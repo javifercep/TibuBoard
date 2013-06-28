@@ -1,0 +1,20 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<history>
+   <processor signature="arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -g -nostartfiles -Map=TibuBoard_Demo.map -O0 --gc-sections -LC:\CooCox\CoIDE\configuration\ProgramData\TibuBoard_Demo -TC:\CooCox\CoIDE\configuration\ProgramData\TibuBoard_Demo/arm-gcc-link.ld -g">
+      <target file="TibuBoard_Demo.elf" lastModified="13f8a0b1fff">
+         <source file="..\obj\stm32f4xx_syscfg.o" lastModified="13f8a0b193b"/>
+         <source file="..\obj\TibuBoard.o" lastModified="13f8a0b19b8"/>
+         <source file="..\obj\ArduinoStyle.o" lastModified="13f8a0b1a15"/>
+         <source file="..\obj\startup_stm32f4xx.o" lastModified="13f851de176"/>
+         <source file="..\obj\main.o" lastModified="13f8a0b1a63"/>
+         <source file="..\obj\stm32f4xx_rcc.o" lastModified="13f8a0b1af0"/>
+         <source file="..\obj\stm32f4xx_it.o" lastModified="13f8a0b1b4d"/>
+         <source file="..\obj\stm32f4xx_gpio.o" lastModified="13f8a0b1bbb"/>
+         <source file="..\obj\system_stm32f4xx.o" lastModified="13f8a0b1c18"/>
+         <source file="..\obj\syscalls.o" lastModified="13f851de417"/>
+         <source file="..\obj\stm32f4xx_exti.o" lastModified="13f8a0b1c76"/>
+         <source file="..\obj\misc.o" lastModified="13f8a0b1cd3"/>
+         <source file="..\obj\stm32f4xx_tim.o" lastModified="13f8a0b1dae"/>
+      </target>
+   </processor>
+</history>
