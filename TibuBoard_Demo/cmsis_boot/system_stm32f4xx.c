@@ -56,7 +56,7 @@
   *-----------------------------------------------------------------------------
   *        APB2 Prescaler                         | 2
   *-----------------------------------------------------------------------------
-  *        HSE Frequency(Hz)                      | 20000000
+  *        HSE Frequency(Hz)                      | 25000000
   *-----------------------------------------------------------------------------
   *        PLL_M                                  | 25
   *-----------------------------------------------------------------------------
@@ -140,13 +140,13 @@
 /*!< Uncomment the following line if you need to relocate your vector Table in
      Internal SRAM. */
 /* #define VECT_TAB_SRAM */
-#define VECT_TAB_OFFSET  0x00 /*!< Vector Table base offset field. 
+#define VECT_TAB_OFFSET  0x0000 /*!< Vector Table base offset field.
                                    This value must be a multiple of 0x200. */
 /******************************************************************************/
 
 /************************* PLL Parameters *************************************/
 /* PLL_VCO = (HSE_VALUE or HSI_VALUE / PLL_M) * PLL_N */
-#define PLL_M      20
+#define PLL_M      25
 #define PLL_N      336
 
 /* SYSCLK = PLL_VCO / PLL_P */

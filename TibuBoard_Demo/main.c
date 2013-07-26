@@ -4,6 +4,7 @@ int main(void)
 {
 	SystemInit();
 	SysTickConfig();
+	Init_PWMPins();
 	setup();
     while(1)
     {
