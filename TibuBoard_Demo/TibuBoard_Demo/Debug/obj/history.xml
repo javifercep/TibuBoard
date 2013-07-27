@@ -4,43 +4,49 @@
       <target file="syscalls.o" lastModified="1401a4093ba">
          <source file="..\..\..\syscalls\syscalls.c" lastModified="13f80b309f8"/>
       </target>
-      <target file="stm32f4xx_gpio.o" lastModified="1401a409306">
+      <target file="stm32f4xx_gpio.o" lastModified="1401b2f8d2c">
          <source file="..\..\..\cmsis_lib\source\stm32f4xx_gpio.c" lastModified="13f80b2fd57"/>
       </target>
-      <target file="TibuBoard.o" lastModified="1401a408fe2">
+      <target file="stm32f4xx_dma.o" lastModified="1401b2f8e4a">
+         <source file="..\..\..\cmsis_lib\source\stm32f4xx_dma.c" lastModified="1401ae9fae8"/>
+      </target>
+      <target file="TibuBoard.o" lastModified="1401b2f86be">
          <source file="..\..\..\TibuBoard.c" lastModified="1401a408a66"/>
       </target>
-      <target file="ArduinoStyle.o" lastModified="1401a97ef14">
-         <source file="..\..\..\ArduinoStyle.c" lastModified="1401a97e77a"/>
+      <target file="stm32f4xx_adc.o" lastModified="1401b2f8b19">
+         <source file="..\..\..\cmsis_lib\source\stm32f4xx_adc.c" lastModified="1401aea32b0"/>
       </target>
-      <target file="stm32f4xx_it.o" lastModified="1401a4091cd">
+      <target file="ArduinoStyle.o" lastModified="1401b3a7952">
+         <source file="..\..\..\ArduinoStyle.c" lastModified="1401b3a74d8"/>
+      </target>
+      <target file="stm32f4xx_it.o" lastModified="1401b2f8a81">
          <source file="..\..\..\Interrupts\stm32f4xx_it.c" lastModified="13f8a0b1516"/>
       </target>
-      <target file="stm32f4xx_tim.o" lastModified="1401a40956b">
+      <target file="stm32f4xx_tim.o" lastModified="1401b2f908d">
          <source file="..\..\..\cmsis_lib\source\stm32f4xx_tim.c" lastModified="13f80b32324"/>
       </target>
-      <target file="system_stm32f4xx.o" lastModified="1401a409368">
+      <target file="system_stm32f4xx.o" lastModified="1401b2f8dcd">
          <source file="..\..\..\cmsis_boot\system_stm32f4xx.c" lastModified="14019d5dd6f"/>
       </target>
       <target file="startup_stm32f4xx.o" lastModified="1401a409080">
          <source file="..\..\..\cmsis_boot\startup\startup_stm32f4xx.c" lastModified="13f80b2fe7c"/>
       </target>
-      <target file="stm32f4xx_syscfg.o" lastModified="1401a408f5b">
-         <source file="..\..\..\cmsis_lib\source\stm32f4xx_syscfg.c" lastModified="13f85c056a0"/>
-      </target>
-      <target file="stm32f4xx_exti.o" lastModified="1401a409426">
+      <target file="stm32f4xx_exti.o" lastModified="1401b2f8ed7">
          <source file="..\..\..\cmsis_lib\source\stm32f4xx_exti.c" lastModified="13f80b3147b"/>
       </target>
-      <target file="BasicFunctions.o" lastModified="1401a90a470">
-         <source file="..\..\..\ArduinoLibraries\BasicFunctions.c" lastModified="1401a90a006"/>
+      <target file="stm32f4xx_syscfg.o" lastModified="1401b2f85e0">
+         <source file="..\..\..\cmsis_lib\source\stm32f4xx_syscfg.c" lastModified="13f85c056a0"/>
       </target>
-      <target file="main.o" lastModified="1401a930aa1">
-         <source file="..\..\..\main.c" lastModified="1401a9305c7"/>
+      <target file="BasicFunctions.o" lastModified="1401b3ca08d">
+         <source file="..\..\..\ArduinoLibraries\BasicFunctions.c" lastModified="1401b3c9b80"/>
       </target>
-      <target file="stm32f4xx_rcc.o" lastModified="1401a40916e">
+      <target file="main.o" lastModified="1401b35902e">
+         <source file="..\..\..\main.c" lastModified="1401b358d02"/>
+      </target>
+      <target file="stm32f4xx_rcc.o" lastModified="1401b2f88f8">
          <source file="..\..\..\cmsis_lib\source\stm32f4xx_rcc.c" lastModified="13f80b301a3"/>
       </target>
-      <target file="misc.o" lastModified="1401a40948b">
+      <target file="misc.o" lastModified="1401b2f8fac">
          <source file="..\..\..\cmsis_lib\source\misc.c" lastModified="13f85bdb5e4"/>
       </target>
    </processor>

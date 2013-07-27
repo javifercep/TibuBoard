@@ -19,13 +19,15 @@ void setup()
 	Tibu.InitAllButton();
 	Tibu.InitButton(USER_BUTTON3);
 	Tibu.ButtonInterrupt(USER_BUTTON3,blink);
-	for(jj=1; jj< 20; jj++)pinMode(jj,OUTPUT);
+	for(jj=1; jj< 20; jj++)
+		if(jj!=A3)pinMode(jj,OUTPUT);
 	pinMode(0,INPUT);
 }
 
 void loop()
 {
 	uint32_t ii;
+	uint16_t pwm;
 
 	if(!Tibu.GetStateButton(USER_BUTTON4))Tibu.LEDOn(LED2);
 	else Tibu.LEDOff(LED2);
@@ -44,8 +46,8 @@ void loop()
 				digitalWrite(ii,LOW);
 		}
 	}
-	analogWrite(3, fade+=1000);
-	if(fade==65000)fade=0;
+	pwm=mapInt16(analogRead(),0, 1023,0,MAXPWMPERIOD);
+	analogWrite(3,pwm);
 	On=On^1;
 	delay(100);
 

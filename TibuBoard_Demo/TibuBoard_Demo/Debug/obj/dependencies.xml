@@ -1,12 +1,15 @@
 <?xml version='1.0' encoding='UTF-8'?>
 <dependencies>
    <includePath signature="/I..\..\..\workspace\TibuBoard_Demo\cmsis /I..\..\..\workspace /I..\..\..\workspace\TibuBoard_Demo /I..\..\..\workspace\TibuBoard_Demo\ArduinoLibraries /I..\..\..\workspace\TibuBoard_Demo\Interrupts /I..\..\..\workspace\TibuBoard_Demo\cmsis_lib /I..\..\.. /I..\..\..\workspace\TibuBoard_Demo\cmsis_lib\include /I..\..\..\workspace\TibuBoard_Demo\cmsis_boot">
-      <source file="..\..\..\ArduinoLibraries\BasicFunctions.h" lastModified="1401a8ec0f4">
+      <source file="..\..\..\ArduinoLibraries\BasicFunctions.h" lastModified="1401b358b20">
          <include file="..\..\..\cmsis_boot\stm32f4xx.h"/>
          <include file="..\..\..\cmsis_boot\stm32f4xx_conf.h"/>
       </source>
       <source file="..\..\..\cmsis_lib\include\stm32f4xx_syscfg.h" lastModified="13f85c0569c">
          <include file="..\..\..\cmsis_boot\stm32f4xx.h"/>
+      </source>
+      <source file="..\..\..\ArduinoLibraries\BasicFunctions.c" lastModified="1401b3c9b80">
+         <include file="..\..\..\ArduinoLibraries\BasicFunctions.h"/>
       </source>
       <source file="..\..\..\cmsis\core_cmInstr.h" lastModified="13f80b304e8">
       </source>
@@ -14,9 +17,6 @@
          <include file="..\..\..\cmsis\core_cmInstr.h"/>
          <include file="..\..\..\cmsis\core_cmFunc.h"/>
          <include file="..\..\..\cmsis\core_cm4_simd.h"/>
-      </source>
-      <source file="..\..\..\ArduinoLibraries\BasicFunctions.c" lastModified="1401a90a006">
-         <include file="..\..\..\ArduinoLibraries\BasicFunctions.h"/>
       </source>
       <source file="..\..\..\cmsis_lib\source\stm32f4xx_syscfg.c" lastModified="13f85c056a0">
          <include file="..\..\..\cmsis_lib\include\stm32f4xx_syscfg.h"/>
@@ -38,12 +38,20 @@
       <source file="..\..\..\cmsis_lib\include\stm32f4xx_gpio.h" lastModified="13f80b2fd52">
          <include file="..\..\..\cmsis_boot\stm32f4xx.h"/>
       </source>
+      <source file="..\..\..\cmsis_lib\source\stm32f4xx_adc.c" lastModified="1401aea32b0">
+         <include file="..\..\..\cmsis_lib\include\stm32f4xx_adc.h"/>
+         <include file="..\..\..\cmsis_lib\include\stm32f4xx_rcc.h"/>
+      </source>
       <source file="..\..\..\TibuBoard.h" lastModified="13f8a0b16ea">
          <include file="..\..\..\cmsis_boot\stm32f4xx.h"/>
          <include file="..\..\..\cmsis_boot\stm32f4xx_conf.h"/>
       </source>
       <source file="..\..\..\cmsis_lib\include\misc.h" lastModified="13f85bdb5df">
          <include file="..\..\..\cmsis_boot\stm32f4xx.h"/>
+      </source>
+      <source file="..\..\..\cmsis_lib\source\stm32f4xx_dma.c" lastModified="1401ae9fae8">
+         <include file="..\..\..\cmsis_lib\include\stm32f4xx_dma.h"/>
+         <include file="..\..\..\cmsis_lib\include\stm32f4xx_rcc.h"/>
       </source>
       <source file="..\..\..\Interrupts\stm32f4xx_it.h" lastModified="13f89db73f0">
          <include file="..\..\..\cmsis_boot\stm32f4xx.h"/>
@@ -57,13 +65,18 @@
          <include file="..\..\..\cmsis_boot\system_stm32f4xx.h"/>
          <include file="..\..\..\cmsis_boot\stm32f4xx_conf.h"/>
       </source>
-      <source file="..\..\..\cmsis_boot\stm32f4xx_conf.h" lastModified="13f85c0832a">
+      <source file="..\..\..\cmsis_boot\stm32f4xx_conf.h" lastModified="1401aea9ec9">
+         <include file="..\..\..\cmsis_lib\include\stm32f4xx_adc.h"/>
+         <include file="..\..\..\cmsis_lib\include\stm32f4xx_dma.h"/>
          <include file="..\..\..\cmsis_lib\include\stm32f4xx_exti.h"/>
          <include file="..\..\..\cmsis_lib\include\stm32f4xx_gpio.h"/>
          <include file="..\..\..\cmsis_lib\include\stm32f4xx_rcc.h"/>
          <include file="..\..\..\cmsis_lib\include\stm32f4xx_syscfg.h"/>
          <include file="..\..\..\cmsis_lib\include\stm32f4xx_tim.h"/>
          <include file="..\..\..\cmsis_lib\include\misc.h"/>
+      </source>
+      <source file="..\..\..\cmsis_lib\include\stm32f4xx_adc.h" lastModified="1401aea32ac">
+         <include file="..\..\..\cmsis_boot\stm32f4xx.h"/>
       </source>
       <source file="..\..\..\cmsis_lib\include\stm32f4xx_tim.h" lastModified="13f80b32314">
          <include file="..\..\..\cmsis_boot\stm32f4xx.h"/>
@@ -76,9 +89,12 @@
       <source file="..\..\..\Interrupts\stm32f4xx_it.c" lastModified="13f8a0b1516">
          <include file="..\..\..\Interrupts\stm32f4xx_it.h"/>
       </source>
+      <source file="..\..\..\cmsis_lib\include\stm32f4xx_dma.h" lastModified="1401ae9fae2">
+         <include file="..\..\..\cmsis_boot\stm32f4xx.h"/>
+      </source>
       <source file="..\..\..\cmsis\core_cmFunc.h" lastModified="13f80b3046c">
       </source>
-      <source file="..\..\..\main.c" lastModified="1401a9305c7">
+      <source file="..\..\..\main.c" lastModified="1401b358d02">
          <include file="..\..\..\ArduinoStyle.h"/>
       </source>
       <source file="..\..\..\cmsis_lib\source\stm32f4xx_rcc.c" lastModified="13f80b301a3">
@@ -101,6 +117,9 @@
       </source>
       <source file="..\..\..\cmsis_lib\include\stm32f4xx_rcc.h" lastModified="13f80b30122">
          <include file="..\..\..\cmsis_boot\stm32f4xx.h"/>
+      </source>
+      <source file="..\..\..\ArduinoStyle.c" lastModified="1401b3a74d8">
+         <include file="..\..\..\ArduinoStyle.h"/>
       </source>
    </includePath>
    <includePath signature="/I..\..\..\workspace\TibuBoard_Demo\cmsis /I..\..\..\workspace /I..\..\..\workspace\TibuBoard_Demo /I..\..\..\workspace\TibuBoard_Demo\Interrupts /I..\..\..\workspace\TibuBoard_Demo\cmsis_lib /I..\..\.. /I..\..\..\workspace\TibuBoard_Demo\cmsis_lib\include /I..\..\..\workspace\TibuBoard_Demo\cmsis_boot">
@@ -137,14 +156,6 @@
       <source file="..\..\..\Interrupts\stm32f4xx_it.h" lastModified="13f89db73f0">
          <include file="..\..\..\cmsis_boot\stm32f4xx.h"/>
          <include file="..\..\..\cmsis_boot\stm32f4xx_conf.h"/>
-      </source>
-      <source file="..\..\..\cmsis_boot\stm32f4xx_conf.h" lastModified="13f85c0832a">
-         <include file="..\..\..\cmsis_lib\include\stm32f4xx_exti.h"/>
-         <include file="..\..\..\cmsis_lib\include\stm32f4xx_gpio.h"/>
-         <include file="..\..\..\cmsis_lib\include\stm32f4xx_rcc.h"/>
-         <include file="..\..\..\cmsis_lib\include\stm32f4xx_syscfg.h"/>
-         <include file="..\..\..\cmsis_lib\include\stm32f4xx_tim.h"/>
-         <include file="..\..\..\cmsis_lib\include\misc.h"/>
       </source>
       <source file="..\..\..\cmsis_lib\include\stm32f4xx_tim.h" lastModified="13f80b32314">
          <include file="..\..\..\cmsis_boot\stm32f4xx.h"/>

@@ -1,21 +1,23 @@
 <?xml version='1.0' encoding='UTF-8'?>
 <history>
    <processor signature="arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -g -nostartfiles -Map=TibuBoard_Demo.map -O0 --gc-sections -LC:\CooCox\CoIDE\configuration\ProgramData\TibuBoard_Demo -TC:\CooCox\CoIDE\configuration\ProgramData\TibuBoard_Demo/arm-gcc-link.ld -g">
-      <target file="TibuBoard_Demo.elf" lastModified="1401a97f1a3">
-         <source file="..\obj\stm32f4xx_syscfg.o" lastModified="1401a408f5b"/>
-         <source file="..\obj\TibuBoard.o" lastModified="1401a408fe2"/>
-         <source file="..\obj\ArduinoStyle.o" lastModified="1401a97ef14"/>
+      <target file="TibuBoard_Demo.elf" lastModified="1401b3ca2f6">
+         <source file="..\obj\stm32f4xx_syscfg.o" lastModified="1401b2f85e0"/>
+         <source file="..\obj\TibuBoard.o" lastModified="1401b2f86be"/>
+         <source file="..\obj\ArduinoStyle.o" lastModified="1401b3a7952"/>
          <source file="..\obj\startup_stm32f4xx.o" lastModified="1401a409080"/>
-         <source file="..\obj\main.o" lastModified="1401a930aa1"/>
-         <source file="..\obj\stm32f4xx_rcc.o" lastModified="1401a40916e"/>
-         <source file="..\obj\stm32f4xx_it.o" lastModified="1401a4091cd"/>
-         <source file="..\obj\BasicFunctions.o" lastModified="1401a90a470"/>
-         <source file="..\obj\stm32f4xx_gpio.o" lastModified="1401a409306"/>
-         <source file="..\obj\system_stm32f4xx.o" lastModified="1401a409368"/>
+         <source file="..\obj\main.o" lastModified="1401b35902e"/>
+         <source file="..\obj\stm32f4xx_rcc.o" lastModified="1401b2f88f8"/>
+         <source file="..\obj\stm32f4xx_it.o" lastModified="1401b2f8a81"/>
+         <source file="..\obj\stm32f4xx_adc.o" lastModified="1401b2f8b19"/>
+         <source file="..\obj\BasicFunctions.o" lastModified="1401b3ca08d"/>
+         <source file="..\obj\stm32f4xx_gpio.o" lastModified="1401b2f8d2c"/>
+         <source file="..\obj\system_stm32f4xx.o" lastModified="1401b2f8dcd"/>
          <source file="..\obj\syscalls.o" lastModified="1401a4093ba"/>
-         <source file="..\obj\stm32f4xx_exti.o" lastModified="1401a409426"/>
-         <source file="..\obj\misc.o" lastModified="1401a40948b"/>
-         <source file="..\obj\stm32f4xx_tim.o" lastModified="1401a40956b"/>
+         <source file="..\obj\stm32f4xx_dma.o" lastModified="1401b2f8e4a"/>
+         <source file="..\obj\stm32f4xx_exti.o" lastModified="1401b2f8ed7"/>
+         <source file="..\obj\misc.o" lastModified="1401b2f8fac"/>
+         <source file="..\obj\stm32f4xx_tim.o" lastModified="1401b2f908d"/>
       </target>
    </processor>
 </history>

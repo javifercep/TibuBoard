@@ -47,6 +47,9 @@ typedef enum
 /* Max Period PWM*/
 #define MAXPWMPERIOD 65535
 
+/*Number of ADCs Channels availables*/
+#define numADC 6
+
 /* Total expansion pin */
 #define numPins 20
 
@@ -180,8 +183,12 @@ typedef enum
  void Init_PWMPins();
 
  /* Analog Functions */
- void analogReference(Button_TypeDef Button);
- uint32_t analogRead(uint32_t pinNumber);
+ void InitADC();
+ uint16_t analogRead();
+
+ /* Useful Functions*/
+ uint16_t mapInt16(uint16_t value, uint16_t minInput, uint16_t maxInput,
+		 	 	 	 	 uint16_t minOutput, uint16_t maxOutput);
 
 
 
