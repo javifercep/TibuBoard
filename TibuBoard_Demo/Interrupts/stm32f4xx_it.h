@@ -39,6 +39,10 @@ void SysTick_Handler(void);
 void EXTI0_IRQHandler(void);
 void EXTI2_IRQHandler(void);
 void EXTI4_IRQHandler(void);
+void OTG_HS_WKUP_IRQHandler(void);
+void OTG_HS_IRQHandler(void);
+void OTG_HS_EP1_IN_IRQHandler(void);
+void OTG_HS_EP1_OUT_IRQHandler(void);
 
 
 

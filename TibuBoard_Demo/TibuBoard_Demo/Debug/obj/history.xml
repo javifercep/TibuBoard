@@ -1,53 +1,95 @@
 <?xml version='1.0' encoding='UTF-8'?>
 <history>
-   <processor signature="arm-none-eabi-gcc noversion nomachine -mcpu=cortex-m4 -mthumb -Wall -ffunction-sections -g -O0 -c -DSTM32F405RG -DSTM32F4XX -DUSE_STDPERIPH_DRIVER -D__ASSEMBLY__ -I..\..\..\workspace\TibuBoard_Demo\cmsis -I..\..\..\workspace -I..\..\..\workspace\TibuBoard_Demo -I..\..\..\workspace\TibuBoard_Demo\ArduinoLibraries -I..\..\..\workspace\TibuBoard_Demo\Interrupts -I..\..\..\workspace\TibuBoard_Demo\cmsis_lib -I..\..\.. -I..\..\..\workspace\TibuBoard_Demo\cmsis_lib\include -I..\..\..\workspace\TibuBoard_Demo\cmsis_boot">
-      <target file="syscalls.o" lastModified="1401a4093ba">
-         <source file="..\..\..\syscalls\syscalls.c" lastModified="13f80b309f8"/>
+   <processor signature="arm-none-eabi-gcc noversion nomachine -mcpu=cortex-m4 -mthumb -Wall -ffunction-sections -g -O0 -c -DSTM32F405RG -DSTM32F4XX -DUSE_STDPERIPH_DRIVER -D__ASSEMBLY__ -I..\..\..\workspace\TibuBoard_Demo\usb_cdc\STM32_USB_OTG_Driver\inc -I..\..\..\workspace\TibuBoard_Demo\usb_cdc\STM32_USB_Device_Library\Class\cdc\inc -I..\..\..\workspace\TibuBoard_Demo\usb_cdc\STM32_USB_OTG_Driver -I..\..\..\workspace\TibuBoard_Demo\usb_cdc\CDC -I..\..\..\workspace\TibuBoard_Demo -I..\..\..\workspace\TibuBoard_Demo\usb_cdc\STM32_USB_Device_Library\Core -I..\..\..\workspace\TibuBoard_Demo\ArduinoLibraries -I..\..\..\workspace\TibuBoard_Demo\usb_cdc\STM32_USB_Device_Library\Class -I..\..\..\workspace\TibuBoard_Demo\usb_cdc\STM32_USB_Device_Library\Core\inc -I..\..\..\workspace\TibuBoard_Demo\usb_cdc\STM32_USB_Device_Library -I..\..\..\workspace\TibuBoard_Demo\Interrupts -I..\..\..\workspace\TibuBoard_Demo\cmsis_lib\include -I..\..\..\workspace\TibuBoard_Demo\cmsis -I..\..\..\workspace\TibuBoard_Demo\usb_cdc -I..\..\..\workspace -I..\..\..\workspace\TibuBoard_Demo\cmsis_lib -I..\..\.. -I..\..\..\workspace\TibuBoard_Demo\usb_cdc\STM32_USB_Device_Library\Class\cdc -I..\..\..\workspace\TibuBoard_Demo\cmsis_boot">
+      <target file="ArduinoStyle.o" lastModified="1406f1ea3b0">
+         <source file="..\..\..\ArduinoStyle.c" lastModified="1406f1e9c14"/>
       </target>
-      <target file="stm32f4xx_gpio.o" lastModified="1401b2f8d2c">
-         <source file="..\..\..\cmsis_lib\source\stm32f4xx_gpio.c" lastModified="13f80b2fd57"/>
-      </target>
-      <target file="stm32f4xx_dma.o" lastModified="1401b2f8e4a">
-         <source file="..\..\..\cmsis_lib\source\stm32f4xx_dma.c" lastModified="1401ae9fae8"/>
-      </target>
-      <target file="TibuBoard.o" lastModified="1401b2f86be">
-         <source file="..\..\..\TibuBoard.c" lastModified="1401a408a66"/>
-      </target>
-      <target file="stm32f4xx_adc.o" lastModified="1401b2f8b19">
-         <source file="..\..\..\cmsis_lib\source\stm32f4xx_adc.c" lastModified="1401aea32b0"/>
-      </target>
-      <target file="ArduinoStyle.o" lastModified="1401b3a7952">
-         <source file="..\..\..\ArduinoStyle.c" lastModified="1401b3a74d8"/>
-      </target>
-      <target file="stm32f4xx_it.o" lastModified="1401b2f8a81">
-         <source file="..\..\..\Interrupts\stm32f4xx_it.c" lastModified="13f8a0b1516"/>
-      </target>
-      <target file="stm32f4xx_tim.o" lastModified="1401b2f908d">
-         <source file="..\..\..\cmsis_lib\source\stm32f4xx_tim.c" lastModified="13f80b32324"/>
-      </target>
-      <target file="system_stm32f4xx.o" lastModified="1401b2f8dcd">
-         <source file="..\..\..\cmsis_boot\system_stm32f4xx.c" lastModified="14019d5dd6f"/>
-      </target>
-      <target file="startup_stm32f4xx.o" lastModified="1401a409080">
-         <source file="..\..\..\cmsis_boot\startup\startup_stm32f4xx.c" lastModified="13f80b2fe7c"/>
-      </target>
-      <target file="stm32f4xx_exti.o" lastModified="1401b2f8ed7">
+      <target file="stm32f4xx_exti.o" lastModified="1406ee68bd6">
          <source file="..\..\..\cmsis_lib\source\stm32f4xx_exti.c" lastModified="13f80b3147b"/>
       </target>
-      <target file="stm32f4xx_syscfg.o" lastModified="1401b2f85e0">
+      <target file="stm32f4xx_gpio.o" lastModified="1406ee686b4">
+         <source file="..\..\..\cmsis_lib\source\stm32f4xx_gpio.c" lastModified="13f80b2fd57"/>
+      </target>
+      <target file="usbd_core.o" lastModified="1406ee6831a">
+         <source file="..\..\..\usb_cdc\STM32_USB_Device_Library\Core\src\usbd_core.c" lastModified="1334a1574c0"/>
+      </target>
+      <target file="usbd_desc.o" lastModified="1406ee6863a">
+         <source file="..\..\..\usb_cdc\CDC\usbd_desc.c" lastModified="13a797d78a6"/>
+      </target>
+      <target file="usbd_cdc_core.o" lastModified="1406ee68ae0">
+         <source file="..\..\..\usb_cdc\STM32_USB_Device_Library\Class\cdc\src\usbd_cdc_core.c" lastModified="13ef4967b4f"/>
+      </target>
+      <target file="TibuBoard.o" lastModified="1406ee68088">
+         <source file="..\..\..\TibuBoard.c" lastModified="1401a408a66"/>
+      </target>
+      <target file="usbd_cdc_vcp.o" lastModified="1406ee6872a">
+         <source file="..\..\..\usb_cdc\CDC\usbd_cdc_vcp.c" lastModified="14053700aef"/>
+      </target>
+      <target file="stm32f4xx_syscfg.o" lastModified="1406ee67f2f">
          <source file="..\..\..\cmsis_lib\source\stm32f4xx_syscfg.c" lastModified="13f85c056a0"/>
       </target>
-      <target file="BasicFunctions.o" lastModified="1401b3ca08d">
-         <source file="..\..\..\ArduinoLibraries\BasicFunctions.c" lastModified="1401b3c9b80"/>
+      <target file="usbd_ioreq.o" lastModified="1406ee68dbc">
+         <source file="..\..\..\usb_cdc\STM32_USB_Device_Library\Core\src\usbd_ioreq.c" lastModified="1334a1574c0"/>
       </target>
-      <target file="main.o" lastModified="1401b35902e">
-         <source file="..\..\..\main.c" lastModified="1401b358d02"/>
+      <target file="startup_stm32f4xx.o" lastModified="1406ee681a9">
+         <source file="..\..\..\cmsis_boot\startup\startup_stm32f4xx.c" lastModified="13f80b2fe7c"/>
       </target>
-      <target file="stm32f4xx_rcc.o" lastModified="1401b2f88f8">
+      <target file="stm32f4xx_tim.o" lastModified="1406ee68ea8">
+         <source file="..\..\..\cmsis_lib\source\stm32f4xx_tim.c" lastModified="13f80b32324"/>
+      </target>
+      <target file="SPIAPI.o" lastModified="1406ee6821a">
+         <source file="..\..\..\ArduinoLibraries\SPIAPI.c" lastModified="140530a6c45"/>
+      </target>
+      <target file="stm32f4xx_adc.o" lastModified="1406ee6854c">
+         <source file="..\..\..\cmsis_lib\source\stm32f4xx_adc.c" lastModified="1401aea32b0"/>
+      </target>
+      <target file="system_stm32f4xx.o" lastModified="1406ee68796">
+         <source file="..\..\..\cmsis_boot\system_stm32f4xx.c" lastModified="14019d5dd6f"/>
+      </target>
+      <target file="usb_bsp.o" lastModified="1406f4fecba">
+         <source file="..\..\..\usb_cdc\CDC\usb_bsp.c" lastModified="140531d66f4"/>
+      </target>
+      <target file="misc.o" lastModified="1406ee68c40">
+         <source file="..\..\..\cmsis_lib\source\misc.c" lastModified="13f85bdb5e4"/>
+      </target>
+      <target file="stm32f4xx_dma.o" lastModified="1406ee6889e">
+         <source file="..\..\..\cmsis_lib\source\stm32f4xx_dma.c" lastModified="1401ae9fae8"/>
+      </target>
+      <target file="usbd_req.o" lastModified="1406ee689b3">
+         <source file="..\..\..\usb_cdc\STM32_USB_Device_Library\Core\src\usbd_req.c" lastModified="1334a1574c0"/>
+      </target>
+      <target file="stm32f4xx_spi.o" lastModified="1406ee68b6a">
+         <source file="..\..\..\cmsis_lib\source\stm32f4xx_spi.c" lastModified="1406ee57d21"/>
+      </target>
+      <target file="usb_dcd_int.o" lastModified="1406ee68a5a">
+         <source file="..\..\..\usb_cdc\STM32_USB_OTG_Driver\src\usb_dcd_int.c" lastModified="13bf7198b3c"/>
+      </target>
+      <target file="usb_dcd.o" lastModified="1406ee68cc4">
+         <source file="..\..\..\usb_cdc\STM32_USB_OTG_Driver\src\usb_dcd.c" lastModified="1334a157c90"/>
+      </target>
+      <target file="stm32f4xx_it.o" lastModified="1406f4fec3d">
+         <source file="..\..\..\Interrupts\stm32f4xx_it.c" lastModified="1406f4fe3fa"/>
+      </target>
+      <target file="stm32f4xx_rcc.o" lastModified="1406ee6843d">
          <source file="..\..\..\cmsis_lib\source\stm32f4xx_rcc.c" lastModified="13f80b301a3"/>
       </target>
-      <target file="misc.o" lastModified="1401b2f8fac">
-         <source file="..\..\..\cmsis_lib\source\misc.c" lastModified="13f85bdb5e4"/>
+      <target file="usb_core.o" lastModified="1406ee68002">
+         <source file="..\..\..\usb_cdc\STM32_USB_OTG_Driver\src\usb_core.c" lastModified="1334a157c90"/>
+      </target>
+      <target file="BasicFunctions.o" lastModified="1406ee685c5">
+         <source file="..\..\..\ArduinoLibraries\BasicFunctions.c" lastModified="1401b3c9b80"/>
+      </target>
+      <target file="syscalls.o" lastModified="1406ee6881c">
+         <source file="..\..\..\syscalls\syscalls.c" lastModified="13f80b309f8"/>
+      </target>
+      <target file="USBSerial.o" lastModified="1406f197422">
+         <source file="..\..\..\ArduinoLibraries\USBSerial.c" lastModified="1406f11cb5c"/>
+      </target>
+      <target file="usbd_usr.o" lastModified="1406ee68164">
+         <source file="..\..\..\usb_cdc\CDC\usbd_usr.c" lastModified="1404da8ee94"/>
+      </target>
+      <target file="main.o" lastModified="1406f4febba">
+         <source file="..\..\..\main.c" lastModified="1406f4fe70c"/>
       </target>
    </processor>
 </history>

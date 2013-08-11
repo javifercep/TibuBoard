@@ -22,39 +22,6 @@
 #include "stm32f4xx_conf.h"
 
  /* Exported define ------------------------------------------------------------*/
-
- typedef enum 
-{
-  LED1 = 0,
-  LED2 = 1,
-  LED3 = 2,
-  LED4 = 3
-} Led_TypeDef;
-
-typedef enum
-{
-  USER_BUTTON1 = 0,
-  USER_BUTTON3 = 1,
-  USER_BUTTON4 = 2
-} Button_TypeDef;
-
-typedef struct
-{
-
-	void 		( *InitLED ) 		( Led_TypeDef ) ;
-	void 		( *ToggleLED )		( Led_TypeDef );
-	void 		( *LEDOn ) 			( Led_TypeDef ) ;
-	void 		( *LEDOff )			( Led_TypeDef );
-	void 		( *InitAllLED )		(void);
-	void 		( *ToggleAllLED )	(void);
-	void 		( *AllLEDOn )		(void);
-	void 		( *AllLEDOff )		(void);
-	void 		( *InitButton )		(Button_TypeDef);
-	void 		( *ButtonInterrupt )(Button_TypeDef, void (*userFunc)(void));
-	void 		( *InitAllButton )	(void);
-	uint32_t 	( *GetStateButton )	(Button_TypeDef);
-
-}TibuBoard;
  
  /* LEDx boards Interface */
  
@@ -111,6 +78,39 @@ typedef struct
  /* Exported types ------------------------------------------------------------*/
 
 typedef void (*voidFuncPtr)(void);
+
+typedef enum 
+{
+  LED1 = 0,
+  LED2 = 1,
+  LED3 = 2,
+  LED4 = 3
+} Led_TypeDef;
+
+typedef enum
+{
+  USER_BUTTON1 = 0,
+  USER_BUTTON3 = 1,
+  USER_BUTTON4 = 2
+} Button_TypeDef;
+
+typedef struct
+{
+
+	void 		( *InitLED ) 		( Led_TypeDef ) ;
+	void 		( *ToggleLED )		( Led_TypeDef );
+	void 		( *LEDOn ) 			( Led_TypeDef ) ;
+	void 		( *LEDOff )			( Led_TypeDef );
+	void 		( *InitAllLED )		(void);
+	void 		( *ToggleAllLED )	(void);
+	void 		( *AllLEDOn )		(void);
+	void 		( *AllLEDOff )		(void);
+	void 		( *InitButton )		(Button_TypeDef);
+	void 		( *ButtonInterrupt )(Button_TypeDef, void (*userFunc)(void));
+	void 		( *InitAllButton )	(void);
+	uint32_t 	( *GetStateButton )	(Button_TypeDef);
+
+}TibuBoard;
 
  /* Exported constants --------------------------------------------------------*/
 

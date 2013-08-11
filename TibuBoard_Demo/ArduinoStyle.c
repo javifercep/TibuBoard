@@ -1,6 +1,6 @@
 #include "ArduinoStyle.h"
 
-TibuBoard Tibu;
+
 uint32_t On=0, fade=0;
 
 
@@ -14,7 +14,7 @@ void setup()
 {
 	int jj;
 
-	InitTibuBoard(&Tibu);
+	Serial.begin();
 	Tibu.InitAllLED();
 	Tibu.InitAllButton();
 	Tibu.InitButton(USER_BUTTON3);
@@ -23,6 +23,7 @@ void setup()
 		if(jj!=A3)pinMode(jj,OUTPUT);
 	pinMode(0,INPUT);
 }
+
 
 void loop()
 {
@@ -47,9 +48,14 @@ void loop()
 		}
 	}
 	pwm=mapInt16(analogRead(),0, 1023,0,MAXPWMPERIOD);
+	Serial.println("Hello!");
 	analogWrite(3,pwm);
 	On=On^1;
 	delay(100);
+	if(Serial.available()>0)
+	{
+		//Serial.print((char)Serial.read());
+	}
 
 }
 

@@ -1,0 +1,20 @@
+Instructions:
+1) Copy all the files from the folder "usb_cdc" to your project;
+2) On "main.c":
+	- #include "usbd_cdc_vcp.h"
+	- For sprintf and others, mark "C Library" from the CooCox "Repository"; 
+	- Then, #include <stdio.h>
+		
+3) Declare the USB HANDLE, as a variable:
+		__ALIGN_BEGIN USB_OTG_CORE_HANDLE  USB_OTG_dev __ALIGN_END;
+
+4) Start the USB_CDC device mode:
+	USBD_InitUSBD_Init(&USB_OTG_dev, USB_OTG_FS_CORE_ID, &USR_desc, &USBD_CDC_cb, &USR_cb);
+
+5) Installed functions from the "usb_cdc_vcp.c" file:
+	- usb_cdc_kbhit(): Identifies if there's new data on the cdc buffer in;
+	- usb_cdc_putc(char c): Prints a char over the usb cdc buffer out; (*)
+	- usb_cdc_printf(char *s): Prints a string over the usb cdc buffer out; (**)
+	- usb_cdc_getc(): Gets a char from the usb cdc buffer in; 
+					  Use this with usb_cdc_kbhit();
+				(*) and (**): both are the same function 
