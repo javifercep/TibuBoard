@@ -1,37 +1,38 @@
 <?xml version='1.0' encoding='UTF-8'?>
 <history>
-   <processor signature="arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -g -nostartfiles -Map=TibuBoard_Demo.map -O0 --gc-sections -LC:\CooCox\CoIDE\configuration\ProgramData\TibuBoard_Demo -TC:\CooCox\CoIDE\configuration\ProgramData\TibuBoard_Demo/arm-gcc-link.ld -g">
-      <target file="TibuBoard_Demo.elf" lastModified="1406f4fef99">
-         <source file="..\obj\stm32f4xx_syscfg.o" lastModified="1406ee67f2f"/>
-         <source file="..\obj\usb_core.o" lastModified="1406ee68002"/>
-         <source file="..\obj\TibuBoard.o" lastModified="1406ee68088"/>
-         <source file="..\obj\ArduinoStyle.o" lastModified="1406f1ea3b0"/>
-         <source file="..\obj\usbd_usr.o" lastModified="1406ee68164"/>
-         <source file="..\obj\startup_stm32f4xx.o" lastModified="1406ee681a9"/>
-         <source file="..\obj\SPIAPI.o" lastModified="1406ee6821a"/>
-         <source file="..\obj\usbd_core.o" lastModified="1406ee6831a"/>
-         <source file="..\obj\main.o" lastModified="1406f4febba"/>
-         <source file="..\obj\stm32f4xx_rcc.o" lastModified="1406ee6843d"/>
-         <source file="..\obj\stm32f4xx_it.o" lastModified="1406f4fec3d"/>
-         <source file="..\obj\stm32f4xx_adc.o" lastModified="1406ee6854c"/>
-         <source file="..\obj\BasicFunctions.o" lastModified="1406ee685c5"/>
-         <source file="..\obj\usbd_desc.o" lastModified="1406ee6863a"/>
-         <source file="..\obj\stm32f4xx_gpio.o" lastModified="1406ee686b4"/>
-         <source file="..\obj\usbd_cdc_vcp.o" lastModified="1406ee6872a"/>
-         <source file="..\obj\system_stm32f4xx.o" lastModified="1406ee68796"/>
-         <source file="..\obj\syscalls.o" lastModified="1406ee6881c"/>
-         <source file="..\obj\stm32f4xx_dma.o" lastModified="1406ee6889e"/>
-         <source file="..\obj\usb_bsp.o" lastModified="1406f4fecba"/>
-         <source file="..\obj\usbd_req.o" lastModified="1406ee689b3"/>
-         <source file="..\obj\usb_dcd_int.o" lastModified="1406ee68a5a"/>
-         <source file="..\obj\usbd_cdc_core.o" lastModified="1406ee68ae0"/>
-         <source file="..\obj\stm32f4xx_spi.o" lastModified="1406ee68b6a"/>
-         <source file="..\obj\stm32f4xx_exti.o" lastModified="1406ee68bd6"/>
-         <source file="..\obj\misc.o" lastModified="1406ee68c40"/>
-         <source file="..\obj\usb_dcd.o" lastModified="1406ee68cc4"/>
-         <source file="..\obj\USBSerial.o" lastModified="1406f197422"/>
-         <source file="..\obj\usbd_ioreq.o" lastModified="1406ee68dbc"/>
-         <source file="..\obj\stm32f4xx_tim.o" lastModified="1406ee68ea8"/>
+   <processor signature="arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -g -nostartfiles -Map=TibuBoard_Demo.map -O0 --gc-sections -lstdc++ -LC:\CooCox\CoIDE\configuration\ProgramData\TibuBoard_Demo -TC:\CooCox\CoIDE\configuration\ProgramData\TibuBoard_Demo/arm-gcc-link.ld -g">
+      <target file="TibuBoard_Demo.elf" lastModified="144dff8a895">
+         <source file="..\obj\stm32f4xx_syscfg.o" lastModified="144dff89630"/>
+         <source file="..\obj\usb_core.o" lastModified="144dff8970f"/>
+         <source file="..\obj\TibuBoard.o" lastModified="144dff897a4"/>
+         <source file="..\obj\ArduinoStyle.o" lastModified="144dff89837"/>
+         <source file="..\obj\usbd_usr.o" lastModified="144dff898a2"/>
+         <source file="..\obj\BufferFunctions.o" lastModified="144dff89933"/>
+         <source file="..\obj\startup_stm32f4xx.o" lastModified="144dff416b2"/>
+         <source file="..\obj\SPIAPI.o" lastModified="144dff8999f"/>
+         <source file="..\obj\usbd_core.o" lastModified="144dff89a22"/>
+         <source file="..\obj\main.o" lastModified="144dff89aac"/>
+         <source file="..\obj\stm32f4xx_rcc.o" lastModified="144dff89b4c"/>
+         <source file="..\obj\stm32f4xx_it.o" lastModified="144dff89bc4"/>
+         <source file="..\obj\stm32f4xx_adc.o" lastModified="144dff89c5b"/>
+         <source file="..\obj\BasicFunctions.o" lastModified="144dff89cd4"/>
+         <source file="..\obj\usbd_desc.o" lastModified="144dff89d47"/>
+         <source file="..\obj\stm32f4xx_gpio.o" lastModified="144dff89dbd"/>
+         <source file="..\obj\usbd_cdc_vcp.o" lastModified="144dff89e3e"/>
+         <source file="..\obj\system_stm32f4xx.o" lastModified="144dff89ea6"/>
+         <source file="..\obj\syscalls.o" lastModified="144dff41d5c"/>
+         <source file="..\obj\stm32f4xx_dma.o" lastModified="144dff89f30"/>
+         <source file="..\obj\usb_bsp.o" lastModified="144dff89fa8"/>
+         <source file="..\obj\usbd_req.o" lastModified="144dff8a041"/>
+         <source file="..\obj\usb_dcd_int.o" lastModified="144dff8a0f9"/>
+         <source file="..\obj\usbd_cdc_core.o" lastModified="144dff8a189"/>
+         <source file="..\obj\stm32f4xx_spi.o" lastModified="144dff8a213"/>
+         <source file="..\obj\stm32f4xx_exti.o" lastModified="144dff8a27f"/>
+         <source file="..\obj\misc.o" lastModified="144dff8a2e9"/>
+         <source file="..\obj\usb_dcd.o" lastModified="144dff8a377"/>
+         <source file="..\obj\USBSerial.o" lastModified="144dff8a40b"/>
+         <source file="..\obj\usbd_ioreq.o" lastModified="144dff8a47d"/>
+         <source file="..\obj\stm32f4xx_tim.o" lastModified="144dff8a563"/>
       </target>
    </processor>
 </history>

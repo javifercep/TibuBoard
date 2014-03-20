@@ -29,6 +29,8 @@ void loop()
 {
 	uint32_t ii;
 	uint16_t pwm;
+	char *toprint;
+	toprint = malloc(sizeof(char)*100);
 
 	if(!Tibu.GetStateButton(USER_BUTTON4))Tibu.LEDOn(LED2);
 	else Tibu.LEDOff(LED2);
@@ -51,10 +53,11 @@ void loop()
 	Serial.println("Hello!");
 	analogWrite(3,pwm);
 	On=On^1;
-	delay(100);
+	delay(1000);
 	if(Serial.available()>0)
 	{
-		//Serial.print((char)Serial.read());
+		toprint =(char*) Serial.readUntil('\n');
+		Serial.print((const char *)toprint);
 	}
 
 }

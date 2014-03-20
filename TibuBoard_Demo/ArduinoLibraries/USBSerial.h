@@ -22,18 +22,21 @@
 #include "stm32f4xx_conf.h"
 #include "usbd_cdc_vcp.h"
 #include <stdio.h>
+#include <string.h>
 
 /* Exported define ------------------------------------------------------------*/
 #define MAXSTRINGSIZE 255
+#define SERIAL_BUFFER_LENGTH 1000
 /* Exported types ------------------------------------------------------------*/
  typedef struct
  {
 
  	void 		( *begin	 ) 		( void );
  	uint8_t 	( *available )		( void );
- 	void 		( *print ) 			( char* );
- 	void 		( *println )		( char* );
+ 	void 		( *print ) 			( const char* );
+ 	void 		( *println )		( const char* );
  	uint8_t		( *read )			( void );
+ 	uint8_t*	( *readUntil )		( uint8_t );
 
  }USBSerial;
 
@@ -43,12 +46,10 @@
 
 void USBSerial_begin(void);
 uint8_t USBSerial_available(void);
-void USBSerial_print(char *s);
-void USBSerial_println(char *s);
+void USBSerial_print(const char *s);
+void USBSerial_println(const char *s);
 uint8_t USBSerial_read(void);
-uint8_t USBSerial_readUntil(char n);
-void USBSerial_StringRead(char *s);
-uint8_t receivedDataEquals(char *in, char *tocomp);
+uint8_t* USBSerial_readUntil(uint8_t n);
 
 /*Init Functions*/
 void InitUSBSerial(USBSerial *Serial);

@@ -51,12 +51,13 @@ extern uint32_t APP_Rx_ptr_in;    /* Increment this pointer or roll it back to
                                      start address when writing received data
                                      in the buffer APP_Rx_Buffer. */
 
+extern __IO FrameContainer USB_DataReceived;
+
 /* Private function prototypes -----------------------------------------------*/
-void DISCOVERY_COM_IRQHandler(void);
 static uint16_t VCP_Init     (void);
 static uint16_t VCP_DeInit   (void);
 static uint16_t VCP_Ctrl     (uint32_t Cmd, uint8_t* Buf, uint32_t Len);
-static uint16_t VCP_DataTx   (uint8_t* Buf);
+static uint16_t VCP_DataTx   (uint8_t* Buf, uint32_t size);
 static uint16_t VCP_DataRx   (uint8_t* Buf, uint32_t Len);
 
 //static uint16_t VCP_COMConfig(uint8_t Conf);
@@ -169,37 +170,27 @@ static uint16_t VCP_Ctrl (uint32_t Cmd, uint8_t* Buf, uint32_t Len)
   * @param  Len: Number of data to be sent (in bytes)
   * @retval Result of the opeartion: USBD_OK if all operations are OK else VCP_FAIL
   */
-static uint16_t VCP_DataTx (uint8_t* Buf)
+static uint16_t VCP_DataTx (uint8_t* Buf, uint32_t size)
 {
-	while(*Buf){
-		APP_Rx_Buffer[APP_Rx_ptr_in] = *Buf++;
-		APP_Rx_ptr_in++;
+	uint32_t ii;
 
-		/* To avoid buffer overflow */
-		if(APP_Rx_ptr_in >= APP_RX_DATA_SIZE)
-		{
-			APP_Rx_ptr_in = 0;
-		}
+	/* Get the data to be sent */
+	for (ii = 0; ii < size; ii++)
+	{
+	APP_Rx_Buffer[APP_Rx_ptr_in] = Buf[ii];
+	/* Increment the in pointer */
+	APP_Rx_ptr_in++;
+	}
+
+	/* To avoid buffer overflow */
+	if(APP_Rx_ptr_in == APP_RX_DATA_SIZE)
+	{
+	APP_Rx_ptr_in = 0;
 	}
 
   return USBD_OK;
 }
 
-/*****************************************************************************
- * Name:
- *    usb_cdc_putc
- * In:
- *    s: char
- * Description:
- *    Print the specified string or char via USB
- *****************************************************************************/
-void usb_cdc_putc(char *s){
-	VCP_DataTx((uint8_t*)s);
-}
-
-void usb_cdc_printf(char *s){
-	VCP_DataTx((uint8_t*)s);
-}
 
 /**
   * @brief  VCP_DataRx
@@ -217,50 +208,25 @@ void usb_cdc_printf(char *s){
   * @retval Result of the opeartion: USBD_OK if all operations are OK else VCP_FAIL
   */
 
-#define APP_TX_BUF_SIZE 32
-uint8_t APP_Tx_Buffer[APP_TX_BUF_SIZE];
-uint32_t APP_tx_ptr_head;
-uint32_t APP_tx_ptr_tail;
 
 static uint16_t VCP_DataRx (uint8_t* Buf, uint32_t Len){
-	uint32_t i;
 
-	for (i = 0; i < Len; i++){
-		APP_Tx_Buffer[APP_tx_ptr_head] = *(Buf + i);
-		APP_tx_ptr_head++;
-
-		if(APP_tx_ptr_head == APP_TX_BUF_SIZE){
-			APP_tx_ptr_head = 0;
-		}
-
-		if(APP_tx_ptr_head == APP_tx_ptr_tail){
-			return USBD_FAIL;
-		}
-	}
+	Write_DataContainer(&USB_DataReceived, Buf, Len);
 	return USBD_OK;
 }
 
-uint8_t usb_cdc_kbhit(void){
-	if(APP_tx_ptr_head == APP_tx_ptr_tail){
-		return 0; //Não há caracter novo
-	}
-	else{
-		return (APP_tx_ptr_tail - APP_tx_ptr_head) ; //Há caracter novo
-	}
+
+/**
+  * @brief  Send a bytes through USB
+  * @param  data: byte array to send.
+  * @param  size: byte array's size
+  * @retval none.
+  */
+void vcp_sendBytes(uint8_t *data, uint32_t size)
+{
+	VCP_DataTx(data, size);
 }
 
-uint8_t usb_cdc_getc(void){
 
-	uint8_t c;
-
-	c = APP_Tx_Buffer[APP_tx_ptr_tail];
-	APP_tx_ptr_tail++;
-
-	if(APP_tx_ptr_tail == APP_TX_BUF_SIZE){
-		APP_tx_ptr_tail = 0;
-	}
-
-	return c;
-}
 
 /******************* (C) COPYRIGHT 2011 STMicroelectronics *****END OF FILE****/

@@ -30,6 +30,7 @@
 #include "usbd_conf.h"
 #include "usbd_usr.h"
 #include "usbd_desc.h"
+#include "BufferFunctions.h"
 
 /* Exported typef ------------------------------------------------------------*/
 /* The following structures groups all needed parameters to be configured for the 
@@ -47,18 +48,12 @@ typedef struct
 /* The following define is used to route the USART IRQ handler to be used.
    The IRQ handler function is implemented in the usbd_cdc_vcp.c file. */
 
-#define DISCOVERY_COM_IRQHandler        USART1_IRQHandler
-
 #define DEFAULT_CONFIG                  0
 #define OTHER_CONFIG                    1
 
 /* Exported macro ------------------------------------------------------------*/
 /* Exported functions ------------------------------------------------------- */
-void putchar_usb(uint8_t c);
-void usb_cdc_putc(char *s);
-void usb_cdc_printf(char *s);
-uint8_t usb_cdc_getc(void);
-uint8_t usb_cdc_kbhit(void);
+void vcp_sendBytes(uint8_t *data, uint32_t size);
 
 #endif /* __USBD_CDC_VCP_H */
 

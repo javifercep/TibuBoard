@@ -15,9 +15,6 @@
       <source file="..\..\..\cmsis_lib\include\misc.h" lastModified="13f85bdb5df">
          <include file="..\..\..\cmsis_boot\stm32f4xx.h"/>
       </source>
-      <source file="..\..\..\usb_cdc\STM32_USB_Device_Library\Class\cdc\inc\usbd_cdc_core.h" lastModified="13a8ab1f2d9">
-         <include file="..\..\..\usb_cdc\STM32_USB_Device_Library\Core\inc\usbd_ioreq.h"/>
-      </source>
       <source file="..\..\..\ArduinoLibraries\SPIAPI.c" lastModified="140530a6c45">
          <include file="..\..\..\ArduinoLibraries\SPIAPI.h"/>
       </source>
@@ -36,10 +33,6 @@
       </source>
       <source file="..\..\..\cmsis_lib\include\stm32f4xx_rcc.h" lastModified="13f80b30122">
          <include file="..\..\..\cmsis_boot\stm32f4xx.h"/>
-      </source>
-      <source file="..\..\..\TibuBoard.h" lastModified="1402f18a349">
-         <include file="..\..\..\cmsis_boot\stm32f4xx.h"/>
-         <include file="..\..\..\cmsis_boot\stm32f4xx_conf.h"/>
       </source>
       <source file="..\..\..\usb_cdc\STM32_USB_OTG_Driver\inc\usb_core.h" lastModified="1334a157c90">
          <include file="..\..\..\usb_cdc\CDC\usb_conf.h"/>
@@ -64,9 +57,6 @@
       <source file="..\..\..\cmsis_lib\include\stm32f4xx_adc.h" lastModified="1401aea32ac">
          <include file="..\..\..\cmsis_boot\stm32f4xx.h"/>
       </source>
-      <source file="..\..\..\TibuBoard.c" lastModified="1401a408a66">
-         <include file="..\..\..\TibuBoard.h"/>
-      </source>
       <source file="..\..\..\usb_cdc\CDC\usb_bsp.c" lastModified="140531d66f4">
          <include file="..\..\..\usb_cdc\STM32_USB_OTG_Driver\inc\usb_bsp.h"/>
          <include file="..\..\..\usb_cdc\CDC\usbd_conf.h"/>
@@ -79,8 +69,6 @@
          <include file="..\..\..\usb_cdc\STM32_USB_OTG_Driver\inc\usb_dcd_int.h"/>
          <include file="..\..\..\usb_cdc\STM32_USB_OTG_Driver\inc\usb_bsp.h"/>
       </source>
-      <source file="..\..\..\cmsis\core_cmFunc.h" lastModified="13f80b3046c">
-      </source>
       <source file="..\..\..\usb_cdc\STM32_USB_Device_Library\Core\inc\usbd_ioreq.h" lastModified="1334a1574c0">
          <include file="..\..\..\usb_cdc\STM32_USB_Device_Library\Core\inc\usbd_def.h"/>
          <include file="..\..\..\usb_cdc\STM32_USB_Device_Library\Core\inc\usbd_core.h"/>
@@ -89,19 +77,12 @@
          <include file="..\..\..\cmsis_lib\include\stm32f4xx_dma.h"/>
          <include file="..\..\..\cmsis_lib\include\stm32f4xx_rcc.h"/>
       </source>
-      <source file="..\..\..\cmsis\core_cm4_simd.h" lastModified="13f80b30449">
+      <source file="..\..\..\cmsis_lib\include\stm32f4xx_dma.h" lastModified="1401ae9fae2">
+         <include file="..\..\..\cmsis_boot\stm32f4xx.h"/>
       </source>
       <source file="..\..\..\usb_cdc\STM32_USB_OTG_Driver\src\usb_core.c" lastModified="1334a157c90">
          <include file="..\..\..\usb_cdc\STM32_USB_OTG_Driver\inc\usb_core.h"/>
          <include file="..\..\..\usb_cdc\STM32_USB_OTG_Driver\inc\usb_bsp.h"/>
-      </source>
-      <source file="..\..\..\cmsis_lib\include\stm32f4xx_dma.h" lastModified="1401ae9fae2">
-         <include file="..\..\..\cmsis_boot\stm32f4xx.h"/>
-      </source>
-      <source file="..\..\..\cmsis_boot\stm32f4xx.h" lastModified="13fc30d8144">
-         <include file="..\..\..\cmsis\core_cm4.h"/>
-         <include file="..\..\..\cmsis_boot\system_stm32f4xx.h"/>
-         <include file="..\..\..\cmsis_boot\stm32f4xx_conf.h"/>
       </source>
       <source file="..\..\..\usb_cdc\STM32_USB_Device_Library\Core\inc\usbd_req.h" lastModified="1334a1574c0">
          <include file="..\..\..\usb_cdc\STM32_USB_Device_Library\Core\inc\usbd_def.h"/>
@@ -118,29 +99,19 @@
       <source file="..\..\..\cmsis_lib\include\stm32f4xx_gpio.h" lastModified="13f80b2fd52">
          <include file="..\..\..\cmsis_boot\stm32f4xx.h"/>
       </source>
-      <source file="..\..\..\usb_cdc\STM32_USB_OTG_Driver\src\usb_dcd_int.c" lastModified="13bf7198b3c">
-         <include file="..\..\..\usb_cdc\STM32_USB_OTG_Driver\inc\usb_dcd_int.h"/>
-         <include file="..\..\..\usb_cdc\CDC\usbd_cdc_vcp.h"/>
-      </source>
       <source file="..\..\..\usb_cdc\STM32_USB_OTG_Driver\inc\usb_dcd.h" lastModified="1334a157c90">
          <include file="..\..\..\usb_cdc\STM32_USB_OTG_Driver\inc\usb_core.h"/>
       </source>
       <source file="..\..\..\usb_cdc\STM32_USB_Device_Library\Core\inc\usbd_def.h" lastModified="1334a1574c0">
          <include file="..\..\..\usb_cdc\CDC\usbd_conf.h"/>
       </source>
-      <source file="..\..\..\syscalls\syscalls.c" lastModified="13f80b31998">
+      <source file="..\..\..\usb_cdc\STM32_USB_OTG_Driver\src\usb_dcd_int.c" lastModified="13bf7198b3c">
+         <include file="..\..\..\usb_cdc\STM32_USB_OTG_Driver\inc\usb_dcd_int.h"/>
+         <include file="..\..\..\usb_cdc\CDC\usbd_cdc_vcp.h"/>
       </source>
       <source file="..\..\..\cmsis_lib\source\stm32f4xx_spi.c" lastModified="1406ee57d21">
          <include file="..\..\..\cmsis_lib\include\stm32f4xx_spi.h"/>
          <include file="..\..\..\cmsis_lib\include\stm32f4xx_rcc.h"/>
-      </source>
-      <source file="..\..\..\usb_cdc\STM32_USB_Device_Library\Core\src\usbd_req.c" lastModified="1334a1574c0">
-         <include file="..\..\..\usb_cdc\STM32_USB_Device_Library\Core\inc\usbd_req.h"/>
-         <include file="..\..\..\usb_cdc\STM32_USB_Device_Library\Core\inc\usbd_ioreq.h"/>
-         <include file="..\..\..\usb_cdc\CDC\usbd_desc.h"/>
-      </source>
-      <source file="..\..\..\usb_cdc\STM32_USB_OTG_Driver\inc\usb_regs.h" lastModified="1334a157c90">
-         <include file="..\..\..\usb_cdc\CDC\usb_conf.h"/>
       </source>
       <source file="..\..\..\cmsis_boot\stm32f4xx_conf.h" lastModified="1406ee5dc83">
          <include file="..\..\..\cmsis_lib\include\stm32f4xx_adc.h"/>
@@ -153,15 +124,16 @@
          <include file="..\..\..\cmsis_lib\include\stm32f4xx_tim.h"/>
          <include file="..\..\..\cmsis_lib\include\misc.h"/>
       </source>
+      <source file="..\..\..\usb_cdc\STM32_USB_OTG_Driver\inc\usb_regs.h" lastModified="1334a157c90">
+         <include file="..\..\..\usb_cdc\CDC\usb_conf.h"/>
+      </source>
+      <source file="..\..\..\usb_cdc\STM32_USB_Device_Library\Core\src\usbd_req.c" lastModified="1334a1574c0">
+         <include file="..\..\..\usb_cdc\STM32_USB_Device_Library\Core\inc\usbd_req.h"/>
+         <include file="..\..\..\usb_cdc\STM32_USB_Device_Library\Core\inc\usbd_ioreq.h"/>
+         <include file="..\..\..\usb_cdc\CDC\usbd_desc.h"/>
+      </source>
       <source file="..\..\..\cmsis_lib\include\stm32f4xx_spi.h" lastModified="1406ee57d13">
          <include file="..\..\..\cmsis_boot\stm32f4xx.h"/>
-      </source>
-      <source file="..\..\..\ArduinoStyle.h" lastModified="1406f1846ea">
-         <include file="..\..\..\TibuBoard.h"/>
-         <include file="..\..\..\ArduinoLibraries\BasicFunctions.h"/>
-         <include file="..\..\..\ArduinoLibraries\USBSerial.h"/>
-      </source>
-      <source file="..\..\..\cmsis\core_cmInstr.h" lastModified="13f80b304e8">
       </source>
       <source file="..\..\..\usb_cdc\CDC\usbd_desc.h" lastModified="13160e343a0">
          <include file="..\..\..\usb_cdc\STM32_USB_Device_Library\Core\inc\usbd_def.h"/>
@@ -172,9 +144,6 @@
          <include file="..\..\..\usb_cdc\STM32_USB_Device_Library\Core\inc\usbd_req.h"/>
          <include file="..\..\..\usb_cdc\CDC\usbd_conf.h"/>
          <include file="..\..\..\usb_cdc\STM32_USB_OTG_Driver\inc\usb_regs.h"/>
-      </source>
-      <source file="..\..\..\ArduinoStyle.c" lastModified="1406f1e9c14">
-         <include file="..\..\..\ArduinoStyle.h"/>
       </source>
       <source file="..\..\..\usb_cdc\STM32_USB_Device_Library\Class\cdc\src\usbd_cdc_core.c" lastModified="13ef4967b4f">
          <include file="..\..\..\usb_cdc\STM32_USB_Device_Library\Class\cdc\inc\usbd_cdc_core.h"/>
@@ -195,32 +164,12 @@
       <source file="..\..\..\usb_cdc\STM32_USB_OTG_Driver\inc\usb_dcd_int.h" lastModified="1334a157c90">
          <include file="..\..\..\usb_cdc\STM32_USB_OTG_Driver\inc\usb_dcd.h"/>
       </source>
-      <source file="..\..\..\ArduinoLibraries\USBSerial.h" lastModified="1406f197238">
-         <include file="..\..\..\cmsis_boot\stm32f4xx.h"/>
-         <include file="..\..\..\cmsis_boot\stm32f4xx_conf.h"/>
-         <include file="..\..\..\usb_cdc\CDC\usbd_cdc_vcp.h"/>
-      </source>
       <source file="..\..\..\usb_cdc\CDC\usb_conf.h" lastModified="13ef4cf5177">
          <include file="..\..\..\cmsis_boot\stm32f4xx.h"/>
-      </source>
-      <source file="..\..\..\usb_cdc\CDC\usbd_cdc_vcp.h" lastModified="13bf79c2dfd">
-         <include file="..\..\..\cmsis_boot\stm32f4xx.h"/>
-         <include file="..\..\..\usb_cdc\STM32_USB_Device_Library\Class\cdc\inc\usbd_cdc_core.h"/>
-         <include file="..\..\..\usb_cdc\CDC\usbd_conf.h"/>
-         <include file="..\..\..\usb_cdc\STM32_USB_Device_Library\Core\inc\usbd_usr.h"/>
-         <include file="..\..\..\usb_cdc\CDC\usbd_desc.h"/>
       </source>
       <source file="..\..\..\usb_cdc\CDC\usbd_usr.c" lastModified="1404da8ee94">
          <include file="..\..\..\usb_cdc\STM32_USB_Device_Library\Core\inc\usbd_usr.h"/>
          <include file="..\..\..\usb_cdc\STM32_USB_Device_Library\Core\inc\usbd_ioreq.h"/>
-      </source>
-      <source file="..\..\..\cmsis\core_cm4.h" lastModified="13f80b303b5">
-         <include file="..\..\..\cmsis\core_cmInstr.h"/>
-         <include file="..\..\..\cmsis\core_cmFunc.h"/>
-         <include file="..\..\..\cmsis\core_cm4_simd.h"/>
-      </source>
-      <source file="..\..\..\ArduinoLibraries\USBSerial.c" lastModified="1406f11cb5c">
-         <include file="..\..\..\ArduinoLibraries\USBSerial.h"/>
       </source>
       <source file="..\..\..\Interrupts\stm32f4xx_it.h" lastModified="1406f4fe718">
          <include file="..\..\..\cmsis_boot\stm32f4xx.h"/>
@@ -235,16 +184,9 @@
          <include file="..\..\..\cmsis_lib\include\stm32f4xx_tim.h"/>
          <include file="..\..\..\cmsis_lib\include\stm32f4xx_rcc.h"/>
       </source>
-      <source file="..\..\..\usb_cdc\CDC\usbd_cdc_vcp.c" lastModified="14053700aef">
-         <include file="..\..\..\usb_cdc\CDC\usbd_cdc_vcp.h"/>
-         <include file="..\..\..\usb_cdc\CDC\usb_conf.h"/>
-      </source>
       <source file="..\..\..\cmsis_boot\startup\startup_stm32f4xx.c" lastModified="13f80b2fe7c">
       </source>
       <source file="..\..\..\cmsis_lib\include\stm32f4xx_tim.h" lastModified="13f80b32314">
-         <include file="..\..\..\cmsis_boot\stm32f4xx.h"/>
-      </source>
-      <source file="..\..\..\cmsis_boot\system_stm32f4xx.c" lastModified="14019d5dd6f">
          <include file="..\..\..\cmsis_boot\stm32f4xx.h"/>
       </source>
       <source file="..\..\..\cmsis_lib\source\stm32f4xx_exti.c" lastModified="13f80b3147b">
@@ -322,9 +264,6 @@
       <source file="..\..\..\cmsis_lib\include\stm32f4xx_tim.h" lastModified="13f80b32314">
          <include file="..\..\..\cmsis_boot\stm32f4xx.h"/>
       </source>
-      <source file="..\..\..\cmsis_boot\system_stm32f4xx.c" lastModified="14019d5dd6f">
-         <include file="..\..\..\cmsis_boot\stm32f4xx.h"/>
-      </source>
       <source file="..\..\..\cmsis_lib\source\stm32f4xx_exti.c" lastModified="13f80b3147b">
          <include file="..\..\..\cmsis_lib\include\stm32f4xx_exti.h"/>
       </source>
@@ -353,19 +292,12 @@
       <source file="..\..\..\cmsis_lib\include\stm32f4xx_rcc.h" lastModified="13f80b30122">
          <include file="..\..\..\cmsis_boot\stm32f4xx.h"/>
       </source>
-      <source file="..\..\..\TibuBoard.h" lastModified="1402f18a349">
-         <include file="..\..\..\cmsis_boot\stm32f4xx.h"/>
-         <include file="..\..\..\cmsis_boot\stm32f4xx_conf.h"/>
-      </source>
       <source file="..\..\..\cmsis_lib\source\stm32f4xx_adc.c" lastModified="1401aea32b0">
          <include file="..\..\..\cmsis_lib\include\stm32f4xx_adc.h"/>
          <include file="..\..\..\cmsis_lib\include\stm32f4xx_rcc.h"/>
       </source>
       <source file="..\..\..\cmsis_lib\include\stm32f4xx_adc.h" lastModified="1401aea32ac">
          <include file="..\..\..\cmsis_boot\stm32f4xx.h"/>
-      </source>
-      <source file="..\..\..\TibuBoard.c" lastModified="1401a408a66">
-         <include file="..\..\..\TibuBoard.h"/>
       </source>
       <source file="..\..\..\cmsis_lib\source\stm32f4xx_dma.c" lastModified="1401ae9fae8">
          <include file="..\..\..\cmsis_lib\include\stm32f4xx_dma.h"/>
@@ -410,7 +342,266 @@
       <source file="..\..\..\cmsis_lib\include\stm32f4xx_tim.h" lastModified="13f80b32314">
          <include file="..\..\..\cmsis_boot\stm32f4xx.h"/>
       </source>
-      <source file="..\..\..\cmsis_boot\system_stm32f4xx.c" lastModified="14019d5dd6f">
+      <source file="..\..\..\cmsis_lib\source\stm32f4xx_exti.c" lastModified="13f80b3147b">
+         <include file="..\..\..\cmsis_lib\include\stm32f4xx_exti.h"/>
+      </source>
+   </includePath>
+   <includePath signature="/I..\..\..\..\..\Users\JAVIS\Documents\GitHub\TibuBoard\TibuBoard_Demo\usb_cdc\CDC /I..\..\..\..\..\Users\JAVIS\Documents\GitHub\TibuBoard /I..\..\..\..\..\Users\JAVIS\Documents\GitHub\TibuBoard\TibuBoard_Demo\usb_cdc\STM32_USB_Device_Library\Core\inc /I..\..\..\..\..\Users\JAVIS\Documents\GitHub /I..\..\..\..\..\Users\JAVIS\Documents\GitHub\TibuBoard\TibuBoard_Demo\Interrupts /I..\..\..\..\..\Users\JAVIS\Documents\GitHub\TibuBoard\TibuBoard_Demo\usb_cdc\STM32_USB_Device_Library /I..\..\..\..\..\Users\JAVIS\Documents\GitHub\TibuBoard\TibuBoard_Demo\cmsis /I..\..\..\..\..\Users\JAVIS\Documents\GitHub\TibuBoard\TibuBoard_Demo\usb_cdc\STM32_USB_OTG_Driver /I..\..\..\..\..\Users\JAVIS\Documents\GitHub\TibuBoard\TibuBoard_Demo\usb_cdc\STM32_USB_Device_Library\Class\cdc\inc /I..\..\..\..\..\Users\JAVIS\Documents\GitHub\TibuBoard\TibuBoard_Demo\usb_cdc\STM32_USB_OTG_Driver\inc /I..\..\..\..\..\Users\JAVIS\Documents\GitHub\TibuBoard\TibuBoard_Demo\usb_cdc\STM32_USB_Device_Library\Class\cdc /I..\..\..\..\..\Users\JAVIS\Documents\GitHub\TibuBoard\TibuBoard_Demo\cmsis_lib /I..\..\..\..\..\Users\JAVIS\Documents\GitHub\TibuBoard\TibuBoard_Demo\cmsis_boot /I..\..\..\..\..\Users\JAVIS\Documents\GitHub\TibuBoard\TibuBoard_Demo\usb_cdc /I..\..\..\..\..\Users\JAVIS\Documents\GitHub\TibuBoard\TibuBoard_Demo\ArduinoLibraries /I..\..\..\..\..\Users\JAVIS\Documents\GitHub\TibuBoard\TibuBoard_Demo\cmsis_lib\include /I..\..\..\..\..\Users\JAVIS\Documents\GitHub\TibuBoard\TibuBoard_Demo\usb_cdc\STM32_USB_Device_Library\Core /I..\..\..\..\..\Users\JAVIS\Documents\GitHub\TibuBoard\TibuBoard_Demo\utilities /I..\..\..\..\..\Users\JAVIS\Documents\GitHub\TibuBoard\TibuBoard_Demo\usb_cdc\STM32_USB_Device_Library\Class /I..\..\..\..\..\Users\JAVIS\Documents\GitHub\TibuBoard\TibuBoard_Demo">
+      <source file="..\..\..\cmsis_lib\source\stm32f4xx_gpio.c" lastModified="13f80b2fd57">
+         <include file="..\..\..\cmsis_lib\include\stm32f4xx_gpio.h"/>
+         <include file="..\..\..\cmsis_lib\include\stm32f4xx_rcc.h"/>
+      </source>
+      <source file="..\..\..\cmsis_lib\include\stm32f4xx_syscfg.h" lastModified="13f85c0569c">
+         <include file="..\..\..\cmsis_boot\stm32f4xx.h"/>
+      </source>
+      <source file="..\..\..\ArduinoLibraries\SPIAPI.h" lastModified="14052ed210b">
+         <include file="..\..\..\cmsis_boot\stm32f4xx.h"/>
+         <include file="..\..\..\cmsis_boot\stm32f4xx_conf.h"/>
+      </source>
+      <source file="..\..\..\cmsis_lib\include\misc.h" lastModified="13f85bdb5df">
+         <include file="..\..\..\cmsis_boot\stm32f4xx.h"/>
+      </source>
+      <source file="..\..\..\usb_cdc\STM32_USB_Device_Library\Class\cdc\inc\usbd_cdc_core.h" lastModified="144dee4d4c6">
+         <include file="..\..\..\usb_cdc\STM32_USB_Device_Library\Core\inc\usbd_ioreq.h"/>
+      </source>
+      <source file="..\..\..\ArduinoLibraries\SPIAPI.c" lastModified="140530a6c45">
+         <include file="..\..\..\ArduinoLibraries\SPIAPI.h"/>
+      </source>
+      <source file="..\..\..\usb_cdc\STM32_USB_OTG_Driver\inc\usb_defines.h" lastModified="1334a157c90">
+         <include file="..\..\..\usb_cdc\CDC\usb_conf.h"/>
+      </source>
+      <source file="..\..\..\cmsis_lib\source\stm32f4xx_syscfg.c" lastModified="13f85c056a0">
+         <include file="..\..\..\cmsis_lib\include\stm32f4xx_syscfg.h"/>
+         <include file="..\..\..\cmsis_lib\include\stm32f4xx_rcc.h"/>
+      </source>
+      <source file="..\..\..\cmsis_lib\source\misc.c" lastModified="13f85bdb5e4">
+         <include file="..\..\..\cmsis_lib\include\misc.h"/>
+      </source>
+      <source file="..\..\..\cmsis_lib\source\stm32f4xx_rcc.c" lastModified="13f80b301a3">
+         <include file="..\..\..\cmsis_lib\include\stm32f4xx_rcc.h"/>
+      </source>
+      <source file="..\..\..\cmsis_lib\include\stm32f4xx_rcc.h" lastModified="13f80b30122">
+         <include file="..\..\..\cmsis_boot\stm32f4xx.h"/>
+      </source>
+      <source file="..\..\..\TibuBoard.h" lastModified="144dff89265">
+         <include file="..\..\..\cmsis_boot\stm32f4xx.h"/>
+         <include file="..\..\..\cmsis_boot\stm32f4xx_conf.h"/>
+      </source>
+      <source file="..\..\..\usb_cdc\STM32_USB_OTG_Driver\inc\usb_core.h" lastModified="1334a157c90">
+         <include file="..\..\..\usb_cdc\CDC\usb_conf.h"/>
+         <include file="..\..\..\usb_cdc\STM32_USB_OTG_Driver\inc\usb_regs.h"/>
+         <include file="..\..\..\usb_cdc\STM32_USB_OTG_Driver\inc\usb_defines.h"/>
+      </source>
+      <source file="..\..\..\usb_cdc\STM32_USB_Device_Library\Core\inc\usbd_usr.h" lastModified="1334a1574c0">
+         <include file="..\..\..\usb_cdc\STM32_USB_Device_Library\Core\inc\usbd_core.h"/>
+      </source>
+      <source file="..\..\..\usb_cdc\STM32_USB_Device_Library\Core\inc\usbd_core.h" lastModified="1334a1574c0">
+         <include file="..\..\..\usb_cdc\STM32_USB_OTG_Driver\inc\usb_dcd.h"/>
+         <include file="..\..\..\usb_cdc\STM32_USB_Device_Library\Core\inc\usbd_def.h"/>
+         <include file="..\..\..\usb_cdc\CDC\usbd_conf.h"/>
+      </source>
+      <source file="..\..\..\cmsis_lib\source\stm32f4xx_adc.c" lastModified="1401aea32b0">
+         <include file="..\..\..\cmsis_lib\include\stm32f4xx_adc.h"/>
+         <include file="..\..\..\cmsis_lib\include\stm32f4xx_rcc.h"/>
+      </source>
+      <source file="..\..\..\usb_cdc\STM32_USB_OTG_Driver\inc\usb_bsp.h" lastModified="1404da8ee58">
+         <include file="..\..\..\usb_cdc\STM32_USB_OTG_Driver\inc\usb_core.h"/>
+      </source>
+      <source file="..\..\..\cmsis_lib\include\stm32f4xx_adc.h" lastModified="1401aea32ac">
+         <include file="..\..\..\cmsis_boot\stm32f4xx.h"/>
+      </source>
+      <source file="..\..\..\usb_cdc\CDC\usb_bsp.c" lastModified="140531d66f4">
+         <include file="..\..\..\usb_cdc\STM32_USB_OTG_Driver\inc\usb_bsp.h"/>
+         <include file="..\..\..\usb_cdc\CDC\usbd_conf.h"/>
+         <include file="..\..\..\Interrupts\stm32f4xx_it.h"/>
+      </source>
+      <source file="..\..\..\usb_cdc\STM32_USB_Device_Library\Core\src\usbd_core.c" lastModified="1334a1574c0">
+         <include file="..\..\..\usb_cdc\STM32_USB_Device_Library\Core\inc\usbd_core.h"/>
+         <include file="..\..\..\usb_cdc\STM32_USB_Device_Library\Core\inc\usbd_req.h"/>
+         <include file="..\..\..\usb_cdc\STM32_USB_Device_Library\Core\inc\usbd_ioreq.h"/>
+         <include file="..\..\..\usb_cdc\STM32_USB_OTG_Driver\inc\usb_dcd_int.h"/>
+         <include file="..\..\..\usb_cdc\STM32_USB_OTG_Driver\inc\usb_bsp.h"/>
+      </source>
+      <source file="..\..\..\cmsis\core_cmFunc.h" lastModified="13f80b3046c">
+      </source>
+      <source file="..\..\..\usb_cdc\STM32_USB_Device_Library\Core\inc\usbd_ioreq.h" lastModified="1334a1574c0">
+         <include file="..\..\..\usb_cdc\STM32_USB_Device_Library\Core\inc\usbd_def.h"/>
+         <include file="..\..\..\usb_cdc\STM32_USB_Device_Library\Core\inc\usbd_core.h"/>
+      </source>
+      <source file="..\..\..\cmsis_lib\source\stm32f4xx_dma.c" lastModified="1401ae9fae8">
+         <include file="..\..\..\cmsis_lib\include\stm32f4xx_dma.h"/>
+         <include file="..\..\..\cmsis_lib\include\stm32f4xx_rcc.h"/>
+      </source>
+      <source file="..\..\..\cmsis\core_cm4_simd.h" lastModified="13f80b30449">
+      </source>
+      <source file="..\..\..\cmsis_lib\include\stm32f4xx_dma.h" lastModified="1401ae9fae2">
+         <include file="..\..\..\cmsis_boot\stm32f4xx.h"/>
+      </source>
+      <source file="..\..\..\usb_cdc\STM32_USB_OTG_Driver\src\usb_core.c" lastModified="1334a157c90">
+         <include file="..\..\..\usb_cdc\STM32_USB_OTG_Driver\inc\usb_core.h"/>
+         <include file="..\..\..\usb_cdc\STM32_USB_OTG_Driver\inc\usb_bsp.h"/>
+      </source>
+      <source file="..\..\..\cmsis_boot\stm32f4xx.h" lastModified="144dfcf19dc">
+         <include file="..\..\..\cmsis\core_cm4.h"/>
+         <include file="..\..\..\cmsis_boot\system_stm32f4xx.h"/>
+         <include file="..\..\..\cmsis_boot\stm32f4xx_conf.h"/>
+      </source>
+      <source file="..\..\..\usb_cdc\STM32_USB_Device_Library\Core\inc\usbd_req.h" lastModified="1334a1574c0">
+         <include file="..\..\..\usb_cdc\STM32_USB_Device_Library\Core\inc\usbd_def.h"/>
+         <include file="..\..\..\usb_cdc\STM32_USB_Device_Library\Core\inc\usbd_core.h"/>
+         <include file="..\..\..\usb_cdc\CDC\usbd_conf.h"/>
+      </source>
+      <source file="..\..\..\usb_cdc\STM32_USB_Device_Library\Core\src\usbd_ioreq.c" lastModified="1334a1574c0">
+         <include file="..\..\..\usb_cdc\STM32_USB_Device_Library\Core\inc\usbd_ioreq.h"/>
+      </source>
+      <source file="..\..\..\cmsis_lib\include\stm32f4xx_exti.h" lastModified="13f85c0d23d">
+         <include file="..\..\..\cmsis_boot\stm32f4xx.h"/>
+         <include file="..\..\..\TibuBoard.h"/>
+      </source>
+      <source file="..\..\..\cmsis_lib\include\stm32f4xx_gpio.h" lastModified="13f80b2fd52">
+         <include file="..\..\..\cmsis_boot\stm32f4xx.h"/>
+      </source>
+      <source file="..\..\..\usb_cdc\STM32_USB_OTG_Driver\inc\usb_dcd.h" lastModified="1334a157c90">
+         <include file="..\..\..\usb_cdc\STM32_USB_OTG_Driver\inc\usb_core.h"/>
+      </source>
+      <source file="..\..\..\usb_cdc\STM32_USB_Device_Library\Core\inc\usbd_def.h" lastModified="1334a1574c0">
+         <include file="..\..\..\usb_cdc\CDC\usbd_conf.h"/>
+      </source>
+      <source file="..\..\..\usb_cdc\STM32_USB_OTG_Driver\src\usb_dcd_int.c" lastModified="13bf7198b3c">
+         <include file="..\..\..\usb_cdc\STM32_USB_OTG_Driver\inc\usb_dcd_int.h"/>
+         <include file="..\..\..\usb_cdc\CDC\usbd_cdc_vcp.h"/>
+      </source>
+      <source file="..\..\..\syscalls\syscalls.c" lastModified="13f80b31998">
+      </source>
+      <source file="..\..\..\cmsis_lib\source\stm32f4xx_spi.c" lastModified="1406ee57d21">
+         <include file="..\..\..\cmsis_lib\include\stm32f4xx_spi.h"/>
+         <include file="..\..\..\cmsis_lib\include\stm32f4xx_rcc.h"/>
+      </source>
+      <source file="..\..\..\cmsis_boot\stm32f4xx_conf.h" lastModified="1406ee5dc83">
+         <include file="..\..\..\cmsis_lib\include\stm32f4xx_adc.h"/>
+         <include file="..\..\..\cmsis_lib\include\stm32f4xx_dma.h"/>
+         <include file="..\..\..\cmsis_lib\include\stm32f4xx_exti.h"/>
+         <include file="..\..\..\cmsis_lib\include\stm32f4xx_gpio.h"/>
+         <include file="..\..\..\cmsis_lib\include\stm32f4xx_rcc.h"/>
+         <include file="..\..\..\cmsis_lib\include\stm32f4xx_spi.h"/>
+         <include file="..\..\..\cmsis_lib\include\stm32f4xx_syscfg.h"/>
+         <include file="..\..\..\cmsis_lib\include\stm32f4xx_tim.h"/>
+         <include file="..\..\..\cmsis_lib\include\misc.h"/>
+      </source>
+      <source file="..\..\..\usb_cdc\STM32_USB_OTG_Driver\inc\usb_regs.h" lastModified="1334a157c90">
+         <include file="..\..\..\usb_cdc\CDC\usb_conf.h"/>
+      </source>
+      <source file="..\..\..\usb_cdc\STM32_USB_Device_Library\Core\src\usbd_req.c" lastModified="1334a1574c0">
+         <include file="..\..\..\usb_cdc\STM32_USB_Device_Library\Core\inc\usbd_req.h"/>
+         <include file="..\..\..\usb_cdc\STM32_USB_Device_Library\Core\inc\usbd_ioreq.h"/>
+         <include file="..\..\..\usb_cdc\CDC\usbd_desc.h"/>
+      </source>
+      <source file="..\..\..\cmsis_lib\include\stm32f4xx_spi.h" lastModified="1406ee57d13">
+         <include file="..\..\..\cmsis_boot\stm32f4xx.h"/>
+      </source>
+      <source file="..\..\..\ArduinoStyle.h" lastModified="1406f1846ea">
+         <include file="..\..\..\TibuBoard.h"/>
+         <include file="..\..\..\ArduinoLibraries\BasicFunctions.h"/>
+         <include file="..\..\..\ArduinoLibraries\USBSerial.h"/>
+      </source>
+      <source file="..\..\..\cmsis\core_cmInstr.h" lastModified="13f80b304e8">
+      </source>
+      <source file="..\..\..\usb_cdc\CDC\usbd_desc.h" lastModified="13160e343a0">
+         <include file="..\..\..\usb_cdc\STM32_USB_Device_Library\Core\inc\usbd_def.h"/>
+      </source>
+      <source file="..\..\..\main.c" lastModified="1406f4fe70c">
+         <include file="..\..\..\ArduinoStyle.h"/>
+      </source>
+      <source file="..\..\..\usb_cdc\CDC\usbd_desc.c" lastModified="13a797d78a6">
+         <include file="..\..\..\usb_cdc\STM32_USB_Device_Library\Core\inc\usbd_core.h"/>
+         <include file="..\..\..\usb_cdc\CDC\usbd_desc.h"/>
+         <include file="..\..\..\usb_cdc\STM32_USB_Device_Library\Core\inc\usbd_req.h"/>
+         <include file="..\..\..\usb_cdc\CDC\usbd_conf.h"/>
+         <include file="..\..\..\usb_cdc\STM32_USB_OTG_Driver\inc\usb_regs.h"/>
+      </source>
+      <source file="..\..\..\usb_cdc\STM32_USB_Device_Library\Class\cdc\src\usbd_cdc_core.c" lastModified="13ef4967b4f">
+         <include file="..\..\..\usb_cdc\STM32_USB_Device_Library\Class\cdc\inc\usbd_cdc_core.h"/>
+         <include file="..\..\..\usb_cdc\CDC\usbd_desc.h"/>
+         <include file="..\..\..\usb_cdc\STM32_USB_Device_Library\Core\inc\usbd_req.h"/>
+      </source>
+      <source file="..\..\..\ArduinoLibraries\BasicFunctions.h" lastModified="1401b358b20">
+         <include file="..\..\..\cmsis_boot\stm32f4xx.h"/>
+         <include file="..\..\..\cmsis_boot\stm32f4xx_conf.h"/>
+      </source>
+      <source file="..\..\..\ArduinoLibraries\BasicFunctions.c" lastModified="1401b3c9b80">
+         <include file="..\..\..\ArduinoLibraries\BasicFunctions.h"/>
+      </source>
+      <source file="..\..\..\usb_cdc\STM32_USB_OTG_Driver\src\usb_dcd.c" lastModified="1334a157c90">
+         <include file="..\..\..\usb_cdc\STM32_USB_OTG_Driver\inc\usb_dcd.h"/>
+         <include file="..\..\..\usb_cdc\STM32_USB_OTG_Driver\inc\usb_bsp.h"/>
+      </source>
+      <source file="..\..\..\usb_cdc\STM32_USB_OTG_Driver\inc\usb_dcd_int.h" lastModified="1334a157c90">
+         <include file="..\..\..\usb_cdc\STM32_USB_OTG_Driver\inc\usb_dcd.h"/>
+      </source>
+      <source file="..\..\..\utilities\BufferFunctions.h" lastModified="144dee2881c">
+         <include file="..\..\..\cmsis_boot\stm32f4xx.h"/>
+         <include file="..\..\..\cmsis_boot\stm32f4xx_conf.h"/>
+      </source>
+      <source file="..\..\..\ArduinoLibraries\USBSerial.h" lastModified="144dee3cf4d">
+         <include file="..\..\..\cmsis_boot\stm32f4xx.h"/>
+         <include file="..\..\..\cmsis_boot\stm32f4xx_conf.h"/>
+         <include file="..\..\..\usb_cdc\CDC\usbd_cdc_vcp.h"/>
+      </source>
+      <source file="..\..\..\utilities\BufferFunctions.c" lastModified="144dee28057">
+         <include file="..\..\..\utilities\BufferFunctions.h"/>
+      </source>
+      <source file="..\..\..\usb_cdc\CDC\usb_conf.h" lastModified="13ef4cf5177">
+         <include file="..\..\..\cmsis_boot\stm32f4xx.h"/>
+      </source>
+      <source file="..\..\..\usb_cdc\CDC\usbd_usr.c" lastModified="1404da8ee94">
+         <include file="..\..\..\usb_cdc\STM32_USB_Device_Library\Core\inc\usbd_usr.h"/>
+         <include file="..\..\..\usb_cdc\STM32_USB_Device_Library\Core\inc\usbd_ioreq.h"/>
+      </source>
+      <source file="..\..\..\usb_cdc\CDC\usbd_cdc_vcp.h" lastModified="144deee63c6">
+         <include file="..\..\..\cmsis_boot\stm32f4xx.h"/>
+         <include file="..\..\..\usb_cdc\STM32_USB_Device_Library\Class\cdc\inc\usbd_cdc_core.h"/>
+         <include file="..\..\..\usb_cdc\CDC\usbd_conf.h"/>
+         <include file="..\..\..\usb_cdc\STM32_USB_Device_Library\Core\inc\usbd_usr.h"/>
+         <include file="..\..\..\usb_cdc\CDC\usbd_desc.h"/>
+         <include file="..\..\..\utilities\BufferFunctions.h"/>
+      </source>
+      <source file="..\..\..\cmsis\core_cm4.h" lastModified="13f80b303b5">
+         <include file="..\..\..\cmsis\core_cmInstr.h"/>
+         <include file="..\..\..\cmsis\core_cmFunc.h"/>
+         <include file="..\..\..\cmsis\core_cm4_simd.h"/>
+      </source>
+      <source file="..\..\..\ArduinoLibraries\USBSerial.c" lastModified="144dfe113cc">
+         <include file="..\..\..\ArduinoLibraries\USBSerial.h"/>
+      </source>
+      <source file="..\..\..\Interrupts\stm32f4xx_it.h" lastModified="1406f4fe718">
+         <include file="..\..\..\cmsis_boot\stm32f4xx.h"/>
+         <include file="..\..\..\cmsis_boot\stm32f4xx_conf.h"/>
+      </source>
+      <source file="..\..\..\cmsis_boot\system_stm32f4xx.h" lastModified="13f80b2ff25">
+      </source>
+      <source file="..\..\..\usb_cdc\CDC\usbd_conf.h" lastModified="1404da8eea0">
+         <include file="..\..\..\usb_cdc\CDC\usb_conf.h"/>
+      </source>
+      <source file="..\..\..\cmsis_lib\source\stm32f4xx_tim.c" lastModified="13f80b32324">
+         <include file="..\..\..\cmsis_lib\include\stm32f4xx_tim.h"/>
+         <include file="..\..\..\cmsis_lib\include\stm32f4xx_rcc.h"/>
+      </source>
+      <source file="..\..\..\usb_cdc\CDC\usbd_cdc_vcp.c" lastModified="144deee63a2">
+         <include file="..\..\..\usb_cdc\CDC\usbd_cdc_vcp.h"/>
+         <include file="..\..\..\usb_cdc\CDC\usb_conf.h"/>
+      </source>
+      <source file="..\..\..\cmsis_boot\startup\startup_stm32f4xx.c" lastModified="13f80b2fe7c">
+      </source>
+      <source file="..\..\..\cmsis_lib\include\stm32f4xx_tim.h" lastModified="13f80b32314">
+         <include file="..\..\..\cmsis_boot\stm32f4xx.h"/>
+      </source>
+      <source file="..\..\..\Interrupts\stm32f4xx_it.c" lastModified="1406f4fe3fa">
+         <include file="..\..\..\Interrupts\stm32f4xx_it.h"/>
+         <include file="..\..\..\usb_cdc\STM32_USB_OTG_Driver\inc\usb_core.h"/>
+         <include file="..\..\..\usb_cdc\STM32_USB_Device_Library\Core\inc\usbd_core.h"/>
+         <include file="..\..\..\usb_cdc\STM32_USB_Device_Library\Class\cdc\inc\usbd_cdc_core.h"/>
+      </source>
+      <source file="..\..\..\cmsis_boot\system_stm32f4xx.c" lastModified="144dfcf1641">
          <include file="..\..\..\cmsis_boot\stm32f4xx.h"/>
       </source>
       <source file="..\..\..\cmsis_lib\source\stm32f4xx_exti.c" lastModified="13f80b3147b">
