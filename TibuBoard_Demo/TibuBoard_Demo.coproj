@@ -17,25 +17,30 @@
           <Define name="USE_STDPERIPH_DRIVER"/>
           <Define name="__ASSEMBLY__"/>
           <Define name="SUPPORT_CPLUSPLUS"/>
+          <Define name="SYSTEM_LIB"/>
         </DefinedSymbols>
       </Compile>
       <Link useDefault="0">
         <Option name="DiscardUnusedSection" value="0"/>
         <Option name="UserEditLinkder" value=""/>
-        <Option name="UseMemoryLayout" value="1"/>
+        <Option name="UseMemoryLayout" value="0"/>
         <Option name="LTO" value="1"/>
         <Option name="IsNewStartupCode" value="1"/>
-        <Option name="Library" value="Not use C Library"/>
+        <Option name="Library" value="Use base C Library"/>
         <Option name="UserEditLinker" value="-lstdc++; "/>
-        <Option name="nostartfiles" value="1"/>
-        <LinkedLibraries/>
+        <Option name="nostartfiles" value="0"/>
+        <LinkedLibraries>
+          <Libset dir="..\..\..\..\..\..\program files (x86)\gnu tools arm embedded\4.7 2012q4\arm-none-eabi\lib\armv7-m\" libs="stdc++"/>
+          <Libset dir="..\..\..\..\..\..\program files (x86)\gnu tools arm embedded\4.7 2012q4\arm-none-eabi\lib\armv7-m\" libs="supc++"/>
+          <Libset dir="..\..\..\..\..\..\program files (x86)\gnu tools arm embedded\4.7 2012q4\arm-none-eabi\lib\armv7-m\" libs="nosys"/>
+        </LinkedLibraries>
         <MemoryAreas debugInFlashNotRAM="1">
           <Memory name="IROM1" type="ReadOnly" size="0x00100000" startValue="0x08000000"/>
           <Memory name="IRAM1" type="ReadWrite" size="0x00020000" startValue="0x20000000"/>
           <Memory name="IROM2" type="ReadOnly" size="" startValue=""/>
           <Memory name="IRAM2" type="ReadWrite" size="0x00010000" startValue="0x10000000"/>
         </MemoryAreas>
-        <LocateLinkFile path="../../../../../../coocox/coide/configuration/programdata/tibuboard_demo/arm-gcc-link.ld" type="0"/>
+        <LocateLinkFile path="./arm-gcc-link.ld" type="0"/>
       </Link>
       <Output>
         <Option name="OutputFileType" value="0"/>
@@ -85,99 +90,108 @@
     <Component id="526" name="SYSCFG" path="" type="2"/>
   </Components>
   <Files>
+    <File name="Interrupts/stm32f4xx_it.cpp" path="Interrupts/stm32f4xx_it.cpp" type="1"/>
+    <File name="usb_cdc/CDC/usbd_desc.c" path="usb_cdc/CDC/usbd_desc.c" type="1"/>
+    <File name="utilities/wiring_private.h" path="utilities/wiring_private.h" type="1"/>
+    <File name="TibuBoard.cpp" path="TibuBoard.cpp" type="1"/>
+    <File name="usb_cdc/STM32_USB_Device_Library/Core/src/usbd_ioreq.c" path="usb_cdc/STM32_USB_Device_Library/Core/src/usbd_ioreq.c" type="1"/>
+    <File name="utilities/Printable.h" path="utilities/Printable.h" type="1"/>
+    <File name="usb_cdc/CDC" path="" type="2"/>
+    <File name="usb_cdc/STM32_USB_Device_Library/Core/src/usbd_core.c" path="usb_cdc/STM32_USB_Device_Library/Core/src/usbd_core.c" type="1"/>
+    <File name="cmsis_boot/stm32f4xx.h" path="cmsis_boot/stm32f4xx.h" type="1"/>
+    <File name="cmsis/core_cm4_simd.h" path="cmsis/core_cm4_simd.h" type="1"/>
+    <File name="cmsis_lib/source/stm32f4xx_spi.c" path="cmsis_lib/source/stm32f4xx_spi.c" type="1"/>
+    <File name="usb_cdc/STM32_USB_Device_Library/Core/inc/usbd_core.h" path="usb_cdc/STM32_USB_Device_Library/Core/inc/usbd_core.h" type="1"/>
+    <File name="cmsis/core_cmFunc.h" path="cmsis/core_cmFunc.h" type="1"/>
+    <File name="usb_cdc/CDC/usbd_usr.c" path="usb_cdc/CDC/usbd_usr.c" type="1"/>
+    <File name="usb_cdc/CDC/usbd_cdc_vcp.c" path="usb_cdc/CDC/usbd_cdc_vcp.c" type="1"/>
+    <File name="usb_cdc/STM32_USB_Device_Library" path="" type="2"/>
+    <File name="syscalls/syscalls.c" path="syscalls/syscalls.c" type="1"/>
+    <File name="usb_cdc/STM32_USB_OTG_Driver/src/usb_dcd.c" path="usb_cdc/STM32_USB_OTG_Driver/src/usb_dcd.c" type="1"/>
+    <File name="ArduinoLibraries" path="" type="2"/>
+    <File name="usb_cdc/CDC/usb_bsp.c" path="usb_cdc/CDC/usb_bsp.c" type="1"/>
+    <File name="usb_cdc/CDC/usb_conf.h" path="usb_cdc/CDC/usb_conf.h" type="1"/>
+    <File name="cmsis_lib/include/stm32f4xx_rcc.h" path="cmsis_lib/include/stm32f4xx_rcc.h" type="1"/>
+    <File name="cmsis_lib/source/stm32f4xx_syscfg.c" path="cmsis_lib/source/stm32f4xx_syscfg.c" type="1"/>
+    <File name="usb_cdc/CDC/usbd_cdc_vcp.h" path="usb_cdc/CDC/usbd_cdc_vcp.h" type="1"/>
+    <File name="ArduinoLibraries/BasicFunctions.c" path="ArduinoLibraries/BasicFunctions.c" type="1"/>
+    <File name="usb_cdc/STM32_USB_Device_Library/Core/inc/usbd_ioreq.h" path="usb_cdc/STM32_USB_Device_Library/Core/inc/usbd_ioreq.h" type="1"/>
+    <File name="cmsis_boot/startup/startup_stm32f4xx.c" path="cmsis_boot/startup/startup_stm32f4xx.c" type="1"/>
+    <File name="cmsis_lib/source/stm32f4xx_rcc.c" path="cmsis_lib/source/stm32f4xx_rcc.c" type="1"/>
+    <File name="usb_cdc/STM32_USB_Device_Library/Class/cdc/inc" path="" type="2"/>
+    <File name="cmsis/core_cmInstr.h" path="cmsis/core_cmInstr.h" type="1"/>
+    <File name="ArduinoStyle.cpp" path="ArduinoStyle.cpp" type="1"/>
+    <File name="usb_cdc/STM32_USB_OTG_Driver/src/usb_core.c" path="usb_cdc/STM32_USB_OTG_Driver/src/usb_core.c" type="1"/>
+    <File name="utilities/WString.h" path="utilities/WString.h" type="1"/>
+    <File name="utilities/binary.h" path="utilities/binary.h" type="1"/>
+    <File name="cmsis_lib/include/stm32f4xx_adc.h" path="cmsis_lib/include/stm32f4xx_adc.h" type="1"/>
+    <File name="usb_cdc/STM32_USB_Device_Library/Class" path="" type="2"/>
+    <File name="usb_cdc/STM32_USB_OTG_Driver/inc/usb_bsp.h" path="usb_cdc/STM32_USB_OTG_Driver/inc/usb_bsp.h" type="1"/>
+    <File name="cmsis_boot/system_stm32f4xx.c" path="cmsis_boot/system_stm32f4xx.c" type="1"/>
+    <File name="cmsis_lib/include/stm32f4xx_spi.h" path="cmsis_lib/include/stm32f4xx_spi.h" type="1"/>
+    <File name="Interrupts" path="" type="2"/>
+    <File name="utilities/BufferFunctions.h" path="utilities/BufferFunctions.h" type="1"/>
+    <File name="cmsis" path="" type="2"/>
+    <File name="cmsis_lib" path="" type="2"/>
+    <File name="main.cpp" path="main.cpp" type="1"/>
+    <File name="Interrupts/stm32f4xx_it.h" path="Interrupts/stm32f4xx_it.h" type="1"/>
+    <File name="ArduinoLibraries/BasicFunctions.h" path="ArduinoLibraries/BasicFunctions.h" type="1"/>
+    <File name="cmsis_lib/include/misc.h" path="cmsis_lib/include/misc.h" type="1"/>
+    <File name="ArduinoLibraries/USBSerial.cpp" path="ArduinoLibraries/USBSerial.cpp" type="1"/>
+    <File name="usb_cdc" path="" type="2"/>
+    <File name="TibuBoard.h" path="TibuBoard.h" type="1"/>
+    <File name="usb_cdc/STM32_USB_Device_Library/Core/inc" path="" type="2"/>
     <File name="ArduinoLibraries/SPIAPI.c" path="ArduinoLibraries/SPIAPI.c" type="1"/>
     <File name="usb_cdc/STM32_USB_OTG_Driver" path="" type="2"/>
     <File name="cmsis_lib/source/stm32f4xx_gpio.c" path="cmsis_lib/source/stm32f4xx_gpio.c" type="1"/>
     <File name="usb_cdc/STM32_USB_OTG_Driver/src/usb_dcd_int.c" path="usb_cdc/STM32_USB_OTG_Driver/src/usb_dcd_int.c" type="1"/>
     <File name="cmsis_lib/source/stm32f4xx_dma.c" path="cmsis_lib/source/stm32f4xx_dma.c" type="1"/>
-    <File name="usb_cdc/CDC/usbd_desc.c" path="usb_cdc/CDC/usbd_desc.c" type="1"/>
+    <File name="utilities/Print.h" path="utilities/Print.h" type="1"/>
     <File name="utilities" path="" type="2"/>
     <File name="cmsis_boot" path="" type="2"/>
-    <File name="cmsis_lib/include/stm32f4xx_syscfg.h" path="cmsis_lib/include/stm32f4xx_syscfg.h" type="1"/>
     <File name="usb_cdc/STM32_USB_Device_Library/Class/cdc" path="" type="2"/>
+    <File name="cmsis_lib/include/stm32f4xx_syscfg.h" path="cmsis_lib/include/stm32f4xx_syscfg.h" type="1"/>
     <File name="usb_cdc/STM32_USB_Device_Library/Core/inc/usbd_def.h" path="usb_cdc/STM32_USB_Device_Library/Core/inc/usbd_def.h" type="1"/>
-    <File name="usb_cdc/STM32_USB_Device_Library/Core/src/usbd_ioreq.c" path="usb_cdc/STM32_USB_Device_Library/Core/src/usbd_ioreq.c" type="1"/>
     <File name="usb_cdc/STM32_USB_Device_Library/Class/cdc/src/usbd_cdc_core.c" path="usb_cdc/STM32_USB_Device_Library/Class/cdc/src/usbd_cdc_core.c" type="1"/>
     <File name="usb_cdc/STM32_USB_OTG_Driver/inc" path="" type="2"/>
-    <File name="usb_cdc/CDC" path="" type="2"/>
-    <File name="usb_cdc/STM32_USB_Device_Library/Core/src/usbd_core.c" path="usb_cdc/STM32_USB_Device_Library/Core/src/usbd_core.c" type="1"/>
-    <File name="cmsis/core_cm4_simd.h" path="cmsis/core_cm4_simd.h" type="1"/>
     <File name="cmsis_boot/startup" path="" type="2"/>
-    <File name="cmsis_boot/stm32f4xx.h" path="cmsis_boot/stm32f4xx.h" type="1"/>
-    <File name="cmsis_lib/source/stm32f4xx_spi.c" path="cmsis_lib/source/stm32f4xx_spi.c" type="1"/>
-    <File name="usb_cdc/STM32_USB_Device_Library/Core/inc/usbd_core.h" path="usb_cdc/STM32_USB_Device_Library/Core/inc/usbd_core.h" type="1"/>
-    <File name="cmsis/core_cmFunc.h" path="cmsis/core_cmFunc.h" type="1"/>
-    <File name="usb_cdc/CDC/usbd_cdc_vcp.c" path="usb_cdc/CDC/usbd_cdc_vcp.c" type="1"/>
     <File name="cmsis/core_cm4.h" path="cmsis/core_cm4.h" type="1"/>
-    <File name="usb_cdc/CDC/usbd_usr.c" path="usb_cdc/CDC/usbd_usr.c" type="1"/>
     <File name="usb_cdc/STM32_USB_Device_Library/Core/inc/usbd_usr.h" path="usb_cdc/STM32_USB_Device_Library/Core/inc/usbd_usr.h" type="1"/>
     <File name="cmsis_lib/source/misc.c" path="cmsis_lib/source/misc.c" type="1"/>
     <File name="cmsis_lib/include/stm32f4xx_tim.h" path="cmsis_lib/include/stm32f4xx_tim.h" type="1"/>
-    <File name="usb_cdc/STM32_USB_Device_Library" path="" type="2"/>
     <File name="cmsis_lib/source/stm32f4xx_adc.c" path="cmsis_lib/source/stm32f4xx_adc.c" type="1"/>
-    <File name="syscalls/syscalls.c" path="syscalls/syscalls.c" type="1"/>
-    <File name="usb_cdc/STM32_USB_OTG_Driver/src/usb_dcd.c" path="usb_cdc/STM32_USB_OTG_Driver/src/usb_dcd.c" type="1"/>
-    <File name="ArduinoLibraries" path="" type="2"/>
-    <File name="usb_cdc/CDC/usb_bsp.c" path="usb_cdc/CDC/usb_bsp.c" type="1"/>
+    <File name="utilities/Stream.h" path="utilities/Stream.h" type="1"/>
     <File name="cmsis_lib/source" path="" type="2"/>
     <File name="ArduinoLibraries/USBSerial.h" path="ArduinoLibraries/USBSerial.h" type="1"/>
     <File name="usb_cdc/STM32_USB_OTG_Driver/inc/usb_dcd_int.h" path="usb_cdc/STM32_USB_OTG_Driver/inc/usb_dcd_int.h" type="1"/>
-    <File name="usb_cdc/CDC/usb_conf.h" path="usb_cdc/CDC/usb_conf.h" type="1"/>
     <File name="cmsis_boot/stm32f4xx_conf.h" path="cmsis_boot/stm32f4xx_conf.h" type="1"/>
     <File name="cmsis_boot/system_stm32f4xx.h" path="cmsis_boot/system_stm32f4xx.h" type="1"/>
     <File name="utilities/BufferFunctions.c" path="utilities/BufferFunctions.c" type="1"/>
-    <File name="cmsis_lib/include/stm32f4xx_rcc.h" path="cmsis_lib/include/stm32f4xx_rcc.h" type="1"/>
-    <File name="ArduinoStyle.c" path="ArduinoStyle.c" type="1"/>
-    <File name="usb_cdc/STM32_USB_OTG_Driver/inc/usb_dcd.h" path="usb_cdc/STM32_USB_OTG_Driver/inc/usb_dcd.h" type="1"/>
     <File name="ArduinoLibraries/SPIAPI.h" path="ArduinoLibraries/SPIAPI.h" type="1"/>
-    <File name="cmsis_lib/source/stm32f4xx_syscfg.c" path="cmsis_lib/source/stm32f4xx_syscfg.c" type="1"/>
-    <File name="usb_cdc/STM32_USB_Device_Library/Class/cdc/inc/usbd_cdc_core.h" path="usb_cdc/STM32_USB_Device_Library/Class/cdc/inc/usbd_cdc_core.h" type="1"/>
-    <File name="usb_cdc/CDC/usbd_cdc_vcp.h" path="usb_cdc/CDC/usbd_cdc_vcp.h" type="1"/>
+    <File name="usb_cdc/STM32_USB_OTG_Driver/inc/usb_dcd.h" path="usb_cdc/STM32_USB_OTG_Driver/inc/usb_dcd.h" type="1"/>
     <File name="usb_cdc/STM32_USB_Device_Library/Class/cdc/src" path="" type="2"/>
-    <File name="ArduinoLibraries/BasicFunctions.c" path="ArduinoLibraries/BasicFunctions.c" type="1"/>
-    <File name="usb_cdc/STM32_USB_Device_Library/Core/inc/usbd_ioreq.h" path="usb_cdc/STM32_USB_Device_Library/Core/inc/usbd_ioreq.h" type="1"/>
-    <File name="Interrupts/stm32f4xx_it.c" path="Interrupts/stm32f4xx_it.c" type="1"/>
-    <File name="cmsis_boot/startup/startup_stm32f4xx.c" path="cmsis_boot/startup/startup_stm32f4xx.c" type="1"/>
-    <File name="cmsis_lib/source/stm32f4xx_rcc.c" path="cmsis_lib/source/stm32f4xx_rcc.c" type="1"/>
-    <File name="usb_cdc/STM32_USB_Device_Library/Class/cdc/inc" path="" type="2"/>
-    <File name="cmsis/core_cmInstr.h" path="cmsis/core_cmInstr.h" type="1"/>
-    <File name="usb_cdc/STM32_USB_OTG_Driver/src/usb_core.c" path="usb_cdc/STM32_USB_OTG_Driver/src/usb_core.c" type="1"/>
+    <File name="usb_cdc/STM32_USB_Device_Library/Class/cdc/inc/usbd_cdc_core.h" path="usb_cdc/STM32_USB_Device_Library/Class/cdc/inc/usbd_cdc_core.h" type="1"/>
+    <File name="utilities/WString.cpp" path="utilities/WString.cpp" type="1"/>
     <File name="usb_cdc/STM32_USB_OTG_Driver/src" path="" type="2"/>
     <File name="usb_cdc/CDC/usbd_desc.h" path="usb_cdc/CDC/usbd_desc.h" type="1"/>
-    <File name="cmsis_lib/include/stm32f4xx_adc.h" path="cmsis_lib/include/stm32f4xx_adc.h" type="1"/>
-    <File name="usb_cdc/STM32_USB_Device_Library/Class" path="" type="2"/>
     <File name="cmsis_lib/include/stm32f4xx_exti.h" path="cmsis_lib/include/stm32f4xx_exti.h" type="1"/>
-    <File name="usb_cdc/STM32_USB_OTG_Driver/inc/usb_bsp.h" path="usb_cdc/STM32_USB_OTG_Driver/inc/usb_bsp.h" type="1"/>
     <File name="cmsis_lib/source/stm32f4xx_exti.c" path="cmsis_lib/source/stm32f4xx_exti.c" type="1"/>
-    <File name="cmsis_boot/system_stm32f4xx.c" path="cmsis_boot/system_stm32f4xx.c" type="1"/>
     <File name="usb_cdc/STM32_USB_OTG_Driver/inc/usb_core.h" path="usb_cdc/STM32_USB_OTG_Driver/inc/usb_core.h" type="1"/>
     <File name="usb_cdc/STM32_USB_Device_Library/Core/inc/usbd_req.h" path="usb_cdc/STM32_USB_Device_Library/Core/inc/usbd_req.h" type="1"/>
-    <File name="cmsis_lib/include/stm32f4xx_spi.h" path="cmsis_lib/include/stm32f4xx_spi.h" type="1"/>
-    <File name="Interrupts" path="" type="2"/>
-    <File name="TibuBoard.c" path="TibuBoard.c" type="1"/>
-    <File name="utilities/BufferFunctions.h" path="utilities/BufferFunctions.h" type="1"/>
     <File name="usb_cdc/STM32_USB_OTG_Driver/inc/usb_defines.h" path="usb_cdc/STM32_USB_OTG_Driver/inc/usb_defines.h" type="1"/>
-    <File name="cmsis" path="" type="2"/>
     <File name="usb_cdc/CDC/usbd_conf.h" path="usb_cdc/CDC/usbd_conf.h" type="1"/>
-    <File name="cmsis_lib" path="" type="2"/>
     <File name="ArduinoStyle.h" path="ArduinoStyle.h" type="1"/>
-    <File name="Interrupts/stm32f4xx_it.h" path="Interrupts/stm32f4xx_it.h" type="1"/>
     <File name="cmsis_lib/include/stm32f4xx_dma.h" path="cmsis_lib/include/stm32f4xx_dma.h" type="1"/>
-    <File name="usb_cdc/STM32_USB_Device_Library/Core/src" path="" type="2"/>
     <File name="cmsis_lib/source/stm32f4xx_tim.c" path="cmsis_lib/source/stm32f4xx_tim.c" type="1"/>
-    <File name="ArduinoLibraries/BasicFunctions.h" path="ArduinoLibraries/BasicFunctions.h" type="1"/>
+    <File name="usb_cdc/STM32_USB_Device_Library/Core/src" path="" type="2"/>
     <File name="cmsis_lib/include/stm32f4xx_gpio.h" path="cmsis_lib/include/stm32f4xx_gpio.h" type="1"/>
     <File name="syscalls" path="" type="2"/>
+    <File name="utilities/Print.cpp" path="utilities/Print.cpp" type="1"/>
     <File name="usb_cdc/STM32_USB_Device_Library/Core" path="" type="2"/>
-    <File name="cmsis_lib/include/misc.h" path="cmsis_lib/include/misc.h" type="1"/>
     <File name="usb_cdc/Orientations" path="usb_cdc/Orientations" type="1"/>
-    <File name="usb_cdc" path="" type="2"/>
     <File name="usb_cdc/STM32_USB_Device_Library/Core/src/usbd_req.c" path="usb_cdc/STM32_USB_Device_Library/Core/src/usbd_req.c" type="1"/>
     <File name="cmsis_lib/include" path="" type="2"/>
-    <File name="usb_cdc/STM32_USB_Device_Library/Core/inc" path="" type="2"/>
-    <File name="TibuBoard.h" path="TibuBoard.h" type="1"/>
     <File name="usb_cdc/STM32_USB_OTG_Driver/inc/usb_regs.h" path="usb_cdc/STM32_USB_OTG_Driver/inc/usb_regs.h" type="1"/>
-    <File name="ArduinoLibraries/USBSerial.c" path="ArduinoLibraries/USBSerial.c" type="1"/>
-    <File name="main.c" path="main.c" type="1"/>
+    <File name="utilities/Stream.cpp" path="utilities/Stream.cpp" type="1"/>
   </Files>
 </Project>

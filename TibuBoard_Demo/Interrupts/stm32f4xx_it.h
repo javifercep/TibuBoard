@@ -14,6 +14,8 @@
 #ifndef __STM32F4xx_IT_H
 #define __STM32F4xx_IT_H
 
+#include "TibuBoard.h"
+
 #ifdef __cplusplus
  extern "C" {
 #endif 
@@ -21,6 +23,10 @@
 /* Includes ------------------------------------------------------------------*/
 #include "stm32f4xx.h"
 #include "stm32f4xx_conf.h"
+#include "usb_core.h"
+#include "usbd_core.h"
+#include "usbd_cdc_core.h"
+#include "usb_dcd_int.h"
 
 /* Exported types ------------------------------------------------------------*/
 /* Exported constants --------------------------------------------------------*/

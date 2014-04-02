@@ -13,6 +13,8 @@
 #ifndef __USBSERIAL_H
 #define __USBSERIAL_H
 
+#include "Stream.h"
+
 #ifdef __cplusplus
  extern "C" {
 #endif
@@ -23,36 +25,50 @@
 #include "usbd_cdc_vcp.h"
 #include <stdio.h>
 #include <string.h>
+#include <inttypes.h>
 
 /* Exported define ------------------------------------------------------------*/
 #define MAXSTRINGSIZE 255
 #define SERIAL_BUFFER_LENGTH 1000
 /* Exported types ------------------------------------------------------------*/
- typedef struct
+
+ class HardwareSerial : public Stream
  {
 
- 	void 		( *begin	 ) 		( void );
- 	uint8_t 	( *available )		( void );
- 	void 		( *print ) 			( const char* );
- 	void 		( *println )		( const char* );
- 	uint8_t		( *read )			( void );
- 	uint8_t*	( *readUntil )		( uint8_t );
+   public:
+     HardwareSerial();
+     void begin(unsigned long);
+     void begin(unsigned long, uint8_t);
+     void end();
+     virtual int available(void);
+     virtual int peek(void);
+     virtual int read(void);
+     virtual void flush(void);
+     virtual size_t write(uint8_t);
+     inline size_t write(unsigned long n) { return write((uint8_t)n); }
+     inline size_t write(long n) { return write((uint8_t)n); }
+     inline size_t write(unsigned int n) { return write((uint8_t)n); }
+     inline size_t write(int n) { return write((uint8_t)n); }
+     using Print::write; // pull in write(str) and write(buf, size) from Print
+     operator bool();
+ };
 
- }USBSerial;
+ extern HardwareSerial Serial;
 
+ extern void serialEventRun(void) __attribute__((weak));
 /* Exported constants --------------------------------------------------------*/
 /* Exported macro ------------------------------------------------------------*/
 /* Exported functions ------------------------------------------------------- */
 
-void USBSerial_begin(void);
+/*void USBSerial_begin(void);
 uint8_t USBSerial_available(void);
 void USBSerial_print(const char *s);
 void USBSerial_println(const char *s);
 uint8_t USBSerial_read(void);
-uint8_t* USBSerial_readUntil(uint8_t n);
+uint8_t* USBSerial_readUntil(uint8_t n);*/
 
 /*Init Functions*/
-void InitUSBSerial(USBSerial *Serial);
+/*void InitUSBSerial(USBSerial *Serial);*/
 
 #ifdef __cplusplus
 }

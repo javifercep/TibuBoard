@@ -102,6 +102,8 @@ extern USBD_DCD_INT_cb_TypeDef *USBD_DCD_INT_fops;
   */ 
 
 uint32_t USBD_OTG_ISR_Handler (USB_OTG_CORE_HANDLE *pdev);
+uint32_t USBD_OTG_EP1IN_ISR_Handler (USB_OTG_CORE_HANDLE *pdev);
+uint32_t USBD_OTG_EP1OUT_ISR_Handler (USB_OTG_CORE_HANDLE *pdev);
 
 /**
   * @}

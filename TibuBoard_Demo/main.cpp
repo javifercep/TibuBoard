@@ -1,12 +1,8 @@
-#include <ArduinoStyle.h>
+#include "ArduinoStyle.h"
 
-TibuBoard Tibu;
-USBSerial Serial;
 
 int main(void)
 {
-	InitTibuBoard(&Tibu);
-	InitUSBSerial(&Serial);
 	SystemInit();
 	SysTickConfig();
 	Init_PWMPins();
@@ -15,5 +11,6 @@ int main(void)
     while(1)
     {
     	loop();
+    	if (serialEventRun) serialEventRun();
     }
 }

@@ -13,10 +13,6 @@
 #ifndef __TIBUBOARD_H
 #define __TIBUBOARD_H
 
-#ifdef __cplusplus
- extern "C" {
-#endif
-
 /* Includes ------------------------------------------------------------------*/
 #include "stm32f4xx.h"
 #include "stm32f4xx_conf.h"
@@ -94,7 +90,22 @@ typedef enum
   USER_BUTTON4 = 2
 } Button_TypeDef;
 
-typedef struct
+class Tibuboard {
+
+public:
+	Tibuboard(void);
+	~Tibuboard(void);
+	void LEDOn(Led_TypeDef Led);
+	void LEDOff(Led_TypeDef Led);
+	void LEDToggle(Led_TypeDef Led);
+	void LEDAllToggle(void);
+	void LEDAllOn(void);
+	void LEDAllOff(void);
+	void ButtonInterrupt(Button_TypeDef button, void (*userFunc)(void));
+	uint8_t GetStateButton(Button_TypeDef button);
+};
+
+/*typedef struct
 {
 
 	void 		( *InitLED ) 		( Led_TypeDef ) ;
@@ -110,7 +121,7 @@ typedef struct
 	void 		( *InitAllButton )	(void);
 	uint32_t 	( *GetStateButton )	(Button_TypeDef);
 
-}TibuBoard;
+}TibuBoard;*/
 
  /* Exported constants --------------------------------------------------------*/
 
@@ -118,31 +129,28 @@ typedef struct
  /* Exported functions ------------------------------------------------------- */
 
 /* LEDs functions*/
- void TibuBoard_InitLED(Led_TypeDef Led);
+ /*void TibuBoard_InitLED(Led_TypeDef Led);
  void TibuBoard_LEDOn(Led_TypeDef Led);
  void TibuBoard_LEDOff(Led_TypeDef Led);
  void TibuBoard_LEDToggle(Led_TypeDef Led);
  void TibuBoard_InitAllLEDs(void);
  void TibuBoard_LEDOnAll(void);
  void TibuBoard_LEDOffAll(void);
- void TibuBoard_LEDToggleAll(void);
+ void TibuBoard_LEDToggleAll(void);*/
 
  /* Push Button Functions */
- void TibuBoard_InitPushButton(Button_TypeDef Button);
+ /*void TibuBoard_InitPushButton(Button_TypeDef Button);
  void TibuBoard_attachButtonInterrupt(Button_TypeDef Button, void (*userFunc)(void));
  void TibuBoard_InitAllPushButton(void);
- uint32_t TibuBoard_GetStatePushButton(Button_TypeDef Button);
+ uint32_t TibuBoard_GetStatePushButton(Button_TypeDef Button);*/
 
  /*Init Functions*/
- void InitTibuBoard(TibuBoard *Tibu);
+ //void InitTibuBoard(TibuBoard *Tibu);
  void SysTickConfig(void);
 
  /*Arduino functions*/
  void delay(uint32_t miliseconds);
+ uint32_t millis(void);
 
-
- #ifdef __cplusplus
- }
- #endif
 
 #endif /* __INITROUTINES_H */
