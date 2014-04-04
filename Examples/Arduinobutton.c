@@ -1,8 +1,9 @@
 #include "ArduinoStyle.h"
 
+Tibuboard Tibu;
+
 void setup() {
 	 pinMode(pushButton, INPUT);
-	 Tibu.InitLED(LED1);
 }
 
 void loop() {

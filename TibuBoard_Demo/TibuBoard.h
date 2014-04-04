@@ -105,44 +105,12 @@ public:
 	uint8_t GetStateButton(Button_TypeDef button);
 };
 
-/*typedef struct
-{
-
-	void 		( *InitLED ) 		( Led_TypeDef ) ;
-	void 		( *ToggleLED )		( Led_TypeDef );
-	void 		( *LEDOn ) 			( Led_TypeDef ) ;
-	void 		( *LEDOff )			( Led_TypeDef );
-	void 		( *InitAllLED )		(void);
-	void 		( *ToggleAllLED )	(void);
-	void 		( *AllLEDOn )		(void);
-	void 		( *AllLEDOff )		(void);
-	void 		( *InitButton )		(Button_TypeDef);
-	void 		( *ButtonInterrupt )(Button_TypeDef, void (*userFunc)(void));
-	void 		( *InitAllButton )	(void);
-	uint32_t 	( *GetStateButton )	(Button_TypeDef);
-
-}TibuBoard;*/
 
  /* Exported constants --------------------------------------------------------*/
 
  /* Exported macro ------------------------------------------------------------*/
  /* Exported functions ------------------------------------------------------- */
 
-/* LEDs functions*/
- /*void TibuBoard_InitLED(Led_TypeDef Led);
- void TibuBoard_LEDOn(Led_TypeDef Led);
- void TibuBoard_LEDOff(Led_TypeDef Led);
- void TibuBoard_LEDToggle(Led_TypeDef Led);
- void TibuBoard_InitAllLEDs(void);
- void TibuBoard_LEDOnAll(void);
- void TibuBoard_LEDOffAll(void);
- void TibuBoard_LEDToggleAll(void);*/
-
- /* Push Button Functions */
- /*void TibuBoard_InitPushButton(Button_TypeDef Button);
- void TibuBoard_attachButtonInterrupt(Button_TypeDef Button, void (*userFunc)(void));
- void TibuBoard_InitAllPushButton(void);
- uint32_t TibuBoard_GetStatePushButton(Button_TypeDef Button);*/
 
  /*Init Functions*/
  //void InitTibuBoard(TibuBoard *Tibu);

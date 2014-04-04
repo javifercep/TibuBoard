@@ -17,25 +17,66 @@
 <part id="1"/>
 <part id="2"/>
 <part id="3"/>
+<part id="4"/>
+<part id="5"/>
+<part id="6"/>
+<part id="7"/>
+<part id="8"/>
+<part id="9"/>
+<part id="10"/>
+<part id="11"/>
 </presentation>
 </folder>
 </info>
 </editorArea>
 <editor activePart="true" focus="true" id="org.eclipse.cdt.ui.editor.CEditor" name="ArduinoStyle.cpp" partName="ArduinoStyle.cpp" path="C:/Users/JAVIS/Documents/GitHub/TibuBoard/TibuBoard_Demo/ArduinoStyle.cpp" title="ArduinoStyle.cpp" tooltip="C:/Users/JAVIS/Documents/GitHub/TibuBoard/TibuBoard_Demo/ArduinoStyle.cpp" workbook="DefaultEditorWorkbook">
 <input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/TibuBoard_Demo/ArduinoStyle.cpp"/>
-<editorState selectionHorizontalPixel="0" selectionLength="37" selectionOffset="74" selectionTopPixel="75"/>
+<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="630" selectionTopPixel="15"/>
 </editor>
-<editor id="org.eclipse.cdt.ui.editor.CEditor" name="WString.h" partName="WString.h" path="C:/Users/JAVIS/Documents/GitHub/TibuBoard/TibuBoard_Demo/utilities/WString.h" title="WString.h" tooltip="C:/Users/JAVIS/Documents/GitHub/TibuBoard/TibuBoard_Demo/utilities/WString.h" workbook="DefaultEditorWorkbook">
-<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/TibuBoard_Demo/utilities/WString.h"/>
-<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="1418" selectionTopPixel="368"/>
+<editor id="org.eclipse.cdt.ui.editor.CEditor" name="w5100.h" partName="w5100.h" path="C:/Users/JAVIS/Documents/GitHub/TibuBoard/TibuBoard_Demo/ArduinoLibraries/Ethernet/utility/w5100.h" title="w5100.h" tooltip="C:/Users/JAVIS/Documents/GitHub/TibuBoard/TibuBoard_Demo/ArduinoLibraries/Ethernet/utility/w5100.h" workbook="DefaultEditorWorkbook">
+<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/TibuBoard_Demo/ArduinoLibraries/Ethernet/utility/w5100.h"/>
+<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="4014" selectionTopPixel="2025"/>
 </editor>
-<editor id="org.eclipse.cdt.ui.editor.CEditor" name="WString.cpp" partName="WString.cpp" path="C:/Users/JAVIS/Documents/GitHub/TibuBoard/TibuBoard_Demo/utilities/WString.cpp" title="WString.cpp" tooltip="C:/Users/JAVIS/Documents/GitHub/TibuBoard/TibuBoard_Demo/utilities/WString.cpp" workbook="DefaultEditorWorkbook">
-<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/TibuBoard_Demo/utilities/WString.cpp"/>
-<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="16452" selectionTopPixel="10748"/>
+<editor id="org.eclipse.cdt.ui.editor.CEditor" name="socket.cpp" partName="socket.cpp" path="C:/Users/JAVIS/Documents/GitHub/TibuBoard/TibuBoard_Demo/ArduinoLibraries/Ethernet/utility/socket.cpp" title="socket.cpp" tooltip="C:/Users/JAVIS/Documents/GitHub/TibuBoard/TibuBoard_Demo/ArduinoLibraries/Ethernet/utility/socket.cpp" workbook="DefaultEditorWorkbook">
+<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/TibuBoard_Demo/ArduinoLibraries/Ethernet/utility/socket.cpp"/>
+<editorState selectionHorizontalPixel="0" selectionLength="47" selectionOffset="7069" selectionTopPixel="4575"/>
+</editor>
+<editor id="org.eclipse.cdt.ui.editor.CEditor" name="Dhcp.cpp" partName="Dhcp.cpp" path="C:/Users/JAVIS/Documents/GitHub/TibuBoard/TibuBoard_Demo/ArduinoLibraries/Ethernet/Dhcp.cpp" title="Dhcp.cpp" tooltip="C:/Users/JAVIS/Documents/GitHub/TibuBoard/TibuBoard_Demo/ArduinoLibraries/Ethernet/Dhcp.cpp" workbook="DefaultEditorWorkbook">
+<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/TibuBoard_Demo/ArduinoLibraries/Ethernet/Dhcp.cpp"/>
+<editorState selectionHorizontalPixel="0" selectionLength="56" selectionOffset="4740" selectionTopPixel="2295"/>
 </editor>
 <editor id="org.eclipse.cdt.ui.editor.CEditor" name="ArduinoStyle.h" partName="ArduinoStyle.h" path="C:/Users/JAVIS/Documents/GitHub/TibuBoard/TibuBoard_Demo/ArduinoStyle.h" title="ArduinoStyle.h" tooltip="C:/Users/JAVIS/Documents/GitHub/TibuBoard/TibuBoard_Demo/ArduinoStyle.h" workbook="DefaultEditorWorkbook">
 <input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/TibuBoard_Demo/ArduinoStyle.h"/>
-<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="117" selectionTopPixel="0"/>
+<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="232" selectionTopPixel="0"/>
+</editor>
+<editor id="org.eclipse.cdt.ui.editor.CEditor" name="Printable.h" partName="Printable.h" path="C:/Users/JAVIS/Documents/GitHub/TibuBoard/TibuBoard_Demo/utilities/Printable.h" title="Printable.h" tooltip="C:/Users/JAVIS/Documents/GitHub/TibuBoard/TibuBoard_Demo/utilities/Printable.h" workbook="DefaultEditorWorkbook">
+<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/TibuBoard_Demo/utilities/Printable.h"/>
+<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="934" selectionTopPixel="173"/>
+</editor>
+<editor id="org.eclipse.cdt.ui.editor.CEditor" name="Dns.cpp" partName="Dns.cpp" path="C:/Users/JAVIS/Documents/GitHub/TibuBoard/TibuBoard_Demo/ArduinoLibraries/Ethernet/Dns.cpp" title="Dns.cpp" tooltip="C:/Users/JAVIS/Documents/GitHub/TibuBoard/TibuBoard_Demo/ArduinoLibraries/Ethernet/Dns.cpp" workbook="DefaultEditorWorkbook">
+<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/TibuBoard_Demo/ArduinoLibraries/Ethernet/Dns.cpp"/>
+<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="3158" selectionTopPixel="1500"/>
+</editor>
+<editor id="org.eclipse.cdt.ui.editor.CEditor" name="w5100.cpp" partName="w5100.cpp" path="C:/Users/JAVIS/Documents/GitHub/TibuBoard/TibuBoard_Demo/ArduinoLibraries/Ethernet/utility/w5100.cpp" title="w5100.cpp" tooltip="C:/Users/JAVIS/Documents/GitHub/TibuBoard/TibuBoard_Demo/ArduinoLibraries/Ethernet/utility/w5100.cpp" workbook="DefaultEditorWorkbook">
+<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/TibuBoard_Demo/ArduinoLibraries/Ethernet/utility/w5100.cpp"/>
+<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="2585" selectionTopPixel="1680"/>
+</editor>
+<editor id="org.eclipse.cdt.ui.editor.CEditor" name="SPIAPI.cpp" partName="SPIAPI.cpp" path="C:/Users/JAVIS/Documents/GitHub/TibuBoard/TibuBoard_Demo/ArduinoLibraries/SPIAPI.cpp" title="SPIAPI.cpp" tooltip="C:/Users/JAVIS/Documents/GitHub/TibuBoard/TibuBoard_Demo/ArduinoLibraries/SPIAPI.cpp" workbook="DefaultEditorWorkbook">
+<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/TibuBoard_Demo/ArduinoLibraries/SPIAPI.cpp"/>
+<editorState selectionHorizontalPixel="0" selectionLength="534" selectionOffset="2135" selectionTopPixel="1110"/>
+</editor>
+<editor id="org.coocox.builder.ui.editors.ConfigEditor" name="" partName="Configuration" title="Configuration" tooltip="" workbook="DefaultEditorWorkbook">
+<input factoryID="org.coocox.builder.ui.persistent.PersistentElementFactory">
+<org.coocox.builder.ui.editors.ConfigEditor horizontalPosition="0" subTagIndex="1" verticalPosition="64"/>
+</input>
+</editor>
+<editor id="org.eclipse.cdt.ui.editor.CEditor" name="USBSerial.h" partName="USBSerial.h" path="C:/Users/JAVIS/Documents/GitHub/TibuBoard/TibuBoard_Demo/ArduinoLibraries/USBSerial.h" title="USBSerial.h" tooltip="C:/Users/JAVIS/Documents/GitHub/TibuBoard/TibuBoard_Demo/ArduinoLibraries/USBSerial.h" workbook="DefaultEditorWorkbook">
+<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/TibuBoard_Demo/ArduinoLibraries/USBSerial.h"/>
+<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="0" selectionTopPixel="540"/>
+</editor>
+<editor id="org.eclipse.cdt.ui.editor.CEditor" name="USBSerial.cpp" partName="USBSerial.cpp" path="C:/Users/JAVIS/Documents/GitHub/TibuBoard/TibuBoard_Demo/ArduinoLibraries/USBSerial.cpp" title="USBSerial.cpp" tooltip="C:/Users/JAVIS/Documents/GitHub/TibuBoard/TibuBoard_Demo/ArduinoLibraries/USBSerial.cpp" workbook="DefaultEditorWorkbook">
+<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/TibuBoard_Demo/ArduinoLibraries/USBSerial.cpp"/>
+<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="3952" selectionTopPixel="1823"/>
 </editor>
 </editors>
 <views>
@@ -43,13 +84,13 @@
 <viewState/>
 </view>
 <view id="org.coocox.builder.ui.views.ProjectView" partName="Project">
-<viewState CommonNavigator.LINKING_ENABLED="0" horizontalPosition="0" org.eclipse.ui.navigator.resources.workingSets.showTopLevelWorkingSets="0" verticalPosition="6">
+<viewState CommonNavigator.LINKING_ENABLED="0" horizontalPosition="0" org.eclipse.ui.navigator.resources.workingSets.showTopLevelWorkingSets="0" verticalPosition="0">
 <expanded>
 <element path="/TibuBoard_Demo"/>
-<element path="/TibuBoard_Demo/utilities"/>
+<element path="/TibuBoard_Demo/ArduinoLibraries"/>
 </expanded>
 <selection>
-<element path="/TibuBoard_Demo/ArduinoStyle.cpp"/>
+<element path="/TibuBoard_Demo/ArduinoLibraries/USBSerial.cpp"/>
 </selection>
 </viewState>
 </view>
@@ -261,162 +302,166 @@
 <workingSets/>
 <navigationHistory>
 <editors>
-<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" path="/TibuBoard_Demo/Interrupts/stm32f4xx_it.cpp"/>
-<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" path="/TibuBoard_Demo/usb_cdc/STM32_USB_OTG_Driver/inc/usb_dcd_int.h"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" path="/TibuBoard_Demo/ArduinoLibraries/Ethernet/utility/w5100.cpp"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" path="/TibuBoard_Demo/ArduinoLibraries/SPIAPI.cpp"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" path="/TibuBoard_Demo/ArduinoLibraries/Ethernet/utility/w5100.h"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" path="/TibuBoard_Demo/TibuBoard.h"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" path="/TibuBoard_Demo/ArduinoLibraries/Ethernet/utility/socket.cpp"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" path="/TibuBoard_Demo/ArduinoLibraries/Ethernet/Dhcp.cpp"/>
+<editor factoryID="org.coocox.builder.ui.persistent.PersistentElementFactory" id="org.coocox.builder.ui.editors.ConfigEditor">
+<org.coocox.builder.ui.editors.ConfigEditor horizontalPosition="0" subTagIndex="1" verticalPosition="64"/>
+</editor>
 <editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" path="/TibuBoard_Demo/ArduinoStyle.cpp"/>
-<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" path="/TibuBoard_Demo/utilities/WString.h"/>
-<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" path="/TibuBoard_Demo/utilities/WString.cpp"/>
-<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" path="/TibuBoard_Demo/ArduinoStyle.h"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" path="/TibuBoard_Demo/ArduinoLibraries/USBSerial.h"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" path="/TibuBoard_Demo/ArduinoLibraries/USBSerial.cpp"/>
 </editors>
-<item historyLabel="stm32f4xx_it.cpp" index="0">
-<position info="not_deleted" x="6314" y="27"/>
-</item>
-<item historyLabel="usb_dcd_int.h" index="1">
-<position info="not_deleted" x="3046" y="0"/>
-</item>
-<item historyLabel="ArduinoStyle.cpp" index="2">
-<position info="not_deleted" x="154" y="0"/>
-</item>
-<item historyLabel="WString.h" index="3">
-<position info="not_deleted" x="8555" y="0"/>
-</item>
-<item historyLabel="WString.cpp" index="4">
-<position info="not_deleted" x="16563" y="0"/>
-</item>
-<item historyLabel="ArduinoStyle.cpp" index="2">
-<position info="not_deleted" x="154" y="0"/>
-</item>
-<item historyLabel="ArduinoStyle.cpp" index="2">
-<position info="not_deleted" x="109" y="0"/>
-</item>
-<item historyLabel="ArduinoStyle.cpp" index="2">
-<position info="not_deleted" x="108" y="0"/>
-</item>
-<item historyLabel="WString.cpp" index="4">
-<position info="not_deleted" x="1781" y="26"/>
-</item>
-<item historyLabel="WString.h" index="3">
-<position info="not_deleted" x="1088" y="0"/>
-</item>
-<item historyLabel="WString.cpp" index="4">
-<position info="not_deleted" x="1781" y="26"/>
-</item>
-<item historyLabel="WString.h" index="3">
-<position info="not_deleted" x="1088" y="0"/>
-</item>
-<item historyLabel="WString.cpp" index="4">
-<position info="not_deleted" x="1781" y="26"/>
-</item>
-<item historyLabel="WString.h" index="3">
-<position info="not_deleted" x="1760" y="0"/>
-</item>
-<item historyLabel="WString.cpp" index="4">
-<position info="not_deleted" x="1881" y="0"/>
-</item>
-<item historyLabel="WString.h" index="3">
-<position info="not_deleted" x="1760" y="0"/>
-</item>
-<item historyLabel="WString.cpp" index="4">
-<position info="not_deleted" x="1818" y="0"/>
-</item>
-<item historyLabel="WString.h" index="3">
-<position info="not_deleted" x="8959" y="0"/>
-</item>
-<item historyLabel="WString.cpp" index="4">
-<position info="not_deleted" x="1818" y="0"/>
-</item>
-<item historyLabel="WString.cpp" index="4">
-<position info="not_deleted" x="2007" y="0"/>
-</item>
-<item historyLabel="WString.h" index="3">
-<position/>
-</item>
-<item historyLabel="WString.cpp" index="4">
-<position info="not_deleted" x="2007" y="0"/>
-</item>
-<item historyLabel="WString.cpp" index="4">
-<position info="not_deleted" x="1781" y="26"/>
-</item>
-<item historyLabel="WString.h" index="3">
-<position/>
-</item>
-<item historyLabel="WString.cpp" index="4">
-<position/>
-</item>
-<item historyLabel="WString.h" index="3">
-<position/>
-</item>
-<item historyLabel="WString.cpp" index="4">
-<position/>
-</item>
-<item historyLabel="WString.h" index="3">
-<position info="not_deleted" x="8983" y="0"/>
-</item>
-<item historyLabel="WString.cpp" index="4">
-<position info="not_deleted" x="2035" y="26"/>
-</item>
-<item historyLabel="WString.h" index="3">
-<position/>
-</item>
-<item historyLabel="WString.cpp" index="4">
-<position/>
-</item>
-<item historyLabel="WString.h" index="3">
-<position/>
-</item>
-<item historyLabel="ArduinoStyle.cpp" index="2">
-<position info="not_deleted" x="74" y="37"/>
-</item>
-<item historyLabel="ArduinoStyle.h" index="5">
+<item historyLabel="SPIAPI.cpp" index="1">
 <position info="not_deleted" x="0" y="0"/>
 </item>
-<item historyLabel="ArduinoStyle.h" index="5">
-<position info="not_deleted" x="117" y="0"/>
+<item historyLabel="w5100.h" index="2">
+<position info="not_deleted" x="416" y="0"/>
 </item>
-<item historyLabel="WString.cpp" index="4">
-<position info="not_deleted" x="14851" y="0"/>
+<item historyLabel="w5100.h" index="2">
+<position info="not_deleted" x="3422" y="0"/>
 </item>
-<item historyLabel="ArduinoStyle.h" index="5">
-<position info="not_deleted" x="117" y="0"/>
+<item historyLabel="w5100.h" index="2">
+<position info="not_deleted" x="3436" y="0"/>
 </item>
-<item historyLabel="WString.h" index="3">
-<position info="not_deleted" x="8645" y="0"/>
+<item historyLabel="w5100.h" index="2">
+<position info="not_deleted" x="3410" y="44"/>
 </item>
-<item historyLabel="WString.cpp" index="4">
-<position info="not_deleted" x="14849" y="1331"/>
+<item historyLabel="w5100.cpp" index="0">
+<position info="not_deleted" x="669" y="0"/>
 </item>
-<item historyLabel="WString.h" index="3">
-<position info="not_deleted" x="8957" y="0"/>
+<item historyLabel="SPIAPI.cpp" index="1">
+<position info="not_deleted" x="2135" y="534"/>
 </item>
-<item historyLabel="WString.cpp" index="4">
-<position info="not_deleted" x="14849" y="1331"/>
+<item historyLabel="w5100.cpp" index="0">
+<position info="not_deleted" x="669" y="0"/>
 </item>
-<item historyLabel="WString.h" index="3">
-<position info="not_deleted" x="8957" y="0"/>
+<item historyLabel="TibuBoard.h" index="3">
+<position info="not_deleted" x="0" y="0"/>
 </item>
-<item historyLabel="WString.cpp" index="4">
-<position info="not_deleted" x="15233" y="0"/>
+<item historyLabel="w5100.cpp" index="0">
+<position info="not_deleted" x="669" y="0"/>
 </item>
-<item historyLabel="WString.cpp" index="4">
-<position info="not_deleted" x="14965" y="0"/>
+<item historyLabel="w5100.cpp" index="0">
+<position info="not_deleted" x="710" y="0"/>
 </item>
-<item historyLabel="WString.cpp" index="4">
-<position info="not_deleted" x="15000" y="0"/>
+<item historyLabel="w5100.cpp" index="0">
+<position info="not_deleted" x="753" y="0"/>
 </item>
-<item historyLabel="WString.cpp" index="4">
-<position info="not_deleted" x="16511" y="0"/>
+<item historyLabel="w5100.cpp" index="0">
+<position info="not_deleted" x="1020" y="0"/>
 </item>
-<item historyLabel="WString.cpp" index="4">
-<position info="not_deleted" x="14922" y="12"/>
+<item historyLabel="w5100.cpp" index="0">
+<position info="not_deleted" x="2596" y="0"/>
 </item>
-<item historyLabel="WString.h" index="3">
-<position info="not_deleted" x="1418" y="0"/>
+<item historyLabel="w5100.cpp" index="0">
+<position info="not_deleted" x="2295" y="43"/>
 </item>
-<item historyLabel="WString.cpp" index="4">
-<position info="not_deleted" x="16452" y="0"/>
+<item historyLabel="w5100.cpp" index="0">
+<position info="not_deleted" x="2562" y="36"/>
 </item>
-<item active="true" historyLabel="ArduinoStyle.cpp" index="2">
-<position info="not_deleted" x="74" y="37"/>
+<item historyLabel="w5100.cpp" index="0">
+<position info="not_deleted" x="2669" y="0"/>
+</item>
+<item historyLabel="w5100.cpp" index="0">
+<position info="not_deleted" x="2404" y="97"/>
+</item>
+<item historyLabel="w5100.cpp" index="0">
+<position info="not_deleted" x="388" y="19"/>
+</item>
+<item historyLabel="w5100.h" index="2">
+<position info="not_deleted" x="3893" y="0"/>
+</item>
+<item historyLabel="w5100.cpp" index="0">
+<position info="not_deleted" x="2404" y="97"/>
+</item>
+<item historyLabel="socket.cpp" index="4">
+<position info="not_deleted" x="7653" y="0"/>
+</item>
+<item historyLabel="socket.cpp" index="4">
+<position info="not_deleted" x="6147" y="54"/>
+</item>
+<item historyLabel="socket.cpp" index="4">
+<position info="not_deleted" x="6125" y="0"/>
+</item>
+<item historyLabel="socket.cpp" index="4">
+<position info="not_deleted" x="6147" y="54"/>
+</item>
+<item historyLabel="socket.cpp" index="4">
+<position info="not_deleted" x="6495" y="71"/>
+</item>
+<item historyLabel="socket.cpp" index="4">
+<position info="not_deleted" x="6147" y="54"/>
+</item>
+<item historyLabel="socket.cpp" index="4">
+<position info="not_deleted" x="6287" y="0"/>
+</item>
+<item historyLabel="w5100.cpp" index="0">
+<position info="not_deleted" x="753" y="0"/>
+</item>
+<item historyLabel="w5100.h" index="2">
+<position info="not_deleted" x="4014" y="0"/>
+</item>
+<item historyLabel="w5100.cpp" index="0">
+<position info="not_deleted" x="2562" y="36"/>
+</item>
+<item historyLabel="socket.cpp" index="4">
+<position info="not_deleted" x="6661" y="54"/>
+</item>
+<item historyLabel="socket.cpp" index="4">
+<position info="not_deleted" x="7488" y="20"/>
+</item>
+<item historyLabel="Dhcp.cpp" index="5">
+<position info="not_deleted" x="495" y="0"/>
+</item>
+<item historyLabel="Dhcp.cpp" index="5">
+<position info="not_deleted" x="4740" y="56"/>
+</item>
+<item historyLabel="w5100.cpp" index="0">
+<position info="not_deleted" x="2295" y="43"/>
+</item>
+<item historyLabel="w5100.cpp" index="0">
+<position info="not_deleted" x="2585" y="0"/>
+</item>
+<item historyLabel="Configuration" index="6"/>
+<item historyLabel="SPIAPI.cpp" index="1">
+<position info="not_deleted" x="2135" y="534"/>
+</item>
+<item historyLabel="socket.cpp" index="4">
+<position info="not_deleted" x="8100" y="0"/>
+</item>
+<item historyLabel="Dhcp.cpp" index="5">
+<position info="not_deleted" x="4740" y="56"/>
+</item>
+<item historyLabel="socket.cpp" index="4">
+<position info="not_deleted" x="7488" y="20"/>
+</item>
+<item historyLabel="socket.cpp" index="4">
+<position info="not_deleted" x="7069" y="47"/>
+</item>
+<item historyLabel="ArduinoStyle.cpp" index="7">
+<position info="not_deleted" x="0" y="0"/>
+</item>
+<item historyLabel="ArduinoStyle.cpp" index="7">
+<position info="not_deleted" x="199" y="0"/>
+</item>
+<item historyLabel="ArduinoStyle.cpp" index="7">
+<position info="not_deleted" x="469" y="0"/>
+</item>
+<item historyLabel="ArduinoStyle.cpp" index="7">
+<position info="not_deleted" x="769" y="22"/>
+</item>
+<item historyLabel="USBSerial.h" index="8">
+<position info="not_deleted" x="0" y="0"/>
+</item>
+<item historyLabel="USBSerial.cpp" index="9">
+<position info="not_deleted" x="3952" y="0"/>
+</item>
+<item active="true" historyLabel="ArduinoStyle.cpp" index="7">
+<position info="not_deleted" x="769" y="22"/>
 </item>
 </navigationHistory>
 <input factoryID="org.eclipse.ui.internal.model.ResourceFactory" path="/" type="8"/>
@@ -425,50 +470,52 @@
 <actionBarAdvisor/>
 </window>
 <mruList>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" name="USBSerial.cpp" tooltip="TibuBoard_Demo/ArduinoLibraries/USBSerial.cpp">
+<persistable path="/TibuBoard_Demo/ArduinoLibraries/USBSerial.cpp"/>
+</file>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" name="USBSerial.h" tooltip="TibuBoard_Demo/ArduinoLibraries/USBSerial.h">
+<persistable path="/TibuBoard_Demo/ArduinoLibraries/USBSerial.h"/>
+</file>
+<file factoryID="org.coocox.builder.ui.persistent.PersistentElementFactory" id="org.coocox.builder.ui.editors.ConfigEditor" name="" tooltip="">
+<persistable>
+<org.coocox.builder.ui.editors.ConfigEditor horizontalPosition="0" subTagIndex="1" verticalPosition="64"/>
+</persistable>
+</file>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" name="TibuBoard.h" tooltip="TibuBoard_Demo/TibuBoard.h">
+<persistable path="/TibuBoard_Demo/TibuBoard.h"/>
+</file>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" name="SPIAPI.cpp" tooltip="TibuBoard_Demo/ArduinoLibraries/SPIAPI.cpp">
+<persistable path="/TibuBoard_Demo/ArduinoLibraries/SPIAPI.cpp"/>
+</file>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" name="w5100.cpp" tooltip="TibuBoard_Demo/ArduinoLibraries/Ethernet/utility/w5100.cpp">
+<persistable path="/TibuBoard_Demo/ArduinoLibraries/Ethernet/utility/w5100.cpp"/>
+</file>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" name="Dns.cpp" tooltip="TibuBoard_Demo/ArduinoLibraries/Ethernet/Dns.cpp">
+<persistable path="/TibuBoard_Demo/ArduinoLibraries/Ethernet/Dns.cpp"/>
+</file>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" name="Printable.h" tooltip="TibuBoard_Demo/utilities/Printable.h">
+<persistable path="/TibuBoard_Demo/utilities/Printable.h"/>
+</file>
 <file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" name="ArduinoStyle.h" tooltip="TibuBoard_Demo/ArduinoStyle.h">
 <persistable path="/TibuBoard_Demo/ArduinoStyle.h"/>
 </file>
-<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" name="WString.cpp" tooltip="TibuBoard_Demo/utilities/WString.cpp">
-<persistable path="/TibuBoard_Demo/utilities/WString.cpp"/>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" name="Dhcp.cpp" tooltip="TibuBoard_Demo/ArduinoLibraries/Ethernet/Dhcp.cpp">
+<persistable path="/TibuBoard_Demo/ArduinoLibraries/Ethernet/Dhcp.cpp"/>
 </file>
-<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" name="WString.h" tooltip="TibuBoard_Demo/utilities/WString.h">
-<persistable path="/TibuBoard_Demo/utilities/WString.h"/>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" name="socket.cpp" tooltip="TibuBoard_Demo/ArduinoLibraries/Ethernet/utility/socket.cpp">
+<persistable path="/TibuBoard_Demo/ArduinoLibraries/Ethernet/utility/socket.cpp"/>
 </file>
-<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" name="usb_dcd_int.c" tooltip="TibuBoard_Demo/usb_cdc/STM32_USB_OTG_Driver/src/usb_dcd_int.c">
-<persistable path="/TibuBoard_Demo/usb_cdc/STM32_USB_OTG_Driver/src/usb_dcd_int.c"/>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" name="w5100.h" tooltip="TibuBoard_Demo/ArduinoLibraries/Ethernet/utility/w5100.h">
+<persistable path="/TibuBoard_Demo/ArduinoLibraries/Ethernet/utility/w5100.h"/>
 </file>
-<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" name="usb_dcd.h" tooltip="TibuBoard_Demo/usb_cdc/STM32_USB_OTG_Driver/inc/usb_dcd.h">
-<persistable path="/TibuBoard_Demo/usb_cdc/STM32_USB_OTG_Driver/inc/usb_dcd.h"/>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" name="ArduinoStyle.cpp" tooltip="TibuBoard_Demo/ArduinoStyle.cpp">
+<persistable path="/TibuBoard_Demo/ArduinoStyle.cpp"/>
 </file>
-<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" name="usb_dcd_int.h" tooltip="TibuBoard_Demo/usb_cdc/STM32_USB_OTG_Driver/inc/usb_dcd_int.h">
-<persistable path="/TibuBoard_Demo/usb_cdc/STM32_USB_OTG_Driver/inc/usb_dcd_int.h"/>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" name="socket.h" tooltip="TibuBoard_Demo/ArduinoLibraries/Ethernet/utility/socket.h">
+<persistable path="/TibuBoard_Demo/ArduinoLibraries/Ethernet/utility/socket.h"/>
 </file>
-<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" name="usb_bsp.c" tooltip="TibuBoard_Demo/usb_cdc/CDC/usb_bsp.c">
-<persistable path="/TibuBoard_Demo/usb_cdc/CDC/usb_bsp.c"/>
-</file>
-<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" name="usb_core.c" tooltip="TibuBoard_Demo/usb_cdc/STM32_USB_OTG_Driver/src/usb_core.c">
-<persistable path="/TibuBoard_Demo/usb_cdc/STM32_USB_OTG_Driver/src/usb_core.c"/>
-</file>
-<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" name="stm32f4xx_it.cpp" tooltip="TibuBoard_Demo/Interrupts/stm32f4xx_it.cpp">
-<persistable path="/TibuBoard_Demo/Interrupts/stm32f4xx_it.cpp"/>
-</file>
-<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" name="stm32f4xx_gpio.h" tooltip="TibuBoard_Demo/cmsis_lib/include/stm32f4xx_gpio.h">
-<persistable path="/TibuBoard_Demo/cmsis_lib/include/stm32f4xx_gpio.h"/>
-</file>
-<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" name="stm32f4xx_exti.c" tooltip="TibuBoard_Demo/cmsis_lib/source/stm32f4xx_exti.c">
-<persistable path="/TibuBoard_Demo/cmsis_lib/source/stm32f4xx_exti.c"/>
-</file>
-<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" name="usbd_usr.c" tooltip="TibuBoard_Demo/usb_cdc/CDC/usbd_usr.c">
-<persistable path="/TibuBoard_Demo/usb_cdc/CDC/usbd_usr.c"/>
-</file>
-<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" name="system_stm32f4xx.h" tooltip="TibuBoard_Demo/cmsis_boot/system_stm32f4xx.h">
-<persistable path="/TibuBoard_Demo/cmsis_boot/system_stm32f4xx.h"/>
-</file>
-<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" name="stm32f4xx_syscfg.h" tooltip="TibuBoard_Demo/cmsis_lib/include/stm32f4xx_syscfg.h">
-<persistable path="/TibuBoard_Demo/cmsis_lib/include/stm32f4xx_syscfg.h"/>
-</file>
-<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" name="stm32f4xx_syscfg.c" tooltip="TibuBoard_Demo/cmsis_lib/source/stm32f4xx_syscfg.c">
-<persistable path="/TibuBoard_Demo/cmsis_lib/source/stm32f4xx_syscfg.c"/>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" name="Dhcp.h" tooltip="TibuBoard_Demo/ArduinoLibraries/Ethernet/Dhcp.h">
+<persistable path="/TibuBoard_Demo/ArduinoLibraries/Ethernet/Dhcp.h"/>
 </file>
 </mruList>
 </workbench>

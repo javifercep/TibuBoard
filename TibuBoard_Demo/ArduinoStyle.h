@@ -1,7 +1,8 @@
 #include "TibuBoard.h"
 #include "BasicFunctions.h"
 #include "USBSerial.h"
-#include "stdio.h"
+#include <stdio.h>
+#include <math.h>
 #include "WString.h"
 
 /*#define HIGH 0x1
@@ -33,3 +34,10 @@
 
 void setup(void);
 void loop(void);
+
+//WMATH prototypes
+// WMath prototypes
+long random(long);
+long random(long, long);
+void randomSeed(unsigned int);
+long map(long, long, long, long, long);

@@ -37,6 +37,7 @@
 
    public:
      HardwareSerial();
+     ~HardwareSerial();
      void begin(unsigned long);
      void begin(unsigned long, uint8_t);
      void end();

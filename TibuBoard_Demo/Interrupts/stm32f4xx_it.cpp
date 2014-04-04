@@ -24,6 +24,7 @@
 __IO uint32_t Counter = 0;			//SysTick counter
 
 extern __IO voidFuncPtr ButtonInt[numBUTTON]; //Button interrupt function
+extern __IO voidFuncPtr intSPIFunc; //SPI interrupt function
 
 /* Private function prototypes -----------------------------------------------*/
 extern USB_OTG_CORE_HANDLE           USB_OTG_dev;
@@ -32,6 +33,7 @@ extern uint32_t USBD_OTG_ISR_Handler (USB_OTG_CORE_HANDLE *pdev);
 #ifdef USB_OTG_HS_DEDICATED_EP1_ENABLED
 extern uint32_t USBD_OTG_EP1IN_ISR_Handler (USB_OTG_CORE_HANDLE *pdev);
 extern uint32_t USBD_OTG_EP1OUT_ISR_Handler (USB_OTG_CORE_HANDLE *pdev);
+
 #endif
 
 
@@ -147,6 +149,19 @@ void SysTick_Handler(void)
 /*  available peripheral interrupt handler's name please refer to the startup */
 /*  file (startup_stm32f4xx.s).                                               */
 /******************************************************************************/
+
+/**
+  * @brief  This function handles SPI 3 interrupt request.
+  * @param  None
+  * @retval None
+  */
+void SPI3_IRQHandler(void)
+{
+	if(SPI_I2S_GetITStatus(SPI3, SPI_I2S_IT_RXNE)||SPI_I2S_GetITStatus(SPI3, SPI_I2S_IT_TXE))
+		if(intSPIFunc)
+			intSPIFunc();
+
+}
 
 /**
   * @brief  This function handles External line 0 interrupt request.

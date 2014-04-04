@@ -27,6 +27,7 @@
 #include "usbd_core.h"
 #include "usbd_cdc_core.h"
 #include "usb_dcd_int.h"
+#include "SPIAPI.h"
 
 /* Exported types ------------------------------------------------------------*/
 /* Exported constants --------------------------------------------------------*/
@@ -42,6 +43,7 @@ void SVC_Handler(void); //not used
 void DebugMon_Handler(void); //not used
 void PendSV_Handler(void); //not used
 void SysTick_Handler(void);
+void SPI3_IRQHANDLER(void);
 void EXTI0_IRQHandler(void);
 void EXTI2_IRQHandler(void);
 void EXTI4_IRQHandler(void);

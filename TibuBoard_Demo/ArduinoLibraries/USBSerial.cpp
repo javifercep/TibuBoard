@@ -78,6 +78,11 @@ HardwareSerial::HardwareSerial()
 	Init_Container(&USB_DataReceived, SERIAL_BUFFER_LENGTH);
 }
 
+HardwareSerial::~HardwareSerial()
+{
+	Free_Container(&USB_DataReceived);
+}
+
 // Public Methods //////////////////////////////////////////////////////////////
 
 void HardwareSerial::begin(unsigned long baud)
@@ -131,6 +136,9 @@ size_t HardwareSerial::write(uint8_t c)
   return 1;
 }
 
+HardwareSerial::operator bool() {
+	return true;
+}
 
 HardwareSerial Serial;
 

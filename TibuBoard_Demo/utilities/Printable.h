@@ -21,6 +21,7 @@
 #define Printable_h
 
 //#include <new.h>
+#include <stdlib.h>
 
 class Print;
 

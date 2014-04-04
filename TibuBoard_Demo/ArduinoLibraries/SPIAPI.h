@@ -44,18 +44,56 @@
  #define SPI3_MOSI_AF                   GPIO_AF_SPI3
 
 
+#define SPI_MODE0 0x00
+#define SPI_MODE1 0x04
+#define SPI_MODE2 0x08
+#define SPI_MODE3 0x0C
+
+#define SPI_MODE_MASK 0x0C  // CPOL = bit 3, CPHA = bit 2 on SPCR
+#define SPI_CLOCK_MASK 0x03  // SPR1 = bit 1, SPR0 = bit 0 on SPCR
+#define SPI_2XCLOCK_MASK 0x01  // SPI2X = bit 0 on SPSR
+
+#define SPI_MASTER 0x00
+#define SPI_SLAVE  0x01
+
+ typedef void (*voidFuncPtr)(void);
+
 /* Exported types ------------------------------------------------------------*/
 
 /* Exported constants --------------------------------------------------------*/
 /* Exported macro ------------------------------------------------------------*/
 /* Exported functions ------------------------------------------------------- */
 
-void SPI_begin(void);
+class SPIClass {
+private:
+	 uint8_t mastermode;
+	 uint16_t bitOrder;
+	 uint16_t dataMode;
+	 uint16_t prescaler;
+public:
+	 SPIClass();
+	 ~SPIClass();
+	 uint16_t  transfer(uint16_t data);
+	 void attachInterrupt(void (*userFunc)(void));
+	 void detachInterrupt(void); // Default
+
+	 void begin(uint8_t); // Default
+	 void end();
+
+	 void setBitOrder(uint16_t);
+	 void setDataMode(uint16_t);
+	 void setClockDivider(uint16_t);
+
+ };
+
+extern SPIClass SPI;
+
+/*void SPI_begin(void);
 void SPI_end(void);
 void SPI_setBitOrder(uint16_t bitOrder);
 void SPI_setClockDivider(uint16_t Preescaler);
 void SPI_setDataMode(uint16_t CPOL ,uint16_t CPHA);
-uint16_t SPI_transfer(uint16_t data);
+uint16_t SPI_transfer(uint16_t data);*/
 
 
 

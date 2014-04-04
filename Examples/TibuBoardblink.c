@@ -1,10 +1,15 @@
 #include "ArduinoStyle.h"
 
-void setup() {
-	Tibu.InitLED(LED1);
+Tibuboard Tibu;
+
+void setup()
+{
+
 }
 
-void loop() {
-	Tibu.ToggleLED(LED1);
+void loop()
+{
+	Tibu.LEDToggle(LED1);
 	delay(1000);
 }
+
