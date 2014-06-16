@@ -25,8 +25,8 @@
 
 typedef enum
 {
-  OUTPUT = 0,
-  INPUT = 1,
+  INPUT = 0,
+  OUTPUT = 1,
   INPUT_PULLUP = 2,
 } Mode_TypeDef;
 
@@ -34,7 +34,7 @@ typedef enum
 {
   LOW = 0,
   HIGH = 1,
-} Mode_OuputState;
+} Mode_OutputState;
 
 typedef enum
 {
@@ -177,7 +177,7 @@ typedef enum
 
 /* Digital functions*/
  void pinMode(uint32_t pinNumber, Mode_TypeDef Mode);
- void digitalWrite(uint32_t pinNumber, Mode_OuputState State);
+ void digitalWrite(uint32_t pinNumber, Mode_OutputState State);
  uint32_t digitalRead(uint32_t pinNumber);
  void analogWrite(uint32_t pinNumber, uint32_t pwm);
  void Init_PWMPins();

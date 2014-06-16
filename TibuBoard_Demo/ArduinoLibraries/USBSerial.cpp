@@ -61,6 +61,7 @@ __ALIGN_BEGIN USB_OTG_CORE_HANDLE  USB_OTG_dev __ALIGN_END;
 
 void serialEvent() __attribute__((weak));
 void serialEvent() {}
+
 #define serialEvent_implemented
 
 

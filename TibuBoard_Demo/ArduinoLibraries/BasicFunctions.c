@@ -131,7 +131,7 @@ void pinMode(uint32_t pinNumber, Mode_TypeDef Mode)
   *     @arg LOW
   * @retval None
   */
-void digitalWrite(uint32_t pinNumber, Mode_OuputState State)
+void digitalWrite(uint32_t pinNumber, Mode_OutputState State)
 {
 	if(pinNumber==PIN3_TIM4CHANNEL || pinNumber == PIN5_TIM4CHANNEL ||
 			pinNumber == PIN6_TIM4CHANNEL || pinNumber == PIN9_TIM4CHANNEL)

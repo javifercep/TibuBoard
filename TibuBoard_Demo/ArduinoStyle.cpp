@@ -1,37 +1,105 @@
 #include "ArduinoStyle.h"
 
-#include "SPIAPI.h"
+#include "ProcArduLib.h"
 
-const int NSS = 10;
-const int CE = 8;
-const int IRQ = 9;
 Tibuboard Tibu;
+
+ProcArduLib ArduInterface;
+
+const int PWMPins[NUMPWM] = {
+  3, 5, 6, 9, 10, 11};
+volatile int PWMFREQ[NUMPWM] = {
+  0, 0, 0, 0, 0, 0};
+volatile int PWMDC[NUMPWM] = {
+  0, 0, 0, 0, 0, 0};
+volatile int PWMCount[NUMPWM] = {
+  0, 0, 0, 0, 0, 0};
+
+volatile int TimeCount = 0;
 
 void setup()
 {
-	SPI.begin(SPI_MASTER);
 	Serial.begin(115200);
-	Tibu.LEDOff(LED1);
-	Tibu.LEDOn(LED2);
-	Serial.println("Hola");
-	pinMode(NSS,OUTPUT);
-	pinMode(CE,OUTPUT);
-	pinMode(IRQ, INPUT);
-	digitalWrite(NSS,HIGH);
-	digitalWrite(CE,LOW);
-	delay(10000);
-	digitalWrite(NSS,LOW);
-	Serial.println(SPI.transfer(0x00));
-	Serial.println(SPI.transfer(0xFF));
-	digitalWrite(NSS,HIGH);
-	Tibu.LEDOn(LED1);
 }
 
 void loop()
 {
-	Serial.println("Hola");
-	delay(500);
+	if(ArduInterface.ProcessData())
+	  {
+	    int pin = ArduInterface.GetPin();
+	    int value = ArduInterface.GetValue();
+	    switch(ArduInterface.GetCommand())
+	    {
+	    case DIGITAL_WRITE:
+	      if(pin < 0 || pin > 13)
+	      {
+	        ArduInterface.SendErrorMsg("Invalid pin!");
+	        break;
+	      }
+	      if(value > 1 || value < 0)
+	      {
+	        ArduInterface.SendErrorMsg("Invalid value!");
+	        break;
+	      }
+	      digitalWrite(pin, (Mode_OutputState)value);
+	      break;
+	    case ANALOG_READ:
+	      if(pin < 0 || pin > 5)
+	      {
+	        ArduInterface.SendErrorMsg("Invalid pin!");
+	        break;
+	      }
+	      ArduInterface.SendCommand(ANALOG_READ, pin, analogRead());
+	      break;
+	    case DIGITAL_READ:
+	      if(pin < 0 || pin > 13)
+	      {
+	        ArduInterface.SendErrorMsg("Invalid value!:");
+	        break;
+	      }
+	      ArduInterface.SendCommand(DIGITAL_READ, pin, digitalRead(pin));
+	      break;
+	    case CONFIG_PIN:
+	      if(pin < 0 || pin > 13)
+	      {
+	        ArduInterface.SendErrorMsg("Invalid pin!");
+	        break;
+	      }
+	      if(value > 2  || value < 0)
+	      {
+	        ArduInterface.SendErrorMsg("Invalid value!");
+	        break;
+	      }
+	      pinMode(pin,(Mode_TypeDef)value);
+	      break;
+	    case ANALOG_BROADCAST:
+	      ArduInterface.SendBroadcast(ANALOG_BROADCAST);
+	      break;
+	    case DIGITAL_BROADCAST:
+	      ArduInterface.SendBroadcast(DIGITAL_BROADCAST);
+	      break;
+	    case PWM_DUTYCYCLE:
+	      pinMode(pin,OUTPUT);
+	      PWMDC[pin] = value;
+	      break;
+	    case PWM_FREQ:
+	      pinMode(pin,OUTPUT);
+	      PWMFREQ[pin] = value;
+	      break;
+	    default:
+	      ArduInterface.SendErrorMsg("Invalid command!");
+	      break;
+	    }
+	  }
 
 }
 
-
+void serialEvent()
+{
+  while (Serial.available())
+  {
+    // get the new byte:
+    if(ArduInterface.GetSerialData((char)Serial.read()))
+      break;
+  }
+}
