@@ -98,7 +98,7 @@ void pinMode(uint32_t pinNumber, Mode_TypeDef Mode)
 		 {
 		 case OUTPUT:
 			 GPIO_InitStructure.GPIO_Mode = GPIO_Mode_OUT;
-			 GPIO_InitStructure.GPIO_OType = GPIO_OType_PP;
+			 GPIO_InitStructure.GPIO_OType = GPIO_OType_OD;
 			 GPIO_InitStructure.GPIO_PuPd = GPIO_PuPd_UP;
 			 break;
 

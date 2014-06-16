@@ -84,7 +84,7 @@
       <source file="..\..\..\cmsis_lib\source\misc.c" lastModified="13f85bdb5e4">
          <include file="..\..\..\cmsis_lib\include\misc.h"/>
       </source>
-      <source file="..\..\..\cmsis_boot\stm32f4xx.h" lastModified="144dfcf19dc">
+      <source file="..\..\..\cmsis_boot\stm32f4xx.h" lastModified="1468051a8fc">
          <include file="..\..\..\cmsis\core_cm4.h"/>
          <include file="..\..\..\cmsis_boot\system_stm32f4xx.h"/>
          <include file="..\..\..\cmsis_boot\stm32f4xx_conf.h"/>
@@ -158,7 +158,7 @@
       </source>
       <source file="..\..\..\cmsis\core_cmInstr.h" lastModified="13f80b304e8">
       </source>
-      <source file="..\..\..\cmsis_boot\system_stm32f4xx.c" lastModified="144dfcf1641">
+      <source file="..\..\..\cmsis_boot\system_stm32f4xx.c" lastModified="1468051a4a0">
          <include file="..\..\..\cmsis_boot\stm32f4xx.h"/>
       </source>
       <source file="..\..\..\usb_cdc\CDC\usbd_cdc_vcp.h" lastModified="144deee63c6">
@@ -326,7 +326,7 @@
       <source file="..\..\..\cmsis_lib\include\stm32f4xx_tim.h" lastModified="13f80b32314">
          <include file="..\..\..\cmsis_boot\stm32f4xx.h"/>
       </source>
-      <source file="..\..\..\ArduinoLibraries\USBSerial.h" lastModified="14526d63902">
+      <source file="..\..\..\ArduinoLibraries\USBSerial.h" lastModified="1467ca1840a">
          <include file="..\..\..\utilities\Stream.h"/>
          <include file="..\..\..\cmsis_boot\stm32f4xx.h"/>
          <include file="..\..\..\cmsis_boot\stm32f4xx_conf.h"/>
@@ -351,7 +351,7 @@
          <include file="..\..\..\ArduinoLibraries\Ethernet\EthernetClient.h"/>
          <include file="..\..\..\ArduinoLibraries\Ethernet\EthernetServer.h"/>
       </source>
-      <source file="..\..\..\ArduinoLibraries\BasicFunctions.c" lastModified="1401b3c9b80">
+      <source file="..\..\..\ArduinoLibraries\BasicFunctions.c" lastModified="1468063b370">
          <include file="..\..\..\ArduinoLibraries\BasicFunctions.h"/>
       </source>
       <source file="..\..\..\usb_cdc\STM32_USB_Device_Library\Core\inc\usbd_core.h" lastModified="1334a1574c0">
@@ -485,9 +485,6 @@
       <source file="..\..\..\utilities\BufferFunctions.c" lastModified="144dee28057">
          <include file="..\..\..\utilities\BufferFunctions.h"/>
       </source>
-      <source file="..\..\..\cmsis_boot\system_stm32f4xx.c" lastModified="144dfcf1641">
-         <include file="..\..\..\cmsis_boot\stm32f4xx.h"/>
-      </source>
       <source file="..\..\..\usb_cdc\CDC\usbd_cdc_vcp.h" lastModified="144deee63c6">
          <include file="..\..\..\cmsis_boot\stm32f4xx.h"/>
          <include file="..\..\..\usb_cdc\STM32_USB_Device_Library\Class\cdc\inc\usbd_cdc_core.h"/>
@@ -598,9 +595,6 @@
          <include file="..\..\..\usb_cdc\STM32_USB_Device_Library\Core\inc\usbd_req.h"/>
          <include file="..\..\..\usb_cdc\STM32_USB_Device_Library\Core\inc\usbd_ioreq.h"/>
          <include file="..\..\..\usb_cdc\CDC\usbd_desc.h"/>
-      </source>
-      <source file="..\..\..\ArduinoLibraries\BasicFunctions.c" lastModified="1401b3c9b80">
-         <include file="..\..\..\ArduinoLibraries\BasicFunctions.h"/>
       </source>
       <source file="..\..\..\usb_cdc\STM32_USB_Device_Library\Core\inc\usbd_core.h" lastModified="1334a1574c0">
          <include file="..\..\..\usb_cdc\STM32_USB_OTG_Driver\inc\usb_dcd.h"/>
@@ -773,9 +767,6 @@
          <include file="..\..\..\usb_cdc\STM32_USB_Device_Library\Core\inc\usbd_ioreq.h"/>
          <include file="..\..\..\usb_cdc\CDC\usbd_desc.h"/>
       </source>
-      <source file="..\..\..\ArduinoLibraries\BasicFunctions.c" lastModified="1401b3c9b80">
-         <include file="..\..\..\ArduinoLibraries\BasicFunctions.h"/>
-      </source>
       <source file="..\..\..\usb_cdc\STM32_USB_Device_Library\Core\inc\usbd_core.h" lastModified="1334a1574c0">
          <include file="..\..\..\usb_cdc\STM32_USB_OTG_Driver\inc\usb_dcd.h"/>
          <include file="..\..\..\usb_cdc\STM32_USB_Device_Library\Core\inc\usbd_def.h"/>
@@ -867,9 +858,6 @@
       </source>
       <source file="..\..\..\cmsis_lib\include\stm32f4xx_tim.h" lastModified="13f80b32314">
          <include file="..\..\..\cmsis_boot\stm32f4xx.h"/>
-      </source>
-      <source file="..\..\..\ArduinoLibraries\BasicFunctions.c" lastModified="1401b3c9b80">
-         <include file="..\..\..\ArduinoLibraries\BasicFunctions.h"/>
       </source>
       <source file="..\..\..\cmsis_lib\source\stm32f4xx_adc.c" lastModified="1401aea32b0">
          <include file="..\..\..\cmsis_lib\include\stm32f4xx_adc.h"/>
