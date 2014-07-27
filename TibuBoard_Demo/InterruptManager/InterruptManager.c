@@ -24,7 +24,7 @@ CREATE_PERIPH_INSTANCE(NUMBER_PERIPHERALS)= {
 {				0, 		1, 				CB_Timer_1},
 {				0, 		1, 				CB_Timer_2},
 {				0, 		1, 				CB_Spi_1},
-{				0, 		1, 				CB_Exti_2}
+{				0, 		2, 				CB_Exti_2}
 };
 
 
@@ -53,9 +53,10 @@ void InitInterruptManager(void)
   */
  void attachInterrupt(void (*userFunc)(void), INSTANCE_ISR Instance)
  {
-	 if(++CURRENT_PERIPH_INSTANCES(Instance) < MAX_PERIPH_INSTANCES(Instace))
+	 if(CURRENT_PERIPH_INSTANCES(Instance) < MAX_PERIPH_INSTANCES(Instace))
 	 {
-		 ADD_CALLBACK_INSTANCE(userFunc);
+		 ADD_CALLBACK_INSTANCE(Instance,userFunc);
+		 CURRENT_PERIPH_INSTANCES(Instance)++;
 	 }
  }
 

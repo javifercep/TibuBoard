@@ -47,7 +47,7 @@
  /* Exported macro ------------------------------------------------------------*/
 #define CURRENT_PERIPH_INSTANCES(Instance)		Periph_ISR[Instance].InstanceCounter
 #define MAX_PERIPH_INSTANCES(Instace)			Periph_ISR[Instance].MaxInstances
-#define ADD_CALLBACK_INSTANCE(AppFunc)			Periph_ISR[Instance].Callbacks[Periph_ISR[Instance].InstanceCounter].userFunc = AppFunc
+#define ADD_CALLBACK_INSTANCE(Instance, AppFunc)Periph_ISR[Instance].Callbacks[Periph_ISR[Instance].InstanceCounter].userFunc = AppFunc
 #define REMOVE_CALLBACK_INSTANCE(Instance)		Periph_ISR[Instance].Callbacks[Periph_ISR[Instance].InstanceCounter].userFunc = 0
 #define CALL_CALLBACK_INSTANCE(Instance, Id)	Periph_ISR[Instance].Callbacks[Id].userFunc
 #define ADD_PERIPH_CB(Instance, periph)			Periph_ISR[Instance].Callbacks = CB_##periph

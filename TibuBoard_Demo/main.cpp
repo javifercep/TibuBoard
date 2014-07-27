@@ -1,7 +1,6 @@
 #include "ArduinoStyle.h"
 #include "InterruptManager.h"
 
-
 int main(void)
 {
 	SystemInit();

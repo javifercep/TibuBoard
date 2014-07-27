@@ -224,7 +224,7 @@ void Tibuboard::ButtonInterrupt(Button_TypeDef button, void (*userFunc)(void))
 	NVIC_Init(&NVIC_InitStructure);
 
 	//ButtonInt[button]=userFunc;
-	attachInterrupt(userFunc,EXTI_2);
+	attachInterrupt(userFunc, EXTI_2);
 
 }
 

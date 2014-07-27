@@ -1,130 +1,172 @@
 <?xml version='1.0' encoding='UTF-8'?>
 <dependencies>
-   <includePath signature="/I..\..\..\..\..\Users\Cal Javi\Documents\GitHub\TibuBoard\TibuBoard_Demo\usb_cdc\STM32_USB_Device_Library /I..\..\..\..\..\Users\Cal Javi\Documents\GitHub\TibuBoard\TibuBoard_Demo\usb_cdc\STM32_USB_OTG_Driver /I..\..\..\..\..\Users\Cal Javi\Documents\GitHub\TibuBoard\TibuBoard_Demo\usb_cdc\STM32_USB_Device_Library\Class\cdc /I..\..\..\..\..\Users\Cal Javi\Documents\GitHub\TibuBoard\TibuBoard_Demo\cmsis_boot /I..\..\..\..\..\Users\Cal Javi\Documents\GitHub\TibuBoard\TibuBoard_Demo\usb_cdc\CDC /I..\..\..\..\..\Users\Cal Javi\Documents\GitHub\TibuBoard\TibuBoard_Demo\usb_cdc\STM32_USB_Device_Library\Class /I..\..\..\..\..\Users\Cal Javi\Documents\GitHub\TibuBoard\TibuBoard_Demo\utilities /I..\..\..\..\..\Users\Cal Javi\Documents\GitHub\TibuBoard\TibuBoard_Demo\cmsis_lib\include /I..\..\..\..\..\Users\Cal Javi\Documents\GitHub\TibuBoard /I..\..\..\..\..\Users\Cal Javi\Documents\GitHub\TibuBoard\TibuBoard_Demo\cmsis_lib /I..\..\..\..\..\Users\Cal Javi\Documents\GitHub\TibuBoard\TibuBoard_Demo\cmsis /I..\..\..\..\..\Users\Cal Javi\Documents\GitHub\TibuBoard\TibuBoard_Demo\usb_cdc /I..\..\..\..\..\Users\Cal Javi\Documents\GitHub\TibuBoard\TibuBoard_Demo\ArduinoLibraries /I..\..\..\..\..\Users\Cal Javi\Documents\GitHub\TibuBoard\TibuBoard_Demo /I..\..\..\..\..\Users\Cal Javi\Documents\GitHub\TibuBoard\TibuBoard_Demo\usb_cdc\STM32_USB_Device_Library\Core\inc /I..\..\..\..\..\Users\Cal Javi\Documents\GitHub /I..\..\..\..\..\Users\Cal Javi\Documents\GitHub\TibuBoard\TibuBoard_Demo\usb_cdc\STM32_USB_Device_Library\Core /I..\..\..\..\..\Users\Cal Javi\Documents\GitHub\TibuBoard\TibuBoard_Demo\usb_cdc\STM32_USB_OTG_Driver\inc /I..\..\..\..\..\Users\Cal Javi\Documents\GitHub\TibuBoard\TibuBoard_Demo\usb_cdc\STM32_USB_Device_Library\Class\cdc\inc /I..\..\..\..\..\Users\Cal Javi\Documents\GitHub\TibuBoard\TibuBoard_Demo\InterruptManager">
-      <source file="..\..\..\utilities\Printable.h" lastModified="1476975e957">
+   <includePath signature="/I..\..\..\..\..\Users\JAVIS\Documents\GitHub\TibuBoard\TibuBoard_Demo\usb_cdc\CDC /I..\..\..\..\..\Users\JAVIS\Documents\GitHub\TibuBoard /I..\..\..\..\..\Users\JAVIS\Documents\GitHub\TibuBoard\TibuBoard_Demo\usb_cdc\STM32_USB_Device_Library\Core\inc /I..\..\..\..\..\Users\JAVIS\Documents\GitHub /I..\..\..\..\..\Users\JAVIS\Documents\GitHub\TibuBoard\TibuBoard_Demo\usb_cdc\STM32_USB_Device_Library /I..\..\..\..\..\Users\JAVIS\Documents\GitHub\TibuBoard\TibuBoard_Demo\cmsis /I..\..\..\..\..\Users\JAVIS\Documents\GitHub\TibuBoard\TibuBoard_Demo\usb_cdc\STM32_USB_OTG_Driver /I..\..\..\..\..\Users\JAVIS\Documents\GitHub\TibuBoard\TibuBoard_Demo\usb_cdc\STM32_USB_Device_Library\Class\cdc\inc /I..\..\..\..\..\Users\JAVIS\Documents\GitHub\TibuBoard\TibuBoard_Demo\InterruptManager /I..\..\..\..\..\Users\JAVIS\Documents\GitHub\TibuBoard\TibuBoard_Demo\usb_cdc\STM32_USB_OTG_Driver\inc /I..\..\..\..\..\Users\JAVIS\Documents\GitHub\TibuBoard\TibuBoard_Demo\usb_cdc\STM32_USB_Device_Library\Class\cdc /I..\..\..\..\..\Users\JAVIS\Documents\GitHub\TibuBoard\TibuBoard_Demo\cmsis_lib /I..\..\..\..\..\Users\JAVIS\Documents\GitHub\TibuBoard\TibuBoard_Demo\cmsis_boot /I..\..\..\..\..\Users\JAVIS\Documents\GitHub\TibuBoard\TibuBoard_Demo\usb_cdc /I..\..\..\..\..\Users\JAVIS\Documents\GitHub\TibuBoard\TibuBoard_Demo\ArduinoLibraries /I..\..\..\..\..\Users\JAVIS\Documents\GitHub\TibuBoard\TibuBoard_Demo\ArduinoLibraries\Ethernet /I..\..\..\..\..\Users\JAVIS\Documents\GitHub\TibuBoard\TibuBoard_Demo\cmsis_lib\include /I..\..\..\..\..\Users\JAVIS\Documents\GitHub\TibuBoard\TibuBoard_Demo\usb_cdc\STM32_USB_Device_Library\Core /I..\..\..\..\..\Users\JAVIS\Documents\GitHub\TibuBoard\TibuBoard_Demo\utilities /I..\..\..\..\..\Users\JAVIS\Documents\GitHub\TibuBoard\TibuBoard_Demo\usb_cdc\STM32_USB_Device_Library\Class /I..\..\..\..\..\Users\JAVIS\Documents\GitHub\TibuBoard\TibuBoard_Demo /I..\..\..\..\..\Users\JAVIS\Documents\GitHub\TibuBoard\TibuBoard_Demo\ArduinoLibraries\Ethernet\utility">
+      <source file="..\..\..\utilities\Printable.h" lastModified="14526f039ef">
       </source>
-      <source file="..\..\..\usb_cdc\CDC\usbd_usr.c" lastModified="1476975e4cc">
+      <source file="..\..\..\utilities\WString.h" lastModified="1451cf67c6b">
+      </source>
+      <source file="..\..\..\usb_cdc\CDC\usbd_usr.c" lastModified="1404da8ee94">
          <include file="..\..\..\usb_cdc\STM32_USB_Device_Library\Core\inc\usbd_usr.h"/>
          <include file="..\..\..\usb_cdc\STM32_USB_Device_Library\Core\inc\usbd_ioreq.h"/>
       </source>
-      <source file="..\..\..\utilities\WString.h" lastModified="1476975f528">
-      </source>
-      <source file="..\..\..\ArduinoStyle.h" lastModified="147739a7d49">
+      <source file="..\..\..\ArduinoStyle.h" lastModified="14777226ad0">
          <include file="..\..\..\TibuBoard.h"/>
          <include file="..\..\..\ArduinoLibraries\BasicFunctions.h"/>
          <include file="..\..\..\ArduinoLibraries\USBSerial.h"/>
          <include file="..\..\..\utilities\WString.h"/>
       </source>
-      <source file="..\..\..\usb_cdc\STM32_USB_OTG_Driver\inc\usb_dcd_int.h" lastModified="1476975e52b">
+      <source file="..\..\..\usb_cdc\STM32_USB_OTG_Driver\inc\usb_dcd_int.h" lastModified="1451c4ed327">
          <include file="..\..\..\usb_cdc\STM32_USB_OTG_Driver\inc\usb_dcd.h"/>
       </source>
-      <source file="..\..\..\cmsis\core_cm4.h" lastModified="1476975e7e3">
+      <source file="..\..\..\cmsis\core_cm4.h" lastModified="13f80b303b5">
          <include file="..\..\..\cmsis\core_cmInstr.h"/>
          <include file="..\..\..\cmsis\core_cmFunc.h"/>
          <include file="..\..\..\cmsis\core_cm4_simd.h"/>
       </source>
-      <source file="..\..\..\usb_cdc\STM32_USB_OTG_Driver\src\usb_dcd.c" lastModified="1476975e53d">
+      <source file="..\..\..\usb_cdc\STM32_USB_OTG_Driver\src\usb_dcd.c" lastModified="1334a157c90">
          <include file="..\..\..\usb_cdc\STM32_USB_OTG_Driver\inc\usb_dcd.h"/>
          <include file="..\..\..\usb_cdc\STM32_USB_OTG_Driver\inc\usb_bsp.h"/>
       </source>
-      <source file="..\..\..\utilities\WString.cpp" lastModified="1476975e584">
+      <source file="..\..\..\InterruptManager\stm32f4xx_it.cpp" lastModified="14776ce53ad">
+         <include file="..\..\..\InterruptManager\stm32f4xx_it.h"/>
+         <include file="..\..\..\InterruptManager\InterruptManager.h"/>
+      </source>
+      <source file="..\..\..\utilities\WString.cpp" lastModified="1451cf7598c">
          <include file="..\..\..\utilities\WString.h"/>
       </source>
-      <source file="..\..\..\utilities\Print.cpp" lastModified="1476975f508">
+      <source file="..\..\..\ArduinoLibraries\Ethernet\Ethernet.h" lastModified="13eb42b9c08">
+         <include file="..\..\..\utilities\IPAddress.h"/>
+         <include file="..\..\..\ArduinoLibraries\Ethernet\EthernetClient.h"/>
+         <include file="..\..\..\ArduinoLibraries\Ethernet\EthernetServer.h"/>
+         <include file="..\..\..\ArduinoLibraries\Ethernet\Dhcp.h"/>
+      </source>
+      <source file="..\..\..\utilities\Print.cpp" lastModified="14522b38103">
          <include file="..\..\..\ArduinoStyle.h"/>
          <include file="..\..\..\utilities\Print.h"/>
       </source>
-      <source file="..\..\..\TibuBoard.h" lastModified="147739a7588">
+      <source file="..\..\..\TibuBoard.h" lastModified="14777226329">
          <include file="..\..\..\cmsis_boot\stm32f4xx.h"/>
          <include file="..\..\..\cmsis_boot\stm32f4xx_conf.h"/>
       </source>
-      <source file="..\..\..\usb_cdc\STM32_USB_OTG_Driver\inc\usb_defines.h" lastModified="1476975e52e">
+      <source file="..\..\..\usb_cdc\STM32_USB_OTG_Driver\inc\usb_defines.h" lastModified="1334a157c90">
          <include file="..\..\..\usb_cdc\CDC\usb_conf.h"/>
       </source>
-      <source file="..\..\..\cmsis_lib\include\misc.h" lastModified="1476975e428">
+      <source file="..\..\..\cmsis_lib\include\misc.h" lastModified="13f85bdb5df">
          <include file="..\..\..\cmsis_boot\stm32f4xx.h"/>
       </source>
-      <source file="..\..\..\cmsis_lib\source\stm32f4xx_tim.c" lastModified="1476975e49f">
+      <source file="..\..\..\cmsis_lib\source\stm32f4xx_tim.c" lastModified="13f80b32324">
          <include file="..\..\..\cmsis_lib\include\stm32f4xx_tim.h"/>
          <include file="..\..\..\cmsis_lib\include\stm32f4xx_rcc.h"/>
       </source>
-      <source file="..\..\..\usb_cdc\STM32_USB_OTG_Driver\src\usb_core.c" lastModified="1476975e53a">
+      <source file="..\..\..\usb_cdc\STM32_USB_OTG_Driver\src\usb_core.c" lastModified="1334a157c90">
          <include file="..\..\..\usb_cdc\STM32_USB_OTG_Driver\inc\usb_core.h"/>
          <include file="..\..\..\usb_cdc\STM32_USB_OTG_Driver\inc\usb_bsp.h"/>
       </source>
-      <source file="..\..\..\main.cpp" lastModified="14776b5f80f">
+      <source file="..\..\..\ArduinoLibraries\Ethernet\utility\socket.cpp" lastModified="1452b6f2dd1">
+         <include file="..\..\..\ArduinoLibraries\Ethernet\utility\w5100.h"/>
+         <include file="..\..\..\ArduinoLibraries\Ethernet\utility\socket.h"/>
+      </source>
+      <source file="..\..\..\utilities\Client.h" lastModified="13eb42bb760">
+         <include file="..\..\..\utilities\Print.h"/>
+         <include file="..\..\..\utilities\Stream.h"/>
+         <include file="..\..\..\utilities\IPAddress.h"/>
+      </source>
+      <source file="..\..\..\main.cpp" lastModified="14777283959">
          <include file="..\..\..\ArduinoStyle.h"/>
          <include file="..\..\..\InterruptManager\InterruptManager.h"/>
       </source>
-      <source file="..\..\..\usb_cdc\STM32_USB_Device_Library\Core\inc\usbd_ioreq.h" lastModified="1476975e502">
+      <source file="..\..\..\usb_cdc\STM32_USB_Device_Library\Core\inc\usbd_ioreq.h" lastModified="1334a1574c0">
          <include file="..\..\..\usb_cdc\STM32_USB_Device_Library\Core\inc\usbd_def.h"/>
          <include file="..\..\..\usb_cdc\STM32_USB_Device_Library\Core\inc\usbd_core.h"/>
       </source>
-      <source file="..\..\..\usb_cdc\STM32_USB_OTG_Driver\inc\usb_core.h" lastModified="1476975e522">
+      <source file="..\..\..\ArduinoLibraries\Ethernet\util.h" lastModified="13eb42b9820">
+      </source>
+      <source file="..\..\..\usb_cdc\STM32_USB_OTG_Driver\inc\usb_core.h" lastModified="1334a157c90">
          <include file="..\..\..\usb_cdc\CDC\usb_conf.h"/>
          <include file="..\..\..\usb_cdc\STM32_USB_OTG_Driver\inc\usb_regs.h"/>
          <include file="..\..\..\usb_cdc\STM32_USB_OTG_Driver\inc\usb_defines.h"/>
       </source>
-      <source file="..\..\..\cmsis_lib\source\misc.c" lastModified="1476975e45d">
+      <source file="..\..\..\cmsis_lib\source\misc.c" lastModified="13f85bdb5e4">
          <include file="..\..\..\cmsis_lib\include\misc.h"/>
       </source>
-      <source file="..\..\..\cmsis_boot\stm32f4xx.h" lastModified="14773a73f86">
+      <source file="..\..\..\cmsis_boot\stm32f4xx.h" lastModified="14777226b72">
          <include file="..\..\..\cmsis\core_cm4.h"/>
          <include file="..\..\..\cmsis_boot\system_stm32f4xx.h"/>
          <include file="..\..\..\cmsis_boot\stm32f4xx_conf.h"/>
       </source>
-      <source file="..\..\..\cmsis_lib\include\stm32f4xx_syscfg.h" lastModified="1476975e453">
+      <source file="..\..\..\ArduinoLibraries\Ethernet\EthernetUdp.h" lastModified="13eb42b9820">
+         <include file="..\..\..\utilities\Udp.h"/>
+      </source>
+      <source file="..\..\..\ArduinoLibraries\Ethernet\Ethernet.cpp" lastModified="13eb42b9820">
+         <include file="..\..\..\ArduinoLibraries\Ethernet\utility\w5100.h"/>
+         <include file="..\..\..\ArduinoLibraries\Ethernet\Ethernet.h"/>
+         <include file="..\..\..\ArduinoLibraries\Ethernet\Dhcp.h"/>
+      </source>
+      <source file="..\..\..\cmsis_lib\include\stm32f4xx_syscfg.h" lastModified="13f85c0569c">
          <include file="..\..\..\cmsis_boot\stm32f4xx.h"/>
       </source>
-      <source file="..\..\..\usb_cdc\STM32_USB_Device_Library\Class\cdc\inc\usbd_cdc_core.h" lastModified="1476975e4d5">
+      <source file="..\..\..\usb_cdc\STM32_USB_Device_Library\Class\cdc\inc\usbd_cdc_core.h" lastModified="144dee4d4c6">
          <include file="..\..\..\usb_cdc\STM32_USB_Device_Library\Core\inc\usbd_ioreq.h"/>
       </source>
-      <source file="..\..\..\usb_cdc\STM32_USB_Device_Library\Core\src\usbd_core.c" lastModified="1476975e511">
+      <source file="..\..\..\ArduinoLibraries\Ethernet\EthernetServer.h" lastModified="13eb42b9820">
+         <include file="..\..\..\utilities\Server.h"/>
+      </source>
+      <source file="..\..\..\ArduinoLibraries\Ethernet\utility\socket.h" lastModified="13eb42b9820">
+         <include file="..\..\..\ArduinoLibraries\Ethernet\utility\w5100.h"/>
+      </source>
+      <source file="..\..\..\usb_cdc\STM32_USB_Device_Library\Core\src\usbd_core.c" lastModified="1334a1574c0">
          <include file="..\..\..\usb_cdc\STM32_USB_Device_Library\Core\inc\usbd_core.h"/>
          <include file="..\..\..\usb_cdc\STM32_USB_Device_Library\Core\inc\usbd_req.h"/>
          <include file="..\..\..\usb_cdc\STM32_USB_Device_Library\Core\inc\usbd_ioreq.h"/>
          <include file="..\..\..\usb_cdc\STM32_USB_OTG_Driver\inc\usb_dcd_int.h"/>
          <include file="..\..\..\usb_cdc\STM32_USB_OTG_Driver\inc\usb_bsp.h"/>
       </source>
-      <source file="..\..\..\cmsis_lib\include\stm32f4xx_spi.h" lastModified="1476975e44e">
+      <source file="..\..\..\cmsis_lib\include\stm32f4xx_spi.h" lastModified="1406ee57d13">
          <include file="..\..\..\cmsis_boot\stm32f4xx.h"/>
       </source>
-      <source file="..\..\..\cmsis_lib\include\stm32f4xx_dma.h" lastModified="1476975e433">
+      <source file="..\..\..\cmsis_lib\include\stm32f4xx_dma.h" lastModified="1401ae9fae2">
          <include file="..\..\..\cmsis_boot\stm32f4xx.h"/>
       </source>
-      <source file="..\..\..\usb_cdc\STM32_USB_Device_Library\Class\cdc\src\usbd_cdc_core.c" lastModified="1476975e4da">
+      <source file="..\..\..\ArduinoLibraries\Ethernet\Dns.cpp" lastModified="14526f0cdc2">
+         <include file="..\..\..\ArduinoLibraries\Ethernet\utility\w5100.h"/>
+         <include file="..\..\..\ArduinoLibraries\Ethernet\EthernetUdp.h"/>
+         <include file="..\..\..\ArduinoLibraries\Ethernet\util.h"/>
+         <include file="..\..\..\ArduinoLibraries\Ethernet\Dns.h"/>
+         <include file="..\..\..\ArduinoStyle.h"/>
+      </source>
+      <source file="..\..\..\usb_cdc\STM32_USB_Device_Library\Class\cdc\src\usbd_cdc_core.c" lastModified="13ef4967b4f">
          <include file="..\..\..\usb_cdc\STM32_USB_Device_Library\Class\cdc\inc\usbd_cdc_core.h"/>
          <include file="..\..\..\usb_cdc\CDC\usbd_desc.h"/>
          <include file="..\..\..\usb_cdc\STM32_USB_Device_Library\Core\inc\usbd_req.h"/>
       </source>
-      <source file="..\..\..\utilities\BufferFunctions.h" lastModified="1476975ed19">
+      <source file="..\..\..\utilities\BufferFunctions.h" lastModified="144dee2881c">
          <include file="..\..\..\cmsis_boot\stm32f4xx.h"/>
          <include file="..\..\..\cmsis_boot\stm32f4xx_conf.h"/>
       </source>
-      <source file="..\..\..\cmsis_lib\include\stm32f4xx_rcc.h" lastModified="1476975e449">
+      <source file="..\..\..\cmsis_lib\include\stm32f4xx_rcc.h" lastModified="13f80b30122">
          <include file="..\..\..\cmsis_boot\stm32f4xx.h"/>
       </source>
-      <source file="..\..\..\cmsis_lib\source\stm32f4xx_exti.c" lastModified="1476975e47e">
+      <source file="..\..\..\cmsis_lib\source\stm32f4xx_exti.c" lastModified="13f80b3147b">
          <include file="..\..\..\cmsis_lib\include\stm32f4xx_exti.h"/>
       </source>
-      <source file="..\..\..\cmsis_boot\system_stm32f4xx.h" lastModified="1476975e423">
+      <source file="..\..\..\cmsis_boot\system_stm32f4xx.h" lastModified="13f80b2ff25">
       </source>
-      <source file="..\..\..\usb_cdc\CDC\usb_bsp.c" lastModified="1476975e4af">
+      <source file="..\..\..\usb_cdc\CDC\usb_bsp.c" lastModified="1451c482db3">
          <include file="..\..\..\usb_cdc\STM32_USB_OTG_Driver\inc\usb_bsp.h"/>
          <include file="..\..\..\usb_cdc\CDC\usbd_conf.h"/>
       </source>
-      <source file="..\..\..\usb_cdc\STM32_USB_OTG_Driver\inc\usb_bsp.h" lastModified="1476975e51f">
+      <source file="..\..\..\usb_cdc\STM32_USB_OTG_Driver\inc\usb_bsp.h" lastModified="1404da8ee58">
          <include file="..\..\..\usb_cdc\STM32_USB_OTG_Driver\inc\usb_core.h"/>
       </source>
-      <source file="..\..\..\utilities\BufferFunctions.c" lastModified="1476975e545">
+      <source file="..\..\..\utilities\BufferFunctions.c" lastModified="144dee28057">
          <include file="..\..\..\utilities\BufferFunctions.h"/>
       </source>
-      <source file="..\..\..\cmsis\core_cmInstr.h" lastModified="1476975e7f0">
+      <source file="..\..\..\cmsis\core_cmInstr.h" lastModified="13f80b304e8">
       </source>
-      <source file="..\..\..\cmsis_boot\system_stm32f4xx.c" lastModified="14773baf4ba">
+      <source file="..\..\..\cmsis_boot\system_stm32f4xx.c" lastModified="147772267a8">
          <include file="..\..\..\cmsis_boot\stm32f4xx.h"/>
       </source>
-      <source file="..\..\..\usb_cdc\CDC\usbd_cdc_vcp.h" lastModified="1476975e4bc">
+      <source file="..\..\..\usb_cdc\CDC\usbd_cdc_vcp.h" lastModified="144deee63c6">
          <include file="..\..\..\cmsis_boot\stm32f4xx.h"/>
          <include file="..\..\..\usb_cdc\STM32_USB_Device_Library\Class\cdc\inc\usbd_cdc_core.h"/>
          <include file="..\..\..\usb_cdc\CDC\usbd_conf.h"/>
@@ -132,41 +174,63 @@
          <include file="..\..\..\usb_cdc\CDC\usbd_desc.h"/>
          <include file="..\..\..\utilities\BufferFunctions.h"/>
       </source>
-      <source file="..\..\..\utilities\wiring_private.h" lastModified="1476975ed65">
+      <source file="..\..\..\utilities\wiring_private.h" lastModified="14522bb01cd">
          <include file="..\..\..\ArduinoStyle.h"/>
       </source>
-      <source file="..\..\..\usb_cdc\CDC\usbd_cdc_vcp.c" lastModified="1476975e4b9">
+      <source file="..\..\..\usb_cdc\CDC\usbd_cdc_vcp.c" lastModified="144deee63a2">
          <include file="..\..\..\usb_cdc\CDC\usbd_cdc_vcp.h"/>
          <include file="..\..\..\usb_cdc\CDC\usb_conf.h"/>
       </source>
-      <source file="..\..\..\utilities\Print.h" lastModified="1476975ed3c">
+      <source file="..\..\..\utilities\Print.h" lastModified="14522ab4af9">
          <include file="..\..\..\utilities\WString.h"/>
          <include file="..\..\..\utilities\Printable.h"/>
       </source>
-      <source file="..\..\..\cmsis_lib\include\stm32f4xx_exti.h" lastModified="1476975e43c">
+      <source file="..\..\..\cmsis_lib\include\stm32f4xx_exti.h" lastModified="1451a476281">
          <include file="..\..\..\cmsis_boot\stm32f4xx.h"/>
       </source>
-      <source file="..\..\..\ArduinoLibraries\SPIAPI.h" lastModified="1476975e21e">
+      <source file="..\..\..\ArduinoLibraries\SPIAPI.h" lastModified="14526cd24f8">
          <include file="..\..\..\cmsis_boot\stm32f4xx.h"/>
          <include file="..\..\..\cmsis_boot\stm32f4xx_conf.h"/>
       </source>
-      <source file="..\..\..\syscalls\syscalls.c" lastModified="1476975f447">
+      <source file="..\..\..\syscalls\syscalls.c" lastModified="13f80b31998">
       </source>
-      <source file="..\..\..\usb_cdc\STM32_USB_Device_Library\Core\src\usbd_ioreq.c" lastModified="1476975e516">
+      <source file="..\..\..\usb_cdc\STM32_USB_Device_Library\Core\src\usbd_ioreq.c" lastModified="1334a1574c0">
          <include file="..\..\..\usb_cdc\STM32_USB_Device_Library\Core\inc\usbd_ioreq.h"/>
       </source>
-      <source file="..\..\..\utilities\Stream.h" lastModified="1476975e962">
+      <source file="..\..\..\ArduinoLibraries\Ethernet\EthernetClient.h" lastModified="14526ea4795">
+         <include file="..\..\..\ArduinoStyle.h"/>
+         <include file="..\..\..\utilities\Print.h"/>
+         <include file="..\..\..\utilities\Client.h"/>
+         <include file="..\..\..\utilities\IPAddress.h"/>
+      </source>
+      <source file="..\..\..\utilities\Stream.h" lastModified="13eb42bbb48">
          <include file="..\..\..\utilities\Print.h"/>
       </source>
-      <source file="..\..\..\utilities\IPAddress.h" lastModified="1476975e564">
+      <source file="..\..\..\utilities\IPAddress.h" lastModified="13eb42bb760">
          <include file="..\..\..\utilities\Printable.h"/>
       </source>
-      <source file="..\..\..\usb_cdc\CDC\usbd_conf.h" lastModified="1476975e4c0">
+      <source file="..\..\..\usb_cdc\CDC\usbd_conf.h" lastModified="1404da8eea0">
          <include file="..\..\..\usb_cdc\CDC\usb_conf.h"/>
       </source>
-      <source file="..\..\..\cmsis\core_cmFunc.h" lastModified="1476975e7ec">
+      <source file="..\..\..\cmsis\core_cmFunc.h" lastModified="13f80b3046c">
       </source>
-      <source file="..\..\..\cmsis_boot\stm32f4xx_conf.h" lastModified="1476975e41a">
+      <source file="..\..\..\ArduinoLibraries\Ethernet\EthernetClient.cpp" lastModified="14526ea4be6">
+         <include file="..\..\..\ArduinoLibraries\Ethernet\utility\w5100.h"/>
+         <include file="..\..\..\ArduinoLibraries\Ethernet\utility\socket.h"/>
+         <include file="..\..\..\ArduinoStyle.h"/>
+         <include file="..\..\..\ArduinoLibraries\Ethernet\Ethernet.h"/>
+         <include file="..\..\..\ArduinoLibraries\Ethernet\EthernetClient.h"/>
+         <include file="..\..\..\ArduinoLibraries\Ethernet\EthernetServer.h"/>
+         <include file="..\..\..\ArduinoLibraries\Ethernet\Dns.h"/>
+      </source>
+      <source file="..\..\..\ArduinoLibraries\Ethernet\utility\w5100.cpp" lastModified="1452b726346">
+         <include file="..\..\..\ArduinoStyle.h"/>
+         <include file="..\..\..\ArduinoLibraries\Ethernet\utility\w5100.h"/>
+      </source>
+      <source file="..\..\..\ArduinoLibraries\Ethernet\Dhcp.h" lastModified="13eb42b9820">
+         <include file="..\..\..\ArduinoLibraries\Ethernet\EthernetUdp.h"/>
+      </source>
+      <source file="..\..\..\cmsis_boot\stm32f4xx_conf.h" lastModified="1406ee5dc83">
          <include file="..\..\..\cmsis_lib\include\stm32f4xx_adc.h"/>
          <include file="..\..\..\cmsis_lib\include\stm32f4xx_dma.h"/>
          <include file="..\..\..\cmsis_lib\include\stm32f4xx_exti.h"/>
@@ -177,57 +241,77 @@
          <include file="..\..\..\cmsis_lib\include\stm32f4xx_tim.h"/>
          <include file="..\..\..\cmsis_lib\include\misc.h"/>
       </source>
-      <source file="..\..\..\cmsis_lib\include\stm32f4xx_adc.h" lastModified="1476975e42f">
+      <source file="..\..\..\cmsis_lib\include\stm32f4xx_adc.h" lastModified="1401aea32ac">
          <include file="..\..\..\cmsis_boot\stm32f4xx.h"/>
       </source>
-      <source file="..\..\..\cmsis_lib\source\stm32f4xx_spi.c" lastModified="1476975e494">
+      <source file="..\..\..\ArduinoLibraries\Ethernet\Dns.h" lastModified="13eb42b9820">
+         <include file="..\..\..\ArduinoLibraries\Ethernet\EthernetUdp.h"/>
+      </source>
+      <source file="..\..\..\cmsis_lib\source\stm32f4xx_spi.c" lastModified="1406ee57d21">
          <include file="..\..\..\cmsis_lib\include\stm32f4xx_spi.h"/>
          <include file="..\..\..\cmsis_lib\include\stm32f4xx_rcc.h"/>
       </source>
-      <source file="..\..\..\cmsis_lib\source\stm32f4xx_dma.c" lastModified="1476975e46a">
+      <source file="..\..\..\cmsis_lib\source\stm32f4xx_dma.c" lastModified="1401ae9fae8">
          <include file="..\..\..\cmsis_lib\include\stm32f4xx_dma.h"/>
          <include file="..\..\..\cmsis_lib\include\stm32f4xx_rcc.h"/>
       </source>
-      <source file="..\..\..\ArduinoLibraries\SPIAPI.cpp" lastModified="1476975e21a">
+      <source file="..\..\..\ArduinoLibraries\SPIAPI.cpp" lastModified="1452b6357a1">
          <include file="..\..\..\ArduinoLibraries\SPIAPI.h"/>
       </source>
-      <source file="..\..\..\cmsis_lib\source\stm32f4xx_rcc.c" lastModified="1476975e48d">
+      <source file="..\..\..\ArduinoLibraries\Ethernet\EthernetUdp.cpp" lastModified="13eb42b9820">
+         <include file="..\..\..\ArduinoLibraries\Ethernet\utility\w5100.h"/>
+         <include file="..\..\..\ArduinoLibraries\Ethernet\utility\socket.h"/>
+         <include file="..\..\..\ArduinoLibraries\Ethernet\Ethernet.h"/>
+         <include file="..\..\..\utilities\Udp.h"/>
+         <include file="..\..\..\ArduinoLibraries\Ethernet\Dns.h"/>
+      </source>
+      <source file="..\..\..\utilities\Udp.h" lastModified="13eb42bb760">
+         <include file="..\..\..\utilities\Stream.h"/>
+         <include file="..\..\..\utilities\IPAddress.h"/>
+      </source>
+      <source file="..\..\..\cmsis_lib\source\stm32f4xx_rcc.c" lastModified="13f80b301a3">
          <include file="..\..\..\cmsis_lib\include\stm32f4xx_rcc.h"/>
       </source>
-      <source file="..\..\..\usb_cdc\STM32_USB_Device_Library\Core\inc\usbd_usr.h" lastModified="1476975e50e">
+      <source file="..\..\..\ArduinoLibraries\Ethernet\Dhcp.cpp" lastModified="14526ea4fb1">
+         <include file="..\..\..\ArduinoLibraries\Ethernet\utility\w5100.h"/>
+         <include file="..\..\..\ArduinoLibraries\Ethernet\Dhcp.h"/>
+         <include file="..\..\..\ArduinoStyle.h"/>
+         <include file="..\..\..\ArduinoLibraries\Ethernet\util.h"/>
+      </source>
+      <source file="..\..\..\usb_cdc\STM32_USB_Device_Library\Core\inc\usbd_usr.h" lastModified="1334a1574c0">
          <include file="..\..\..\usb_cdc\STM32_USB_Device_Library\Core\inc\usbd_core.h"/>
       </source>
-      <source file="..\..\..\ArduinoLibraries\USBSerial.cpp" lastModified="1476975f1c1">
+      <source file="..\..\..\ArduinoLibraries\USBSerial.cpp" lastModified="1477717a151">
          <include file="..\..\..\ArduinoStyle.h"/>
          <include file="..\..\..\utilities\wiring_private.h"/>
          <include file="..\..\..\ArduinoLibraries\USBSerial.h"/>
       </source>
-      <source file="..\..\..\TibuBoard.cpp" lastModified="14776b5f7ed">
+      <source file="..\..\..\TibuBoard.cpp" lastModified="1477728d72f">
          <include file="..\..\..\TibuBoard.h"/>
          <include file="..\..\..\InterruptManager\InterruptManager.h"/>
       </source>
-      <source file="..\..\..\usb_cdc\STM32_USB_OTG_Driver\inc\usb_regs.h" lastModified="1476975e533">
+      <source file="..\..\..\usb_cdc\STM32_USB_OTG_Driver\inc\usb_regs.h" lastModified="1334a157c90">
          <include file="..\..\..\usb_cdc\CDC\usb_conf.h"/>
       </source>
-      <source file="..\..\..\cmsis_lib\source\stm32f4xx_gpio.c" lastModified="1476975e488">
+      <source file="..\..\..\cmsis_lib\source\stm32f4xx_gpio.c" lastModified="13f80b2fd57">
          <include file="..\..\..\cmsis_lib\include\stm32f4xx_gpio.h"/>
          <include file="..\..\..\cmsis_lib\include\stm32f4xx_rcc.h"/>
       </source>
-      <source file="..\..\..\cmsis\core_cm4_simd.h" lastModified="1476975e7e7">
+      <source file="..\..\..\cmsis\core_cm4_simd.h" lastModified="13f80b30449">
       </source>
-      <source file="..\..\..\cmsis_lib\source\stm32f4xx_syscfg.c" lastModified="1476975e49a">
+      <source file="..\..\..\cmsis_lib\source\stm32f4xx_syscfg.c" lastModified="13f85c056a0">
          <include file="..\..\..\cmsis_lib\include\stm32f4xx_syscfg.h"/>
          <include file="..\..\..\cmsis_lib\include\stm32f4xx_rcc.h"/>
       </source>
-      <source file="..\..\..\cmsis_boot\startup\startup_stm32f4xx.c" lastModified="1476975e40d">
+      <source file="..\..\..\cmsis_boot\startup\startup_stm32f4xx.c" lastModified="14518689a4d">
       </source>
-      <source file="..\..\..\cmsis_lib\include\stm32f4xx_gpio.h" lastModified="1476975e440">
+      <source file="..\..\..\cmsis_lib\include\stm32f4xx_gpio.h" lastModified="13f80b2fd52">
          <include file="..\..\..\cmsis_boot\stm32f4xx.h"/>
       </source>
-      <source file="..\..\..\usb_cdc\CDC\usbd_desc.h" lastModified="1476975e4c9">
+      <source file="..\..\..\usb_cdc\CDC\usbd_desc.h" lastModified="13160e343a0">
          <include file="..\..\..\usb_cdc\STM32_USB_Device_Library\Core\inc\usbd_def.h"/>
       </source>
-      <source file="..\..\..\InterruptManager\stm32f4xx_it.h" lastModified="1476975e265">
+      <source file="..\..\..\InterruptManager\stm32f4xx_it.h" lastModified="14776ce53a8">
          <include file="..\..\..\TibuBoard.h"/>
          <include file="..\..\..\cmsis_boot\stm32f4xx.h"/>
          <include file="..\..\..\cmsis_boot\stm32f4xx_conf.h"/>
@@ -237,78 +321,854 @@
          <include file="..\..\..\usb_cdc\STM32_USB_OTG_Driver\inc\usb_dcd_int.h"/>
          <include file="..\..\..\ArduinoLibraries\SPIAPI.h"/>
       </source>
-      <source file="..\..\..\InterruptManager\InterruptManager.h" lastModified="1477393e005">
+      <source file="..\..\..\InterruptManager\InterruptManager.h" lastModified="1477727bc56">
          <include file="..\..\..\cmsis_boot\stm32f4xx.h"/>
       </source>
-      <source file="..\..\..\utilities\Stream.cpp" lastModified="1476975e577">
+      <source file="..\..\..\utilities\Stream.cpp" lastModified="14522b2d814">
          <include file="..\..\..\ArduinoStyle.h"/>
          <include file="..\..\..\utilities\Stream.h"/>
       </source>
-      <source file="..\..\..\ArduinoLibraries\BasicFunctions.h" lastModified="1476975e1c0">
+      <source file="..\..\..\ArduinoLibraries\BasicFunctions.h" lastModified="1477717919f">
          <include file="..\..\..\cmsis_boot\stm32f4xx.h"/>
          <include file="..\..\..\cmsis_boot\stm32f4xx_conf.h"/>
       </source>
-      <source file="..\..\..\cmsis_lib\include\stm32f4xx_tim.h" lastModified="1476975e458">
+      <source file="..\..\..\cmsis_lib\include\stm32f4xx_tim.h" lastModified="13f80b32314">
          <include file="..\..\..\cmsis_boot\stm32f4xx.h"/>
       </source>
-      <source file="..\..\..\ArduinoLibraries\USBSerial.h" lastModified="1476975eddd">
+      <source file="..\..\..\ArduinoLibraries\USBSerial.h" lastModified="1467ca1840a">
          <include file="..\..\..\utilities\Stream.h"/>
          <include file="..\..\..\cmsis_boot\stm32f4xx.h"/>
          <include file="..\..\..\cmsis_boot\stm32f4xx_conf.h"/>
          <include file="..\..\..\usb_cdc\CDC\usbd_cdc_vcp.h"/>
       </source>
-      <source file="..\..\..\InterruptManager\InterruptManager.c" lastModified="14773938cc2">
+      <source file="..\..\..\InterruptManager\InterruptManager.c" lastModified="147772e7710">
          <include file="..\..\..\InterruptManager\InterruptManager.h"/>
       </source>
-      <source file="..\..\..\usb_cdc\CDC\usbd_desc.c" lastModified="1476975e4c4">
+      <source file="..\..\..\usb_cdc\CDC\usbd_desc.c" lastModified="13a797d78a6">
          <include file="..\..\..\usb_cdc\STM32_USB_Device_Library\Core\inc\usbd_core.h"/>
          <include file="..\..\..\usb_cdc\CDC\usbd_desc.h"/>
          <include file="..\..\..\usb_cdc\STM32_USB_Device_Library\Core\inc\usbd_req.h"/>
          <include file="..\..\..\usb_cdc\CDC\usbd_conf.h"/>
          <include file="..\..\..\usb_cdc\STM32_USB_OTG_Driver\inc\usb_regs.h"/>
       </source>
-      <source file="..\..\..\usb_cdc\STM32_USB_Device_Library\Core\src\usbd_req.c" lastModified="1476975e51a">
+      <source file="..\..\..\usb_cdc\STM32_USB_Device_Library\Core\src\usbd_req.c" lastModified="1334a1574c0">
          <include file="..\..\..\usb_cdc\STM32_USB_Device_Library\Core\inc\usbd_req.h"/>
          <include file="..\..\..\usb_cdc\STM32_USB_Device_Library\Core\inc\usbd_ioreq.h"/>
          <include file="..\..\..\usb_cdc\CDC\usbd_desc.h"/>
       </source>
-      <source file="..\..\..\ArduinoLibraries\BasicFunctions.c" lastModified="1476975e1ab">
+      <source file="..\..\..\ArduinoLibraries\Ethernet\EthernetServer.cpp" lastModified="13eb42b9c08">
+         <include file="..\..\..\ArduinoLibraries\Ethernet\utility\w5100.h"/>
+         <include file="..\..\..\ArduinoLibraries\Ethernet\utility\socket.h"/>
+         <include file="..\..\..\ArduinoLibraries\Ethernet\Ethernet.h"/>
+         <include file="..\..\..\ArduinoLibraries\Ethernet\EthernetClient.h"/>
+         <include file="..\..\..\ArduinoLibraries\Ethernet\EthernetServer.h"/>
+      </source>
+      <source file="..\..\..\ArduinoLibraries\BasicFunctions.c" lastModified="1477717919e">
          <include file="..\..\..\ArduinoLibraries\BasicFunctions.h"/>
       </source>
-      <source file="..\..\..\usb_cdc\STM32_USB_Device_Library\Core\inc\usbd_core.h" lastModified="1476975e4fb">
+      <source file="..\..\..\usb_cdc\STM32_USB_Device_Library\Core\inc\usbd_core.h" lastModified="1334a1574c0">
          <include file="..\..\..\usb_cdc\STM32_USB_OTG_Driver\inc\usb_dcd.h"/>
          <include file="..\..\..\usb_cdc\STM32_USB_Device_Library\Core\inc\usbd_def.h"/>
          <include file="..\..\..\usb_cdc\CDC\usbd_conf.h"/>
       </source>
-      <source file="..\..\..\usb_cdc\CDC\usb_conf.h" lastModified="1476975e4b4">
+      <source file="..\..\..\usb_cdc\CDC\usb_conf.h" lastModified="13ef4cf5177">
          <include file="..\..\..\cmsis_boot\stm32f4xx.h"/>
       </source>
-      <source file="..\..\..\usb_cdc\STM32_USB_OTG_Driver\src\usb_dcd_int.c" lastModified="1476975e541">
-         <include file="..\..\..\usb_cdc\STM32_USB_OTG_Driver\inc\usb_dcd_int.h"/>
-         <include file="..\..\..\usb_cdc\CDC\usbd_cdc_vcp.h"/>
-      </source>
-      <source file="..\..\..\ArduinoStyle.cpp" lastModified="147739e9775">
-         <include file="..\..\..\ArduinoStyle.h"/>
-         <include file="..\..\..\ArduinoLibraries\SPIAPI.h"/>
-      </source>
-      <source file="..\..\..\cmsis_lib\source\stm32f4xx_adc.c" lastModified="1476975e464">
+      <source file="..\..\..\cmsis_lib\source\stm32f4xx_adc.c" lastModified="1401aea32b0">
          <include file="..\..\..\cmsis_lib\include\stm32f4xx_adc.h"/>
          <include file="..\..\..\cmsis_lib\include\stm32f4xx_rcc.h"/>
       </source>
-      <source file="..\..\..\usb_cdc\STM32_USB_Device_Library\Core\inc\usbd_def.h" lastModified="1476975e4ff">
+      <source file="..\..\..\usb_cdc\STM32_USB_OTG_Driver\src\usb_dcd_int.c" lastModified="13bf7198b3c">
+         <include file="..\..\..\usb_cdc\STM32_USB_OTG_Driver\inc\usb_dcd_int.h"/>
+         <include file="..\..\..\usb_cdc\CDC\usbd_cdc_vcp.h"/>
+      </source>
+      <source file="..\..\..\usb_cdc\STM32_USB_Device_Library\Core\inc\usbd_def.h" lastModified="1334a1574c0">
          <include file="..\..\..\usb_cdc\CDC\usbd_conf.h"/>
       </source>
-      <source file="..\..\..\utilities\IPAddress.cpp" lastModified="1476975e55f">
+      <source file="..\..\..\utilities\IPAddress.cpp" lastModified="14526ea4779">
          <include file="..\..\..\ArduinoStyle.h"/>
          <include file="..\..\..\utilities\IPAddress.h"/>
       </source>
-      <source file="..\..\..\usb_cdc\STM32_USB_Device_Library\Core\inc\usbd_req.h" lastModified="1476975e506">
+      <source file="..\..\..\usb_cdc\STM32_USB_Device_Library\Core\inc\usbd_req.h" lastModified="1334a1574c0">
          <include file="..\..\..\usb_cdc\STM32_USB_Device_Library\Core\inc\usbd_def.h"/>
          <include file="..\..\..\usb_cdc\STM32_USB_Device_Library\Core\inc\usbd_core.h"/>
          <include file="..\..\..\usb_cdc\CDC\usbd_conf.h"/>
       </source>
-      <source file="..\..\..\usb_cdc\STM32_USB_OTG_Driver\inc\usb_dcd.h" lastModified="1476975e527">
+      <source file="..\..\..\utilities\Server.h" lastModified="13eb42bb760">
+      </source>
+      <source file="..\..\..\ArduinoLibraries\Ethernet\utility\w5100.h" lastModified="1452b6f7d0b">
+         <include file="..\..\..\ArduinoLibraries\SPIAPI.h"/>
+         <include file="..\..\..\TibuBoard.h"/>
+      </source>
+      <source file="..\..\..\usb_cdc\STM32_USB_OTG_Driver\inc\usb_dcd.h" lastModified="1334a157c90">
          <include file="..\..\..\usb_cdc\STM32_USB_OTG_Driver\inc\usb_core.h"/>
+      </source>
+   </includePath>
+   <includePath signature="/I..\..\..\..\..\Users\JAVIS\Documents\GitHub\TibuBoard\TibuBoard_Demo\usb_cdc\CDC /I..\..\..\..\..\Users\JAVIS\Documents\GitHub\TibuBoard /I..\..\..\..\..\Users\JAVIS\Documents\GitHub\TibuBoard\TibuBoard_Demo\usb_cdc\STM32_USB_Device_Library\Core\inc /I..\..\..\..\..\Users\JAVIS\Documents\GitHub /I..\..\..\..\..\Users\JAVIS\Documents\GitHub\TibuBoard\TibuBoard_Demo\Interrupts /I..\..\..\..\..\Users\JAVIS\Documents\GitHub\TibuBoard\TibuBoard_Demo\usb_cdc\STM32_USB_Device_Library /I..\..\..\..\..\Users\JAVIS\Documents\GitHub\TibuBoard\TibuBoard_Demo\cmsis /I..\..\..\..\..\Users\JAVIS\Documents\GitHub\TibuBoard\TibuBoard_Demo\usb_cdc\STM32_USB_OTG_Driver /I..\..\..\..\..\Users\JAVIS\Documents\GitHub\TibuBoard\TibuBoard_Demo\usb_cdc\STM32_USB_Device_Library\Class\cdc\inc /I..\..\..\..\..\Users\JAVIS\Documents\GitHub\TibuBoard\TibuBoard_Demo\usb_cdc\STM32_USB_OTG_Driver\inc /I..\..\..\..\..\Users\JAVIS\Documents\GitHub\TibuBoard\TibuBoard_Demo\usb_cdc\STM32_USB_Device_Library\Class\cdc /I..\..\..\..\..\Users\JAVIS\Documents\GitHub\TibuBoard\TibuBoard_Demo\cmsis_lib /I..\..\..\..\..\Users\JAVIS\Documents\GitHub\TibuBoard\TibuBoard_Demo\cmsis_boot /I..\..\..\..\..\Users\JAVIS\Documents\GitHub\TibuBoard\TibuBoard_Demo\usb_cdc /I..\..\..\..\..\Users\JAVIS\Documents\GitHub\TibuBoard\TibuBoard_Demo\ArduinoLibraries /I..\..\..\..\..\Users\JAVIS\Documents\GitHub\TibuBoard\TibuBoard_Demo\ArduinoLibraries\Ethernet /I..\..\..\..\..\Users\JAVIS\Documents\GitHub\TibuBoard\TibuBoard_Demo\cmsis_lib\include /I..\..\..\..\..\Users\JAVIS\Documents\GitHub\TibuBoard\TibuBoard_Demo\usb_cdc\STM32_USB_Device_Library\Core /I..\..\..\..\..\Users\JAVIS\Documents\GitHub\TibuBoard\TibuBoard_Demo\utilities /I..\..\..\..\..\Users\JAVIS\Documents\GitHub\TibuBoard\TibuBoard_Demo\usb_cdc\STM32_USB_Device_Library\Class /I..\..\..\..\..\Users\JAVIS\Documents\GitHub\TibuBoard\TibuBoard_Demo /I..\..\..\..\..\Users\JAVIS\Documents\GitHub\TibuBoard\TibuBoard_Demo\ArduinoLibraries\Ethernet\utility">
+      <source file="..\..\..\usb_cdc\CDC\usbd_usr.c" lastModified="1404da8ee94">
+         <include file="..\..\..\usb_cdc\STM32_USB_Device_Library\Core\inc\usbd_usr.h"/>
+         <include file="..\..\..\usb_cdc\STM32_USB_Device_Library\Core\inc\usbd_ioreq.h"/>
+      </source>
+      <source file="..\..\..\usb_cdc\STM32_USB_OTG_Driver\inc\usb_dcd_int.h" lastModified="1451c4ed327">
+         <include file="..\..\..\usb_cdc\STM32_USB_OTG_Driver\inc\usb_dcd.h"/>
+      </source>
+      <source file="..\..\..\usb_cdc\STM32_USB_OTG_Driver\src\usb_dcd.c" lastModified="1334a157c90">
+         <include file="..\..\..\usb_cdc\STM32_USB_OTG_Driver\inc\usb_dcd.h"/>
+         <include file="..\..\..\usb_cdc\STM32_USB_OTG_Driver\inc\usb_bsp.h"/>
+      </source>
+      <source file="..\..\..\utilities\WString.cpp" lastModified="1451cf7598c">
+         <include file="..\..\..\utilities\WString.h"/>
+      </source>
+      <source file="..\..\..\usb_cdc\STM32_USB_OTG_Driver\inc\usb_defines.h" lastModified="1334a157c90">
+         <include file="..\..\..\usb_cdc\CDC\usb_conf.h"/>
+      </source>
+      <source file="..\..\..\cmsis_lib\include\misc.h" lastModified="13f85bdb5df">
+         <include file="..\..\..\cmsis_boot\stm32f4xx.h"/>
+      </source>
+      <source file="..\..\..\cmsis_lib\source\stm32f4xx_tim.c" lastModified="13f80b32324">
+         <include file="..\..\..\cmsis_lib\include\stm32f4xx_tim.h"/>
+         <include file="..\..\..\cmsis_lib\include\stm32f4xx_rcc.h"/>
+      </source>
+      <source file="..\..\..\usb_cdc\STM32_USB_OTG_Driver\src\usb_core.c" lastModified="1334a157c90">
+         <include file="..\..\..\usb_cdc\STM32_USB_OTG_Driver\inc\usb_core.h"/>
+         <include file="..\..\..\usb_cdc\STM32_USB_OTG_Driver\inc\usb_bsp.h"/>
+      </source>
+      <source file="..\..\..\ArduinoLibraries\Ethernet\utility\socket.cpp" lastModified="1452b6f2dd1">
+         <include file="..\..\..\ArduinoLibraries\Ethernet\utility\w5100.h"/>
+         <include file="..\..\..\ArduinoLibraries\Ethernet\utility\socket.h"/>
+      </source>
+      <source file="..\..\..\utilities\Client.h" lastModified="13eb42bb760">
+         <include file="..\..\..\utilities\Print.h"/>
+         <include file="..\..\..\utilities\Stream.h"/>
+         <include file="..\..\..\utilities\IPAddress.h"/>
+      </source>
+      <source file="..\..\..\usb_cdc\STM32_USB_Device_Library\Core\inc\usbd_ioreq.h" lastModified="1334a1574c0">
+         <include file="..\..\..\usb_cdc\STM32_USB_Device_Library\Core\inc\usbd_def.h"/>
+         <include file="..\..\..\usb_cdc\STM32_USB_Device_Library\Core\inc\usbd_core.h"/>
+      </source>
+      <source file="..\..\..\ArduinoLibraries\Ethernet\util.h" lastModified="13eb42b9820">
+      </source>
+      <source file="..\..\..\usb_cdc\STM32_USB_OTG_Driver\inc\usb_core.h" lastModified="1334a157c90">
+         <include file="..\..\..\usb_cdc\CDC\usb_conf.h"/>
+         <include file="..\..\..\usb_cdc\STM32_USB_OTG_Driver\inc\usb_regs.h"/>
+         <include file="..\..\..\usb_cdc\STM32_USB_OTG_Driver\inc\usb_defines.h"/>
+      </source>
+      <source file="..\..\..\cmsis_lib\source\misc.c" lastModified="13f85bdb5e4">
+         <include file="..\..\..\cmsis_lib\include\misc.h"/>
+      </source>
+      <source file="..\..\..\ArduinoLibraries\Ethernet\EthernetUdp.h" lastModified="13eb42b9820">
+         <include file="..\..\..\utilities\Udp.h"/>
+      </source>
+      <source file="..\..\..\ArduinoLibraries\Ethernet\Ethernet.cpp" lastModified="13eb42b9820">
+         <include file="..\..\..\ArduinoLibraries\Ethernet\utility\w5100.h"/>
+         <include file="..\..\..\ArduinoLibraries\Ethernet\Ethernet.h"/>
+         <include file="..\..\..\ArduinoLibraries\Ethernet\Dhcp.h"/>
+      </source>
+      <source file="..\..\..\cmsis_lib\include\stm32f4xx_syscfg.h" lastModified="13f85c0569c">
+         <include file="..\..\..\cmsis_boot\stm32f4xx.h"/>
+      </source>
+      <source file="..\..\..\usb_cdc\STM32_USB_Device_Library\Class\cdc\inc\usbd_cdc_core.h" lastModified="144dee4d4c6">
+         <include file="..\..\..\usb_cdc\STM32_USB_Device_Library\Core\inc\usbd_ioreq.h"/>
+      </source>
+      <source file="..\..\..\ArduinoLibraries\Ethernet\EthernetServer.h" lastModified="13eb42b9820">
+         <include file="..\..\..\utilities\Server.h"/>
+      </source>
+      <source file="..\..\..\ArduinoLibraries\Ethernet\utility\socket.h" lastModified="13eb42b9820">
+         <include file="..\..\..\ArduinoLibraries\Ethernet\utility\w5100.h"/>
+      </source>
+      <source file="..\..\..\usb_cdc\STM32_USB_Device_Library\Core\src\usbd_core.c" lastModified="1334a1574c0">
+         <include file="..\..\..\usb_cdc\STM32_USB_Device_Library\Core\inc\usbd_core.h"/>
+         <include file="..\..\..\usb_cdc\STM32_USB_Device_Library\Core\inc\usbd_req.h"/>
+         <include file="..\..\..\usb_cdc\STM32_USB_Device_Library\Core\inc\usbd_ioreq.h"/>
+         <include file="..\..\..\usb_cdc\STM32_USB_OTG_Driver\inc\usb_dcd_int.h"/>
+         <include file="..\..\..\usb_cdc\STM32_USB_OTG_Driver\inc\usb_bsp.h"/>
+      </source>
+      <source file="..\..\..\cmsis_lib\include\stm32f4xx_spi.h" lastModified="1406ee57d13">
+         <include file="..\..\..\cmsis_boot\stm32f4xx.h"/>
+      </source>
+      <source file="..\..\..\cmsis_lib\include\stm32f4xx_dma.h" lastModified="1401ae9fae2">
+         <include file="..\..\..\cmsis_boot\stm32f4xx.h"/>
+      </source>
+      <source file="..\..\..\usb_cdc\STM32_USB_Device_Library\Class\cdc\src\usbd_cdc_core.c" lastModified="13ef4967b4f">
+         <include file="..\..\..\usb_cdc\STM32_USB_Device_Library\Class\cdc\inc\usbd_cdc_core.h"/>
+         <include file="..\..\..\usb_cdc\CDC\usbd_desc.h"/>
+         <include file="..\..\..\usb_cdc\STM32_USB_Device_Library\Core\inc\usbd_req.h"/>
+      </source>
+      <source file="..\..\..\cmsis_lib\include\stm32f4xx_rcc.h" lastModified="13f80b30122">
+         <include file="..\..\..\cmsis_boot\stm32f4xx.h"/>
+      </source>
+      <source file="..\..\..\cmsis_lib\source\stm32f4xx_exti.c" lastModified="13f80b3147b">
+         <include file="..\..\..\cmsis_lib\include\stm32f4xx_exti.h"/>
+      </source>
+      <source file="..\..\..\cmsis_boot\system_stm32f4xx.h" lastModified="13f80b2ff25">
+      </source>
+      <source file="..\..\..\usb_cdc\CDC\usb_bsp.c" lastModified="1451c482db3">
+         <include file="..\..\..\usb_cdc\STM32_USB_OTG_Driver\inc\usb_bsp.h"/>
+         <include file="..\..\..\usb_cdc\CDC\usbd_conf.h"/>
+      </source>
+      <source file="..\..\..\usb_cdc\STM32_USB_OTG_Driver\inc\usb_bsp.h" lastModified="1404da8ee58">
+         <include file="..\..\..\usb_cdc\STM32_USB_OTG_Driver\inc\usb_core.h"/>
+      </source>
+      <source file="..\..\..\utilities\BufferFunctions.c" lastModified="144dee28057">
+         <include file="..\..\..\utilities\BufferFunctions.h"/>
+      </source>
+      <source file="..\..\..\usb_cdc\CDC\usbd_cdc_vcp.h" lastModified="144deee63c6">
+         <include file="..\..\..\cmsis_boot\stm32f4xx.h"/>
+         <include file="..\..\..\usb_cdc\STM32_USB_Device_Library\Class\cdc\inc\usbd_cdc_core.h"/>
+         <include file="..\..\..\usb_cdc\CDC\usbd_conf.h"/>
+         <include file="..\..\..\usb_cdc\STM32_USB_Device_Library\Core\inc\usbd_usr.h"/>
+         <include file="..\..\..\usb_cdc\CDC\usbd_desc.h"/>
+         <include file="..\..\..\utilities\BufferFunctions.h"/>
+      </source>
+      <source file="..\..\..\usb_cdc\CDC\usbd_cdc_vcp.c" lastModified="144deee63a2">
+         <include file="..\..\..\usb_cdc\CDC\usbd_cdc_vcp.h"/>
+         <include file="..\..\..\usb_cdc\CDC\usb_conf.h"/>
+      </source>
+      <source file="..\..\..\cmsis_lib\include\stm32f4xx_exti.h" lastModified="1451a476281">
+         <include file="..\..\..\cmsis_boot\stm32f4xx.h"/>
+      </source>
+      <source file="..\..\..\ArduinoLibraries\SPIAPI.h" lastModified="14526cd24f8">
+         <include file="..\..\..\cmsis_boot\stm32f4xx.h"/>
+         <include file="..\..\..\cmsis_boot\stm32f4xx_conf.h"/>
+      </source>
+      <source file="..\..\..\usb_cdc\STM32_USB_Device_Library\Core\src\usbd_ioreq.c" lastModified="1334a1574c0">
+         <include file="..\..\..\usb_cdc\STM32_USB_Device_Library\Core\inc\usbd_ioreq.h"/>
+      </source>
+      <source file="..\..\..\ArduinoLibraries\Ethernet\EthernetClient.h" lastModified="14526ea4795">
+         <include file="..\..\..\ArduinoStyle.h"/>
+         <include file="..\..\..\utilities\Print.h"/>
+         <include file="..\..\..\utilities\Client.h"/>
+         <include file="..\..\..\utilities\IPAddress.h"/>
+      </source>
+      <source file="..\..\..\utilities\IPAddress.h" lastModified="13eb42bb760">
+         <include file="..\..\..\utilities\Printable.h"/>
+      </source>
+      <source file="..\..\..\usb_cdc\CDC\usbd_conf.h" lastModified="1404da8eea0">
+         <include file="..\..\..\usb_cdc\CDC\usb_conf.h"/>
+      </source>
+      <source file="..\..\..\ArduinoLibraries\Ethernet\Dhcp.h" lastModified="13eb42b9820">
+         <include file="..\..\..\ArduinoLibraries\Ethernet\EthernetUdp.h"/>
+      </source>
+      <source file="..\..\..\cmsis_boot\stm32f4xx_conf.h" lastModified="1406ee5dc83">
+         <include file="..\..\..\cmsis_lib\include\stm32f4xx_adc.h"/>
+         <include file="..\..\..\cmsis_lib\include\stm32f4xx_dma.h"/>
+         <include file="..\..\..\cmsis_lib\include\stm32f4xx_exti.h"/>
+         <include file="..\..\..\cmsis_lib\include\stm32f4xx_gpio.h"/>
+         <include file="..\..\..\cmsis_lib\include\stm32f4xx_rcc.h"/>
+         <include file="..\..\..\cmsis_lib\include\stm32f4xx_spi.h"/>
+         <include file="..\..\..\cmsis_lib\include\stm32f4xx_syscfg.h"/>
+         <include file="..\..\..\cmsis_lib\include\stm32f4xx_tim.h"/>
+         <include file="..\..\..\cmsis_lib\include\misc.h"/>
+      </source>
+      <source file="..\..\..\cmsis_lib\include\stm32f4xx_adc.h" lastModified="1401aea32ac">
+         <include file="..\..\..\cmsis_boot\stm32f4xx.h"/>
+      </source>
+      <source file="..\..\..\ArduinoLibraries\Ethernet\Dns.h" lastModified="13eb42b9820">
+         <include file="..\..\..\ArduinoLibraries\Ethernet\EthernetUdp.h"/>
+      </source>
+      <source file="..\..\..\cmsis_lib\source\stm32f4xx_spi.c" lastModified="1406ee57d21">
+         <include file="..\..\..\cmsis_lib\include\stm32f4xx_spi.h"/>
+         <include file="..\..\..\cmsis_lib\include\stm32f4xx_rcc.h"/>
+      </source>
+      <source file="..\..\..\cmsis_lib\source\stm32f4xx_dma.c" lastModified="1401ae9fae8">
+         <include file="..\..\..\cmsis_lib\include\stm32f4xx_dma.h"/>
+         <include file="..\..\..\cmsis_lib\include\stm32f4xx_rcc.h"/>
+      </source>
+      <source file="..\..\..\ArduinoLibraries\SPIAPI.cpp" lastModified="1452b6357a1">
+         <include file="..\..\..\ArduinoLibraries\SPIAPI.h"/>
+      </source>
+      <source file="..\..\..\ArduinoLibraries\Ethernet\EthernetUdp.cpp" lastModified="13eb42b9820">
+         <include file="..\..\..\ArduinoLibraries\Ethernet\utility\w5100.h"/>
+         <include file="..\..\..\ArduinoLibraries\Ethernet\utility\socket.h"/>
+         <include file="..\..\..\ArduinoLibraries\Ethernet\Ethernet.h"/>
+         <include file="..\..\..\utilities\Udp.h"/>
+         <include file="..\..\..\ArduinoLibraries\Ethernet\Dns.h"/>
+      </source>
+      <source file="..\..\..\utilities\Udp.h" lastModified="13eb42bb760">
+         <include file="..\..\..\utilities\Stream.h"/>
+         <include file="..\..\..\utilities\IPAddress.h"/>
+      </source>
+      <source file="..\..\..\cmsis_lib\source\stm32f4xx_rcc.c" lastModified="13f80b301a3">
+         <include file="..\..\..\cmsis_lib\include\stm32f4xx_rcc.h"/>
+      </source>
+      <source file="..\..\..\usb_cdc\STM32_USB_Device_Library\Core\inc\usbd_usr.h" lastModified="1334a1574c0">
+         <include file="..\..\..\usb_cdc\STM32_USB_Device_Library\Core\inc\usbd_core.h"/>
+      </source>
+      <source file="..\..\..\usb_cdc\STM32_USB_OTG_Driver\inc\usb_regs.h" lastModified="1334a157c90">
+         <include file="..\..\..\usb_cdc\CDC\usb_conf.h"/>
+      </source>
+      <source file="..\..\..\cmsis_lib\source\stm32f4xx_gpio.c" lastModified="13f80b2fd57">
+         <include file="..\..\..\cmsis_lib\include\stm32f4xx_gpio.h"/>
+         <include file="..\..\..\cmsis_lib\include\stm32f4xx_rcc.h"/>
+      </source>
+      <source file="..\..\..\cmsis_lib\source\stm32f4xx_syscfg.c" lastModified="13f85c056a0">
+         <include file="..\..\..\cmsis_lib\include\stm32f4xx_syscfg.h"/>
+         <include file="..\..\..\cmsis_lib\include\stm32f4xx_rcc.h"/>
+      </source>
+      <source file="..\..\..\cmsis_boot\startup\startup_stm32f4xx.c" lastModified="14518689a4d">
+      </source>
+      <source file="..\..\..\cmsis_lib\include\stm32f4xx_gpio.h" lastModified="13f80b2fd52">
+         <include file="..\..\..\cmsis_boot\stm32f4xx.h"/>
+      </source>
+      <source file="..\..\..\usb_cdc\CDC\usbd_desc.h" lastModified="13160e343a0">
+         <include file="..\..\..\usb_cdc\STM32_USB_Device_Library\Core\inc\usbd_def.h"/>
+      </source>
+      <source file="..\..\..\utilities\Stream.cpp" lastModified="14522b2d814">
+         <include file="..\..\..\ArduinoStyle.h"/>
+         <include file="..\..\..\utilities\Stream.h"/>
+      </source>
+      <source file="..\..\..\cmsis_lib\include\stm32f4xx_tim.h" lastModified="13f80b32314">
+         <include file="..\..\..\cmsis_boot\stm32f4xx.h"/>
+      </source>
+      <source file="..\..\..\usb_cdc\CDC\usbd_desc.c" lastModified="13a797d78a6">
+         <include file="..\..\..\usb_cdc\STM32_USB_Device_Library\Core\inc\usbd_core.h"/>
+         <include file="..\..\..\usb_cdc\CDC\usbd_desc.h"/>
+         <include file="..\..\..\usb_cdc\STM32_USB_Device_Library\Core\inc\usbd_req.h"/>
+         <include file="..\..\..\usb_cdc\CDC\usbd_conf.h"/>
+         <include file="..\..\..\usb_cdc\STM32_USB_OTG_Driver\inc\usb_regs.h"/>
+      </source>
+      <source file="..\..\..\usb_cdc\STM32_USB_Device_Library\Core\src\usbd_req.c" lastModified="1334a1574c0">
+         <include file="..\..\..\usb_cdc\STM32_USB_Device_Library\Core\inc\usbd_req.h"/>
+         <include file="..\..\..\usb_cdc\STM32_USB_Device_Library\Core\inc\usbd_ioreq.h"/>
+         <include file="..\..\..\usb_cdc\CDC\usbd_desc.h"/>
+      </source>
+      <source file="..\..\..\usb_cdc\STM32_USB_Device_Library\Core\inc\usbd_core.h" lastModified="1334a1574c0">
+         <include file="..\..\..\usb_cdc\STM32_USB_OTG_Driver\inc\usb_dcd.h"/>
+         <include file="..\..\..\usb_cdc\STM32_USB_Device_Library\Core\inc\usbd_def.h"/>
+         <include file="..\..\..\usb_cdc\CDC\usbd_conf.h"/>
+      </source>
+      <source file="..\..\..\usb_cdc\CDC\usb_conf.h" lastModified="13ef4cf5177">
+         <include file="..\..\..\cmsis_boot\stm32f4xx.h"/>
+      </source>
+      <source file="..\..\..\cmsis_lib\source\stm32f4xx_adc.c" lastModified="1401aea32b0">
+         <include file="..\..\..\cmsis_lib\include\stm32f4xx_adc.h"/>
+         <include file="..\..\..\cmsis_lib\include\stm32f4xx_rcc.h"/>
+      </source>
+      <source file="..\..\..\usb_cdc\STM32_USB_OTG_Driver\src\usb_dcd_int.c" lastModified="13bf7198b3c">
+         <include file="..\..\..\usb_cdc\STM32_USB_OTG_Driver\inc\usb_dcd_int.h"/>
+         <include file="..\..\..\usb_cdc\CDC\usbd_cdc_vcp.h"/>
+      </source>
+      <source file="..\..\..\usb_cdc\STM32_USB_Device_Library\Core\inc\usbd_def.h" lastModified="1334a1574c0">
+         <include file="..\..\..\usb_cdc\CDC\usbd_conf.h"/>
+      </source>
+      <source file="..\..\..\utilities\IPAddress.cpp" lastModified="14526ea4779">
+         <include file="..\..\..\ArduinoStyle.h"/>
+         <include file="..\..\..\utilities\IPAddress.h"/>
+      </source>
+      <source file="..\..\..\usb_cdc\STM32_USB_Device_Library\Core\inc\usbd_req.h" lastModified="1334a1574c0">
+         <include file="..\..\..\usb_cdc\STM32_USB_Device_Library\Core\inc\usbd_def.h"/>
+         <include file="..\..\..\usb_cdc\STM32_USB_Device_Library\Core\inc\usbd_core.h"/>
+         <include file="..\..\..\usb_cdc\CDC\usbd_conf.h"/>
+      </source>
+      <source file="..\..\..\utilities\Server.h" lastModified="13eb42bb760">
+      </source>
+      <source file="..\..\..\ArduinoLibraries\Ethernet\utility\w5100.h" lastModified="1452b6f7d0b">
+         <include file="..\..\..\ArduinoLibraries\SPIAPI.h"/>
+         <include file="..\..\..\TibuBoard.h"/>
+      </source>
+      <source file="..\..\..\usb_cdc\STM32_USB_OTG_Driver\inc\usb_dcd.h" lastModified="1334a157c90">
+         <include file="..\..\..\usb_cdc\STM32_USB_OTG_Driver\inc\usb_core.h"/>
+      </source>
+   </includePath>
+   <includePath signature="/I..\..\..\..\..\Users\JAVIS\Documents\GitHub\TibuBoard\TibuBoard_Demo\usb_cdc\CDC /I..\..\..\..\..\Users\JAVIS\Documents\GitHub\TibuBoard /I..\..\..\..\..\Users\JAVIS\Documents\GitHub\TibuBoard\TibuBoard_Demo\usb_cdc\STM32_USB_Device_Library\Core\inc /I..\..\..\..\..\Users\JAVIS\Documents\GitHub /I..\..\..\..\..\Users\JAVIS\Documents\GitHub\TibuBoard\TibuBoard_Demo\Interrupts /I..\..\..\..\..\Users\JAVIS\Documents\GitHub\TibuBoard\TibuBoard_Demo\usb_cdc\STM32_USB_Device_Library /I..\..\..\..\..\Users\JAVIS\Documents\GitHub\TibuBoard\TibuBoard_Demo\cmsis /I..\..\..\..\..\Users\JAVIS\Documents\GitHub\TibuBoard\TibuBoard_Demo\usb_cdc\STM32_USB_OTG_Driver /I..\..\..\..\..\Users\JAVIS\Documents\GitHub\TibuBoard\TibuBoard_Demo\usb_cdc\STM32_USB_Device_Library\Class\cdc\inc /I..\..\..\..\..\Users\JAVIS\Documents\GitHub\TibuBoard\TibuBoard_Demo\usb_cdc\STM32_USB_OTG_Driver\inc /I..\..\..\..\..\Users\JAVIS\Documents\GitHub\TibuBoard\TibuBoard_Demo\usb_cdc\STM32_USB_Device_Library\Class\cdc /I..\..\..\..\..\Users\JAVIS\Documents\GitHub\TibuBoard\TibuBoard_Demo\cmsis_lib /I..\..\..\..\..\Users\JAVIS\Documents\GitHub\TibuBoard\TibuBoard_Demo\cmsis_boot /I..\..\..\..\..\Users\JAVIS\Documents\GitHub\TibuBoard\TibuBoard_Demo\usb_cdc /I..\..\..\..\..\Users\JAVIS\Documents\GitHub\TibuBoard\TibuBoard_Demo\ArduinoLibraries /I..\..\..\..\..\Users\JAVIS\Documents\GitHub\TibuBoard\TibuBoard_Demo\cmsis_lib\include /I..\..\..\..\..\Users\JAVIS\Documents\GitHub\TibuBoard\TibuBoard_Demo\usb_cdc\STM32_USB_Device_Library\Core /I..\..\..\..\..\Users\JAVIS\Documents\GitHub\TibuBoard\TibuBoard_Demo\utilities /I..\..\..\..\..\Users\JAVIS\Documents\GitHub\TibuBoard\TibuBoard_Demo\usb_cdc\STM32_USB_Device_Library\Class /I..\..\..\..\..\Users\JAVIS\Documents\GitHub\TibuBoard\TibuBoard_Demo">
+      <source file="..\..\..\usb_cdc\CDC\usbd_usr.c" lastModified="1404da8ee94">
+         <include file="..\..\..\usb_cdc\STM32_USB_Device_Library\Core\inc\usbd_usr.h"/>
+         <include file="..\..\..\usb_cdc\STM32_USB_Device_Library\Core\inc\usbd_ioreq.h"/>
+      </source>
+      <source file="..\..\..\usb_cdc\STM32_USB_OTG_Driver\inc\usb_dcd_int.h" lastModified="1451c4ed327">
+         <include file="..\..\..\usb_cdc\STM32_USB_OTG_Driver\inc\usb_dcd.h"/>
+      </source>
+      <source file="..\..\..\usb_cdc\STM32_USB_OTG_Driver\src\usb_dcd.c" lastModified="1334a157c90">
+         <include file="..\..\..\usb_cdc\STM32_USB_OTG_Driver\inc\usb_dcd.h"/>
+         <include file="..\..\..\usb_cdc\STM32_USB_OTG_Driver\inc\usb_bsp.h"/>
+      </source>
+      <source file="..\..\..\utilities\WString.cpp" lastModified="1451cf7598c">
+         <include file="..\..\..\utilities\WString.h"/>
+      </source>
+      <source file="..\..\..\usb_cdc\STM32_USB_OTG_Driver\inc\usb_defines.h" lastModified="1334a157c90">
+         <include file="..\..\..\usb_cdc\CDC\usb_conf.h"/>
+      </source>
+      <source file="..\..\..\cmsis_lib\include\misc.h" lastModified="13f85bdb5df">
+         <include file="..\..\..\cmsis_boot\stm32f4xx.h"/>
+      </source>
+      <source file="..\..\..\cmsis_lib\source\stm32f4xx_tim.c" lastModified="13f80b32324">
+         <include file="..\..\..\cmsis_lib\include\stm32f4xx_tim.h"/>
+         <include file="..\..\..\cmsis_lib\include\stm32f4xx_rcc.h"/>
+      </source>
+      <source file="..\..\..\usb_cdc\STM32_USB_OTG_Driver\src\usb_core.c" lastModified="1334a157c90">
+         <include file="..\..\..\usb_cdc\STM32_USB_OTG_Driver\inc\usb_core.h"/>
+         <include file="..\..\..\usb_cdc\STM32_USB_OTG_Driver\inc\usb_bsp.h"/>
+      </source>
+      <source file="..\..\..\usb_cdc\STM32_USB_Device_Library\Core\inc\usbd_ioreq.h" lastModified="1334a1574c0">
+         <include file="..\..\..\usb_cdc\STM32_USB_Device_Library\Core\inc\usbd_def.h"/>
+         <include file="..\..\..\usb_cdc\STM32_USB_Device_Library\Core\inc\usbd_core.h"/>
+      </source>
+      <source file="..\..\..\usb_cdc\STM32_USB_OTG_Driver\inc\usb_core.h" lastModified="1334a157c90">
+         <include file="..\..\..\usb_cdc\CDC\usb_conf.h"/>
+         <include file="..\..\..\usb_cdc\STM32_USB_OTG_Driver\inc\usb_regs.h"/>
+         <include file="..\..\..\usb_cdc\STM32_USB_OTG_Driver\inc\usb_defines.h"/>
+      </source>
+      <source file="..\..\..\cmsis_lib\source\misc.c" lastModified="13f85bdb5e4">
+         <include file="..\..\..\cmsis_lib\include\misc.h"/>
+      </source>
+      <source file="..\..\..\cmsis_lib\include\stm32f4xx_syscfg.h" lastModified="13f85c0569c">
+         <include file="..\..\..\cmsis_boot\stm32f4xx.h"/>
+      </source>
+      <source file="..\..\..\usb_cdc\STM32_USB_Device_Library\Class\cdc\inc\usbd_cdc_core.h" lastModified="144dee4d4c6">
+         <include file="..\..\..\usb_cdc\STM32_USB_Device_Library\Core\inc\usbd_ioreq.h"/>
+      </source>
+      <source file="..\..\..\usb_cdc\STM32_USB_Device_Library\Core\src\usbd_core.c" lastModified="1334a1574c0">
+         <include file="..\..\..\usb_cdc\STM32_USB_Device_Library\Core\inc\usbd_core.h"/>
+         <include file="..\..\..\usb_cdc\STM32_USB_Device_Library\Core\inc\usbd_req.h"/>
+         <include file="..\..\..\usb_cdc\STM32_USB_Device_Library\Core\inc\usbd_ioreq.h"/>
+         <include file="..\..\..\usb_cdc\STM32_USB_OTG_Driver\inc\usb_dcd_int.h"/>
+         <include file="..\..\..\usb_cdc\STM32_USB_OTG_Driver\inc\usb_bsp.h"/>
+      </source>
+      <source file="..\..\..\cmsis_lib\include\stm32f4xx_spi.h" lastModified="1406ee57d13">
+         <include file="..\..\..\cmsis_boot\stm32f4xx.h"/>
+      </source>
+      <source file="..\..\..\cmsis_lib\include\stm32f4xx_dma.h" lastModified="1401ae9fae2">
+         <include file="..\..\..\cmsis_boot\stm32f4xx.h"/>
+      </source>
+      <source file="..\..\..\usb_cdc\STM32_USB_Device_Library\Class\cdc\src\usbd_cdc_core.c" lastModified="13ef4967b4f">
+         <include file="..\..\..\usb_cdc\STM32_USB_Device_Library\Class\cdc\inc\usbd_cdc_core.h"/>
+         <include file="..\..\..\usb_cdc\CDC\usbd_desc.h"/>
+         <include file="..\..\..\usb_cdc\STM32_USB_Device_Library\Core\inc\usbd_req.h"/>
+      </source>
+      <source file="..\..\..\cmsis_lib\include\stm32f4xx_rcc.h" lastModified="13f80b30122">
+         <include file="..\..\..\cmsis_boot\stm32f4xx.h"/>
+      </source>
+      <source file="..\..\..\cmsis_lib\source\stm32f4xx_exti.c" lastModified="13f80b3147b">
+         <include file="..\..\..\cmsis_lib\include\stm32f4xx_exti.h"/>
+      </source>
+      <source file="..\..\..\cmsis_boot\system_stm32f4xx.h" lastModified="13f80b2ff25">
+      </source>
+      <source file="..\..\..\usb_cdc\CDC\usb_bsp.c" lastModified="1451c482db3">
+         <include file="..\..\..\usb_cdc\STM32_USB_OTG_Driver\inc\usb_bsp.h"/>
+         <include file="..\..\..\usb_cdc\CDC\usbd_conf.h"/>
+      </source>
+      <source file="..\..\..\usb_cdc\STM32_USB_OTG_Driver\inc\usb_bsp.h" lastModified="1404da8ee58">
+         <include file="..\..\..\usb_cdc\STM32_USB_OTG_Driver\inc\usb_core.h"/>
+      </source>
+      <source file="..\..\..\utilities\BufferFunctions.c" lastModified="144dee28057">
+         <include file="..\..\..\utilities\BufferFunctions.h"/>
+      </source>
+      <source file="..\..\..\usb_cdc\CDC\usbd_cdc_vcp.h" lastModified="144deee63c6">
+         <include file="..\..\..\cmsis_boot\stm32f4xx.h"/>
+         <include file="..\..\..\usb_cdc\STM32_USB_Device_Library\Class\cdc\inc\usbd_cdc_core.h"/>
+         <include file="..\..\..\usb_cdc\CDC\usbd_conf.h"/>
+         <include file="..\..\..\usb_cdc\STM32_USB_Device_Library\Core\inc\usbd_usr.h"/>
+         <include file="..\..\..\usb_cdc\CDC\usbd_desc.h"/>
+         <include file="..\..\..\utilities\BufferFunctions.h"/>
+      </source>
+      <source file="..\..\..\usb_cdc\CDC\usbd_cdc_vcp.c" lastModified="144deee63a2">
+         <include file="..\..\..\usb_cdc\CDC\usbd_cdc_vcp.h"/>
+         <include file="..\..\..\usb_cdc\CDC\usb_conf.h"/>
+      </source>
+      <source file="..\..\..\cmsis_lib\include\stm32f4xx_exti.h" lastModified="1451a476281">
+         <include file="..\..\..\cmsis_boot\stm32f4xx.h"/>
+      </source>
+      <source file="..\..\..\ArduinoLibraries\SPIAPI.h" lastModified="14526cd24f8">
+         <include file="..\..\..\cmsis_boot\stm32f4xx.h"/>
+         <include file="..\..\..\cmsis_boot\stm32f4xx_conf.h"/>
+      </source>
+      <source file="..\..\..\ArduinoLibraries\SPIAPI.c" lastModified="140530a6c45">
+         <include file="..\..\..\ArduinoLibraries\SPIAPI.h"/>
+      </source>
+      <source file="..\..\..\usb_cdc\STM32_USB_Device_Library\Core\src\usbd_ioreq.c" lastModified="1334a1574c0">
+         <include file="..\..\..\usb_cdc\STM32_USB_Device_Library\Core\inc\usbd_ioreq.h"/>
+      </source>
+      <source file="..\..\..\usb_cdc\CDC\usbd_conf.h" lastModified="1404da8eea0">
+         <include file="..\..\..\usb_cdc\CDC\usb_conf.h"/>
+      </source>
+      <source file="..\..\..\cmsis_boot\stm32f4xx_conf.h" lastModified="1406ee5dc83">
+         <include file="..\..\..\cmsis_lib\include\stm32f4xx_adc.h"/>
+         <include file="..\..\..\cmsis_lib\include\stm32f4xx_dma.h"/>
+         <include file="..\..\..\cmsis_lib\include\stm32f4xx_exti.h"/>
+         <include file="..\..\..\cmsis_lib\include\stm32f4xx_gpio.h"/>
+         <include file="..\..\..\cmsis_lib\include\stm32f4xx_rcc.h"/>
+         <include file="..\..\..\cmsis_lib\include\stm32f4xx_spi.h"/>
+         <include file="..\..\..\cmsis_lib\include\stm32f4xx_syscfg.h"/>
+         <include file="..\..\..\cmsis_lib\include\stm32f4xx_tim.h"/>
+         <include file="..\..\..\cmsis_lib\include\misc.h"/>
+      </source>
+      <source file="..\..\..\cmsis_lib\include\stm32f4xx_adc.h" lastModified="1401aea32ac">
+         <include file="..\..\..\cmsis_boot\stm32f4xx.h"/>
+      </source>
+      <source file="..\..\..\cmsis_lib\source\stm32f4xx_spi.c" lastModified="1406ee57d21">
+         <include file="..\..\..\cmsis_lib\include\stm32f4xx_spi.h"/>
+         <include file="..\..\..\cmsis_lib\include\stm32f4xx_rcc.h"/>
+      </source>
+      <source file="..\..\..\cmsis_lib\source\stm32f4xx_dma.c" lastModified="1401ae9fae8">
+         <include file="..\..\..\cmsis_lib\include\stm32f4xx_dma.h"/>
+         <include file="..\..\..\cmsis_lib\include\stm32f4xx_rcc.h"/>
+      </source>
+      <source file="..\..\..\cmsis_lib\source\stm32f4xx_rcc.c" lastModified="13f80b301a3">
+         <include file="..\..\..\cmsis_lib\include\stm32f4xx_rcc.h"/>
+      </source>
+      <source file="..\..\..\usb_cdc\STM32_USB_Device_Library\Core\inc\usbd_usr.h" lastModified="1334a1574c0">
+         <include file="..\..\..\usb_cdc\STM32_USB_Device_Library\Core\inc\usbd_core.h"/>
+      </source>
+      <source file="..\..\..\usb_cdc\STM32_USB_OTG_Driver\inc\usb_regs.h" lastModified="1334a157c90">
+         <include file="..\..\..\usb_cdc\CDC\usb_conf.h"/>
+      </source>
+      <source file="..\..\..\cmsis_lib\source\stm32f4xx_gpio.c" lastModified="13f80b2fd57">
+         <include file="..\..\..\cmsis_lib\include\stm32f4xx_gpio.h"/>
+         <include file="..\..\..\cmsis_lib\include\stm32f4xx_rcc.h"/>
+      </source>
+      <source file="..\..\..\cmsis_lib\source\stm32f4xx_syscfg.c" lastModified="13f85c056a0">
+         <include file="..\..\..\cmsis_lib\include\stm32f4xx_syscfg.h"/>
+         <include file="..\..\..\cmsis_lib\include\stm32f4xx_rcc.h"/>
+      </source>
+      <source file="..\..\..\cmsis_boot\startup\startup_stm32f4xx.c" lastModified="14518689a4d">
+      </source>
+      <source file="..\..\..\cmsis_lib\include\stm32f4xx_gpio.h" lastModified="13f80b2fd52">
+         <include file="..\..\..\cmsis_boot\stm32f4xx.h"/>
+      </source>
+      <source file="..\..\..\usb_cdc\CDC\usbd_desc.h" lastModified="13160e343a0">
+         <include file="..\..\..\usb_cdc\STM32_USB_Device_Library\Core\inc\usbd_def.h"/>
+      </source>
+      <source file="..\..\..\utilities\Stream.cpp" lastModified="14522b2d814">
+         <include file="..\..\..\ArduinoStyle.h"/>
+         <include file="..\..\..\utilities\Stream.h"/>
+      </source>
+      <source file="..\..\..\cmsis_lib\include\stm32f4xx_tim.h" lastModified="13f80b32314">
+         <include file="..\..\..\cmsis_boot\stm32f4xx.h"/>
+      </source>
+      <source file="..\..\..\usb_cdc\CDC\usbd_desc.c" lastModified="13a797d78a6">
+         <include file="..\..\..\usb_cdc\STM32_USB_Device_Library\Core\inc\usbd_core.h"/>
+         <include file="..\..\..\usb_cdc\CDC\usbd_desc.h"/>
+         <include file="..\..\..\usb_cdc\STM32_USB_Device_Library\Core\inc\usbd_req.h"/>
+         <include file="..\..\..\usb_cdc\CDC\usbd_conf.h"/>
+         <include file="..\..\..\usb_cdc\STM32_USB_OTG_Driver\inc\usb_regs.h"/>
+      </source>
+      <source file="..\..\..\usb_cdc\STM32_USB_Device_Library\Core\src\usbd_req.c" lastModified="1334a1574c0">
+         <include file="..\..\..\usb_cdc\STM32_USB_Device_Library\Core\inc\usbd_req.h"/>
+         <include file="..\..\..\usb_cdc\STM32_USB_Device_Library\Core\inc\usbd_ioreq.h"/>
+         <include file="..\..\..\usb_cdc\CDC\usbd_desc.h"/>
+      </source>
+      <source file="..\..\..\usb_cdc\STM32_USB_Device_Library\Core\inc\usbd_core.h" lastModified="1334a1574c0">
+         <include file="..\..\..\usb_cdc\STM32_USB_OTG_Driver\inc\usb_dcd.h"/>
+         <include file="..\..\..\usb_cdc\STM32_USB_Device_Library\Core\inc\usbd_def.h"/>
+         <include file="..\..\..\usb_cdc\CDC\usbd_conf.h"/>
+      </source>
+      <source file="..\..\..\usb_cdc\CDC\usb_conf.h" lastModified="13ef4cf5177">
+         <include file="..\..\..\cmsis_boot\stm32f4xx.h"/>
+      </source>
+      <source file="..\..\..\cmsis_lib\source\stm32f4xx_adc.c" lastModified="1401aea32b0">
+         <include file="..\..\..\cmsis_lib\include\stm32f4xx_adc.h"/>
+         <include file="..\..\..\cmsis_lib\include\stm32f4xx_rcc.h"/>
+      </source>
+      <source file="..\..\..\usb_cdc\STM32_USB_OTG_Driver\src\usb_dcd_int.c" lastModified="13bf7198b3c">
+         <include file="..\..\..\usb_cdc\STM32_USB_OTG_Driver\inc\usb_dcd_int.h"/>
+         <include file="..\..\..\usb_cdc\CDC\usbd_cdc_vcp.h"/>
+      </source>
+      <source file="..\..\..\usb_cdc\STM32_USB_Device_Library\Core\inc\usbd_def.h" lastModified="1334a1574c0">
+         <include file="..\..\..\usb_cdc\CDC\usbd_conf.h"/>
+      </source>
+      <source file="..\..\..\usb_cdc\STM32_USB_Device_Library\Core\inc\usbd_req.h" lastModified="1334a1574c0">
+         <include file="..\..\..\usb_cdc\STM32_USB_Device_Library\Core\inc\usbd_def.h"/>
+         <include file="..\..\..\usb_cdc\STM32_USB_Device_Library\Core\inc\usbd_core.h"/>
+         <include file="..\..\..\usb_cdc\CDC\usbd_conf.h"/>
+      </source>
+      <source file="..\..\..\usb_cdc\STM32_USB_OTG_Driver\inc\usb_dcd.h" lastModified="1334a157c90">
+         <include file="..\..\..\usb_cdc\STM32_USB_OTG_Driver\inc\usb_core.h"/>
+      </source>
+   </includePath>
+   <includePath signature="/I..\..\..\workspace\TibuBoard_Demo\usb_cdc\STM32_USB_OTG_Driver\inc /I..\..\..\workspace\TibuBoard_Demo\usb_cdc\STM32_USB_Device_Library\Class\cdc\inc /I..\..\..\workspace\TibuBoard_Demo\usb_cdc\STM32_USB_OTG_Driver /I..\..\..\workspace\TibuBoard_Demo\usb_cdc\CDC /I..\..\..\workspace\TibuBoard_Demo /I..\..\..\workspace\TibuBoard_Demo\usb_cdc\STM32_USB_Device_Library\Core /I..\..\..\workspace\TibuBoard_Demo\ArduinoLibraries /I..\..\..\workspace\TibuBoard_Demo\usb_cdc\STM32_USB_Device_Library\Class /I..\..\..\workspace\TibuBoard_Demo\usb_cdc\STM32_USB_Device_Library\Core\inc /I..\..\..\workspace\TibuBoard_Demo\usb_cdc\STM32_USB_Device_Library /I..\..\..\workspace\TibuBoard_Demo\Interrupts /I..\..\..\workspace\TibuBoard_Demo\cmsis_lib\include /I..\..\..\workspace\TibuBoard_Demo\cmsis /I..\..\..\workspace\TibuBoard_Demo\usb_cdc /I..\..\..\workspace /I..\..\..\workspace\TibuBoard_Demo\cmsis_lib /I..\..\.. /I..\..\..\workspace\TibuBoard_Demo\usb_cdc\STM32_USB_Device_Library\Class\cdc /I..\..\..\workspace\TibuBoard_Demo\cmsis_boot">
+      <source file="..\..\..\usb_cdc\CDC\usbd_usr.c" lastModified="1404da8ee94">
+         <include file="..\..\..\usb_cdc\STM32_USB_Device_Library\Core\inc\usbd_usr.h"/>
+         <include file="..\..\..\usb_cdc\STM32_USB_Device_Library\Core\inc\usbd_ioreq.h"/>
+      </source>
+      <source file="..\..\..\usb_cdc\STM32_USB_OTG_Driver\src\usb_dcd.c" lastModified="1334a157c90">
+         <include file="..\..\..\usb_cdc\STM32_USB_OTG_Driver\inc\usb_dcd.h"/>
+         <include file="..\..\..\usb_cdc\STM32_USB_OTG_Driver\inc\usb_bsp.h"/>
+      </source>
+      <source file="..\..\..\usb_cdc\STM32_USB_OTG_Driver\inc\usb_defines.h" lastModified="1334a157c90">
+         <include file="..\..\..\usb_cdc\CDC\usb_conf.h"/>
+      </source>
+      <source file="..\..\..\cmsis_lib\include\misc.h" lastModified="13f85bdb5df">
+         <include file="..\..\..\cmsis_boot\stm32f4xx.h"/>
+      </source>
+      <source file="..\..\..\cmsis_lib\source\stm32f4xx_tim.c" lastModified="13f80b32324">
+         <include file="..\..\..\cmsis_lib\include\stm32f4xx_tim.h"/>
+         <include file="..\..\..\cmsis_lib\include\stm32f4xx_rcc.h"/>
+      </source>
+      <source file="..\..\..\usb_cdc\STM32_USB_OTG_Driver\src\usb_core.c" lastModified="1334a157c90">
+         <include file="..\..\..\usb_cdc\STM32_USB_OTG_Driver\inc\usb_core.h"/>
+         <include file="..\..\..\usb_cdc\STM32_USB_OTG_Driver\inc\usb_bsp.h"/>
+      </source>
+      <source file="..\..\..\usb_cdc\STM32_USB_Device_Library\Core\inc\usbd_ioreq.h" lastModified="1334a1574c0">
+         <include file="..\..\..\usb_cdc\STM32_USB_Device_Library\Core\inc\usbd_def.h"/>
+         <include file="..\..\..\usb_cdc\STM32_USB_Device_Library\Core\inc\usbd_core.h"/>
+      </source>
+      <source file="..\..\..\usb_cdc\STM32_USB_OTG_Driver\inc\usb_core.h" lastModified="1334a157c90">
+         <include file="..\..\..\usb_cdc\CDC\usb_conf.h"/>
+         <include file="..\..\..\usb_cdc\STM32_USB_OTG_Driver\inc\usb_regs.h"/>
+         <include file="..\..\..\usb_cdc\STM32_USB_OTG_Driver\inc\usb_defines.h"/>
+      </source>
+      <source file="..\..\..\cmsis_lib\source\misc.c" lastModified="13f85bdb5e4">
+         <include file="..\..\..\cmsis_lib\include\misc.h"/>
+      </source>
+      <source file="..\..\..\cmsis_lib\include\stm32f4xx_syscfg.h" lastModified="13f85c0569c">
+         <include file="..\..\..\cmsis_boot\stm32f4xx.h"/>
+      </source>
+      <source file="..\..\..\usb_cdc\STM32_USB_Device_Library\Core\src\usbd_core.c" lastModified="1334a1574c0">
+         <include file="..\..\..\usb_cdc\STM32_USB_Device_Library\Core\inc\usbd_core.h"/>
+         <include file="..\..\..\usb_cdc\STM32_USB_Device_Library\Core\inc\usbd_req.h"/>
+         <include file="..\..\..\usb_cdc\STM32_USB_Device_Library\Core\inc\usbd_ioreq.h"/>
+         <include file="..\..\..\usb_cdc\STM32_USB_OTG_Driver\inc\usb_dcd_int.h"/>
+         <include file="..\..\..\usb_cdc\STM32_USB_OTG_Driver\inc\usb_bsp.h"/>
+      </source>
+      <source file="..\..\..\cmsis_lib\include\stm32f4xx_spi.h" lastModified="1406ee57d13">
+         <include file="..\..\..\cmsis_boot\stm32f4xx.h"/>
+      </source>
+      <source file="..\..\..\cmsis_lib\include\stm32f4xx_dma.h" lastModified="1401ae9fae2">
+         <include file="..\..\..\cmsis_boot\stm32f4xx.h"/>
+      </source>
+      <source file="..\..\..\usb_cdc\STM32_USB_Device_Library\Class\cdc\src\usbd_cdc_core.c" lastModified="13ef4967b4f">
+         <include file="..\..\..\usb_cdc\STM32_USB_Device_Library\Class\cdc\inc\usbd_cdc_core.h"/>
+         <include file="..\..\..\usb_cdc\CDC\usbd_desc.h"/>
+         <include file="..\..\..\usb_cdc\STM32_USB_Device_Library\Core\inc\usbd_req.h"/>
+      </source>
+      <source file="..\..\..\cmsis_lib\include\stm32f4xx_rcc.h" lastModified="13f80b30122">
+         <include file="..\..\..\cmsis_boot\stm32f4xx.h"/>
+      </source>
+      <source file="..\..\..\cmsis_lib\source\stm32f4xx_exti.c" lastModified="13f80b3147b">
+         <include file="..\..\..\cmsis_lib\include\stm32f4xx_exti.h"/>
+      </source>
+      <source file="..\..\..\cmsis_boot\system_stm32f4xx.h" lastModified="13f80b2ff25">
+      </source>
+      <source file="..\..\..\usb_cdc\STM32_USB_OTG_Driver\inc\usb_bsp.h" lastModified="1404da8ee58">
+         <include file="..\..\..\usb_cdc\STM32_USB_OTG_Driver\inc\usb_core.h"/>
+      </source>
+      <source file="..\..\..\ArduinoLibraries\SPIAPI.c" lastModified="140530a6c45">
+         <include file="..\..\..\ArduinoLibraries\SPIAPI.h"/>
+      </source>
+      <source file="..\..\..\usb_cdc\STM32_USB_Device_Library\Core\src\usbd_ioreq.c" lastModified="1334a1574c0">
+         <include file="..\..\..\usb_cdc\STM32_USB_Device_Library\Core\inc\usbd_ioreq.h"/>
+      </source>
+      <source file="..\..\..\usb_cdc\CDC\usbd_conf.h" lastModified="1404da8eea0">
+         <include file="..\..\..\usb_cdc\CDC\usb_conf.h"/>
+      </source>
+      <source file="..\..\..\cmsis_boot\stm32f4xx_conf.h" lastModified="1406ee5dc83">
+         <include file="..\..\..\cmsis_lib\include\stm32f4xx_adc.h"/>
+         <include file="..\..\..\cmsis_lib\include\stm32f4xx_dma.h"/>
+         <include file="..\..\..\cmsis_lib\include\stm32f4xx_exti.h"/>
+         <include file="..\..\..\cmsis_lib\include\stm32f4xx_gpio.h"/>
+         <include file="..\..\..\cmsis_lib\include\stm32f4xx_rcc.h"/>
+         <include file="..\..\..\cmsis_lib\include\stm32f4xx_spi.h"/>
+         <include file="..\..\..\cmsis_lib\include\stm32f4xx_syscfg.h"/>
+         <include file="..\..\..\cmsis_lib\include\stm32f4xx_tim.h"/>
+         <include file="..\..\..\cmsis_lib\include\misc.h"/>
+      </source>
+      <source file="..\..\..\cmsis_lib\include\stm32f4xx_adc.h" lastModified="1401aea32ac">
+         <include file="..\..\..\cmsis_boot\stm32f4xx.h"/>
+      </source>
+      <source file="..\..\..\cmsis_lib\source\stm32f4xx_spi.c" lastModified="1406ee57d21">
+         <include file="..\..\..\cmsis_lib\include\stm32f4xx_spi.h"/>
+         <include file="..\..\..\cmsis_lib\include\stm32f4xx_rcc.h"/>
+      </source>
+      <source file="..\..\..\cmsis_lib\source\stm32f4xx_dma.c" lastModified="1401ae9fae8">
+         <include file="..\..\..\cmsis_lib\include\stm32f4xx_dma.h"/>
+         <include file="..\..\..\cmsis_lib\include\stm32f4xx_rcc.h"/>
+      </source>
+      <source file="..\..\..\cmsis_lib\source\stm32f4xx_rcc.c" lastModified="13f80b301a3">
+         <include file="..\..\..\cmsis_lib\include\stm32f4xx_rcc.h"/>
+      </source>
+      <source file="..\..\..\usb_cdc\STM32_USB_Device_Library\Core\inc\usbd_usr.h" lastModified="1334a1574c0">
+         <include file="..\..\..\usb_cdc\STM32_USB_Device_Library\Core\inc\usbd_core.h"/>
+      </source>
+      <source file="..\..\..\usb_cdc\STM32_USB_OTG_Driver\inc\usb_regs.h" lastModified="1334a157c90">
+         <include file="..\..\..\usb_cdc\CDC\usb_conf.h"/>
+      </source>
+      <source file="..\..\..\cmsis_lib\source\stm32f4xx_gpio.c" lastModified="13f80b2fd57">
+         <include file="..\..\..\cmsis_lib\include\stm32f4xx_gpio.h"/>
+         <include file="..\..\..\cmsis_lib\include\stm32f4xx_rcc.h"/>
+      </source>
+      <source file="..\..\..\cmsis_lib\source\stm32f4xx_syscfg.c" lastModified="13f85c056a0">
+         <include file="..\..\..\cmsis_lib\include\stm32f4xx_syscfg.h"/>
+         <include file="..\..\..\cmsis_lib\include\stm32f4xx_rcc.h"/>
+      </source>
+      <source file="..\..\..\cmsis_lib\include\stm32f4xx_gpio.h" lastModified="13f80b2fd52">
+         <include file="..\..\..\cmsis_boot\stm32f4xx.h"/>
+      </source>
+      <source file="..\..\..\usb_cdc\CDC\usbd_desc.h" lastModified="13160e343a0">
+         <include file="..\..\..\usb_cdc\STM32_USB_Device_Library\Core\inc\usbd_def.h"/>
+      </source>
+      <source file="..\..\..\cmsis_lib\include\stm32f4xx_tim.h" lastModified="13f80b32314">
+         <include file="..\..\..\cmsis_boot\stm32f4xx.h"/>
+      </source>
+      <source file="..\..\..\usb_cdc\CDC\usbd_desc.c" lastModified="13a797d78a6">
+         <include file="..\..\..\usb_cdc\STM32_USB_Device_Library\Core\inc\usbd_core.h"/>
+         <include file="..\..\..\usb_cdc\CDC\usbd_desc.h"/>
+         <include file="..\..\..\usb_cdc\STM32_USB_Device_Library\Core\inc\usbd_req.h"/>
+         <include file="..\..\..\usb_cdc\CDC\usbd_conf.h"/>
+         <include file="..\..\..\usb_cdc\STM32_USB_OTG_Driver\inc\usb_regs.h"/>
+      </source>
+      <source file="..\..\..\usb_cdc\STM32_USB_Device_Library\Core\src\usbd_req.c" lastModified="1334a1574c0">
+         <include file="..\..\..\usb_cdc\STM32_USB_Device_Library\Core\inc\usbd_req.h"/>
+         <include file="..\..\..\usb_cdc\STM32_USB_Device_Library\Core\inc\usbd_ioreq.h"/>
+         <include file="..\..\..\usb_cdc\CDC\usbd_desc.h"/>
+      </source>
+      <source file="..\..\..\usb_cdc\STM32_USB_Device_Library\Core\inc\usbd_core.h" lastModified="1334a1574c0">
+         <include file="..\..\..\usb_cdc\STM32_USB_OTG_Driver\inc\usb_dcd.h"/>
+         <include file="..\..\..\usb_cdc\STM32_USB_Device_Library\Core\inc\usbd_def.h"/>
+         <include file="..\..\..\usb_cdc\CDC\usbd_conf.h"/>
+      </source>
+      <source file="..\..\..\usb_cdc\CDC\usb_conf.h" lastModified="13ef4cf5177">
+         <include file="..\..\..\cmsis_boot\stm32f4xx.h"/>
+      </source>
+      <source file="..\..\..\cmsis_lib\source\stm32f4xx_adc.c" lastModified="1401aea32b0">
+         <include file="..\..\..\cmsis_lib\include\stm32f4xx_adc.h"/>
+         <include file="..\..\..\cmsis_lib\include\stm32f4xx_rcc.h"/>
+      </source>
+      <source file="..\..\..\usb_cdc\STM32_USB_OTG_Driver\src\usb_dcd_int.c" lastModified="13bf7198b3c">
+         <include file="..\..\..\usb_cdc\STM32_USB_OTG_Driver\inc\usb_dcd_int.h"/>
+         <include file="..\..\..\usb_cdc\CDC\usbd_cdc_vcp.h"/>
+      </source>
+      <source file="..\..\..\usb_cdc\STM32_USB_Device_Library\Core\inc\usbd_def.h" lastModified="1334a1574c0">
+         <include file="..\..\..\usb_cdc\CDC\usbd_conf.h"/>
+      </source>
+      <source file="..\..\..\usb_cdc\STM32_USB_Device_Library\Core\inc\usbd_req.h" lastModified="1334a1574c0">
+         <include file="..\..\..\usb_cdc\STM32_USB_Device_Library\Core\inc\usbd_def.h"/>
+         <include file="..\..\..\usb_cdc\STM32_USB_Device_Library\Core\inc\usbd_core.h"/>
+         <include file="..\..\..\usb_cdc\CDC\usbd_conf.h"/>
+      </source>
+      <source file="..\..\..\usb_cdc\STM32_USB_OTG_Driver\inc\usb_dcd.h" lastModified="1334a157c90">
+         <include file="..\..\..\usb_cdc\STM32_USB_OTG_Driver\inc\usb_core.h"/>
+      </source>
+   </includePath>
+   <includePath signature="/I..\..\..\workspace\TibuBoard_Demo\cmsis /I..\..\..\workspace /I..\..\..\workspace\TibuBoard_Demo /I..\..\..\workspace\TibuBoard_Demo\ArduinoLibraries /I..\..\..\workspace\TibuBoard_Demo\Interrupts /I..\..\..\workspace\TibuBoard_Demo\cmsis_lib /I..\..\.. /I..\..\..\workspace\TibuBoard_Demo\cmsis_lib\include /I..\..\..\workspace\TibuBoard_Demo\cmsis_boot">
+      <source file="..\..\..\cmsis_lib\include\misc.h" lastModified="13f85bdb5df">
+         <include file="..\..\..\cmsis_boot\stm32f4xx.h"/>
+      </source>
+      <source file="..\..\..\cmsis_lib\source\stm32f4xx_tim.c" lastModified="13f80b32324">
+         <include file="..\..\..\cmsis_lib\include\stm32f4xx_tim.h"/>
+         <include file="..\..\..\cmsis_lib\include\stm32f4xx_rcc.h"/>
+      </source>
+      <source file="..\..\..\cmsis_lib\source\misc.c" lastModified="13f85bdb5e4">
+         <include file="..\..\..\cmsis_lib\include\misc.h"/>
+      </source>
+      <source file="..\..\..\cmsis_lib\include\stm32f4xx_syscfg.h" lastModified="13f85c0569c">
+         <include file="..\..\..\cmsis_boot\stm32f4xx.h"/>
+      </source>
+      <source file="..\..\..\cmsis_lib\include\stm32f4xx_dma.h" lastModified="1401ae9fae2">
+         <include file="..\..\..\cmsis_boot\stm32f4xx.h"/>
+      </source>
+      <source file="..\..\..\cmsis_lib\include\stm32f4xx_rcc.h" lastModified="13f80b30122">
+         <include file="..\..\..\cmsis_boot\stm32f4xx.h"/>
+      </source>
+      <source file="..\..\..\cmsis_lib\source\stm32f4xx_exti.c" lastModified="13f80b3147b">
+         <include file="..\..\..\cmsis_lib\include\stm32f4xx_exti.h"/>
+      </source>
+      <source file="..\..\..\cmsis_boot\system_stm32f4xx.h" lastModified="13f80b2ff25">
+      </source>
+      <source file="..\..\..\cmsis_boot\stm32f4xx_conf.h" lastModified="1406ee5dc83">
+         <include file="..\..\..\cmsis_lib\include\stm32f4xx_adc.h"/>
+         <include file="..\..\..\cmsis_lib\include\stm32f4xx_dma.h"/>
+         <include file="..\..\..\cmsis_lib\include\stm32f4xx_exti.h"/>
+         <include file="..\..\..\cmsis_lib\include\stm32f4xx_gpio.h"/>
+         <include file="..\..\..\cmsis_lib\include\stm32f4xx_rcc.h"/>
+         <include file="..\..\..\cmsis_lib\include\stm32f4xx_spi.h"/>
+         <include file="..\..\..\cmsis_lib\include\stm32f4xx_syscfg.h"/>
+         <include file="..\..\..\cmsis_lib\include\stm32f4xx_tim.h"/>
+         <include file="..\..\..\cmsis_lib\include\misc.h"/>
+      </source>
+      <source file="..\..\..\cmsis_lib\include\stm32f4xx_adc.h" lastModified="1401aea32ac">
+         <include file="..\..\..\cmsis_boot\stm32f4xx.h"/>
+      </source>
+      <source file="..\..\..\cmsis_lib\source\stm32f4xx_dma.c" lastModified="1401ae9fae8">
+         <include file="..\..\..\cmsis_lib\include\stm32f4xx_dma.h"/>
+         <include file="..\..\..\cmsis_lib\include\stm32f4xx_rcc.h"/>
+      </source>
+      <source file="..\..\..\cmsis_lib\source\stm32f4xx_rcc.c" lastModified="13f80b301a3">
+         <include file="..\..\..\cmsis_lib\include\stm32f4xx_rcc.h"/>
+      </source>
+      <source file="..\..\..\cmsis_lib\source\stm32f4xx_gpio.c" lastModified="13f80b2fd57">
+         <include file="..\..\..\cmsis_lib\include\stm32f4xx_gpio.h"/>
+         <include file="..\..\..\cmsis_lib\include\stm32f4xx_rcc.h"/>
+      </source>
+      <source file="..\..\..\cmsis_lib\source\stm32f4xx_syscfg.c" lastModified="13f85c056a0">
+         <include file="..\..\..\cmsis_lib\include\stm32f4xx_syscfg.h"/>
+         <include file="..\..\..\cmsis_lib\include\stm32f4xx_rcc.h"/>
+      </source>
+      <source file="..\..\..\cmsis_lib\include\stm32f4xx_gpio.h" lastModified="13f80b2fd52">
+         <include file="..\..\..\cmsis_boot\stm32f4xx.h"/>
+      </source>
+      <source file="..\..\..\cmsis_lib\include\stm32f4xx_tim.h" lastModified="13f80b32314">
+         <include file="..\..\..\cmsis_boot\stm32f4xx.h"/>
+      </source>
+      <source file="..\..\..\cmsis_lib\source\stm32f4xx_adc.c" lastModified="1401aea32b0">
+         <include file="..\..\..\cmsis_lib\include\stm32f4xx_adc.h"/>
+         <include file="..\..\..\cmsis_lib\include\stm32f4xx_rcc.h"/>
+      </source>
+   </includePath>
+   <includePath signature="/I..\..\..\workspace\TibuBoard_Demo\cmsis /I..\..\..\workspace /I..\..\..\workspace\TibuBoard_Demo /I..\..\..\workspace\TibuBoard_Demo\Interrupts /I..\..\..\workspace\TibuBoard_Demo\cmsis_lib /I..\..\.. /I..\..\..\workspace\TibuBoard_Demo\cmsis_lib\include /I..\..\..\workspace\TibuBoard_Demo\cmsis_boot">
+      <source file="..\..\..\cmsis_lib\include\misc.h" lastModified="13f85bdb5df">
+         <include file="..\..\..\cmsis_boot\stm32f4xx.h"/>
+      </source>
+      <source file="..\..\..\cmsis_lib\source\stm32f4xx_tim.c" lastModified="13f80b32324">
+         <include file="..\..\..\cmsis_lib\include\stm32f4xx_tim.h"/>
+         <include file="..\..\..\cmsis_lib\include\stm32f4xx_rcc.h"/>
+      </source>
+      <source file="..\..\..\cmsis_lib\source\misc.c" lastModified="13f85bdb5e4">
+         <include file="..\..\..\cmsis_lib\include\misc.h"/>
+      </source>
+      <source file="..\..\..\cmsis_lib\include\stm32f4xx_syscfg.h" lastModified="13f85c0569c">
+         <include file="..\..\..\cmsis_boot\stm32f4xx.h"/>
+      </source>
+      <source file="..\..\..\cmsis_lib\include\stm32f4xx_rcc.h" lastModified="13f80b30122">
+         <include file="..\..\..\cmsis_boot\stm32f4xx.h"/>
+      </source>
+      <source file="..\..\..\cmsis_lib\source\stm32f4xx_exti.c" lastModified="13f80b3147b">
+         <include file="..\..\..\cmsis_lib\include\stm32f4xx_exti.h"/>
+      </source>
+      <source file="..\..\..\cmsis_boot\system_stm32f4xx.h" lastModified="13f80b2ff25">
+      </source>
+      <source file="..\..\..\cmsis_lib\source\stm32f4xx_rcc.c" lastModified="13f80b301a3">
+         <include file="..\..\..\cmsis_lib\include\stm32f4xx_rcc.h"/>
+      </source>
+      <source file="..\..\..\cmsis_lib\source\stm32f4xx_gpio.c" lastModified="13f80b2fd57">
+         <include file="..\..\..\cmsis_lib\include\stm32f4xx_gpio.h"/>
+         <include file="..\..\..\cmsis_lib\include\stm32f4xx_rcc.h"/>
+      </source>
+      <source file="..\..\..\cmsis_lib\source\stm32f4xx_syscfg.c" lastModified="13f85c056a0">
+         <include file="..\..\..\cmsis_lib\include\stm32f4xx_syscfg.h"/>
+         <include file="..\..\..\cmsis_lib\include\stm32f4xx_rcc.h"/>
+      </source>
+      <source file="..\..\..\cmsis_lib\include\stm32f4xx_gpio.h" lastModified="13f80b2fd52">
+         <include file="..\..\..\cmsis_boot\stm32f4xx.h"/>
+      </source>
+      <source file="..\..\..\cmsis_lib\include\stm32f4xx_tim.h" lastModified="13f80b32314">
+         <include file="..\..\..\cmsis_boot\stm32f4xx.h"/>
+      </source>
+   </includePath>
+   <includePath signature="/I..\..\..\workspace\TibuBoard_Demo\cmsis /I..\..\..\workspace /I..\..\..\workspace\TibuBoard_Demo /I..\..\..\workspace\TibuBoard_Demo\cmsis_lib /I..\..\.. /I..\..\..\workspace\TibuBoard_Demo\cmsis_lib\include /I..\..\..\workspace\TibuBoard_Demo\cmsis_boot">
+      <source file="..\..\..\cmsis_lib\source\stm32f4xx_tim.c" lastModified="13f80b32324">
+         <include file="..\..\..\cmsis_lib\include\stm32f4xx_tim.h"/>
+         <include file="..\..\..\cmsis_lib\include\stm32f4xx_rcc.h"/>
+      </source>
+      <source file="..\..\..\cmsis_lib\include\stm32f4xx_rcc.h" lastModified="13f80b30122">
+         <include file="..\..\..\cmsis_boot\stm32f4xx.h"/>
+      </source>
+      <source file="..\..\..\cmsis_lib\source\stm32f4xx_exti.c" lastModified="13f80b3147b">
+         <include file="..\..\..\cmsis_lib\include\stm32f4xx_exti.h"/>
+      </source>
+      <source file="..\..\..\cmsis_boot\system_stm32f4xx.h" lastModified="13f80b2ff25">
+      </source>
+      <source file="..\..\..\cmsis_lib\source\stm32f4xx_rcc.c" lastModified="13f80b301a3">
+         <include file="..\..\..\cmsis_lib\include\stm32f4xx_rcc.h"/>
+      </source>
+      <source file="..\..\..\cmsis_lib\source\stm32f4xx_gpio.c" lastModified="13f80b2fd57">
+         <include file="..\..\..\cmsis_lib\include\stm32f4xx_gpio.h"/>
+         <include file="..\..\..\cmsis_lib\include\stm32f4xx_rcc.h"/>
+      </source>
+      <source file="..\..\..\cmsis_lib\include\stm32f4xx_gpio.h" lastModified="13f80b2fd52">
+         <include file="..\..\..\cmsis_boot\stm32f4xx.h"/>
+      </source>
+      <source file="..\..\..\cmsis_lib\include\stm32f4xx_tim.h" lastModified="13f80b32314">
+         <include file="..\..\..\cmsis_boot\stm32f4xx.h"/>
       </source>
    </includePath>
 </dependencies>
