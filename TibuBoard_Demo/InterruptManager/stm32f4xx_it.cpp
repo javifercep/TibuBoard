@@ -13,6 +13,7 @@
 
 /* Includes ------------------------------------------------------------------*/
 #include "stm32f4xx_it.h"
+#include "InterruptManager.h"
 
 
 /* Private typedef -----------------------------------------------------------*/
@@ -21,10 +22,12 @@
 /* Private variables ---------------------------------------------------------*/
 
 
+extern CREATE_PERIPH_INSTANCE(NUMBER_PERIPHERALS);
+
 __IO uint32_t Counter = 0;			//SysTick counter
 
 extern __IO voidFuncPtr ButtonInt[numBUTTON]; //Button interrupt function
-extern __IO voidFuncPtr intSPIFunc; //SPI interrupt function
+extern __IO voidFuncPtr intSPIFunc; //SPI interrupt functio
 
 /* Private function prototypes -----------------------------------------------*/
 extern USB_OTG_CORE_HANDLE           USB_OTG_dev;
@@ -33,6 +36,7 @@ extern uint32_t USBD_OTG_ISR_Handler (USB_OTG_CORE_HANDLE *pdev);
 #ifdef USB_OTG_HS_DEDICATED_EP1_ENABLED
 extern uint32_t USBD_OTG_EP1IN_ISR_Handler (USB_OTG_CORE_HANDLE *pdev);
 extern uint32_t USBD_OTG_EP1OUT_ISR_Handler (USB_OTG_CORE_HANDLE *pdev);
+
 
 #endif
 
@@ -180,8 +184,17 @@ void EXTI0_IRQHandler(void)
   */
 void EXTI2_IRQHandler(void)
 {
+  uint16_t CBCount;
   if(EXTI_GetITStatus(USER_BUTTON3_EXTI_LINE) != RESET)
   {
+	  for(CBCount = 0; CBCount < CURRENT_PERIPH_INSTANCES(EXTI_2); CBCount++)
+	  {
+		  if(CALL_CALLBACK_INSTANCE(EXTI_2, CBCount) != NULL)
+		  {
+			  CALL_CALLBACK_INSTANCE(EXTI_2, CBCount)();
+		  }
+	  }
+
 	  if(ButtonInt[USER_BUTTON3])
 	  		  ButtonInt[USER_BUTTON3]();
 

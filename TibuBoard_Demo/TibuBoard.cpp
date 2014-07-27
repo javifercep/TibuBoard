@@ -11,6 +11,7 @@
 
 /* Includes ------------------------------------------------------------------*/
 #include "TibuBoard.h"
+#include "InterruptManager.h"
 
 /* Private typedef -----------------------------------------------------------*/
 
@@ -222,7 +223,8 @@ void Tibuboard::ButtonInterrupt(Button_TypeDef button, void (*userFunc)(void))
 
 	NVIC_Init(&NVIC_InitStructure);
 
-	ButtonInt[button]=userFunc;
+	//ButtonInt[button]=userFunc;
+	attachInterrupt(userFunc,EXTI_2);
 
 }
 
