@@ -120,7 +120,7 @@ void SPIClass::detachInterrupt(void)
  	  SPI_InitStructure.SPI_NSS = SPI_NSS_Hard;
  	  SPI_InitStructure.SPI_BaudRatePrescaler = prescaler;
  	  SPI_InitStructure.SPI_FirstBit = bitOrder;
- 	  SPI_InitStructure.SPI_CRCPolynomial = 7;
+ 	  SPI_InitStructure.SPI_CRCPolynomial = 0;
 
  	  /* Initializes the SPI communication */
  	  if(mode == SPI_MASTER)
@@ -179,10 +179,10 @@ void SPIClass::detachInterrupt(void)
 			break;
 	}
 
-	SPI_InitStructure.SPI_NSS = SPI_NSS_Soft;
+	SPI_InitStructure.SPI_NSS = SPI_NSS_Hard;
 	SPI_InitStructure.SPI_BaudRatePrescaler = prescaler;
 	SPI_InitStructure.SPI_FirstBit = bitOrder;
-	SPI_InitStructure.SPI_CRCPolynomial = 7;
+	SPI_InitStructure.SPI_CRCPolynomial = 0;
 
 	/* Initializes the SPI communication */
 	if(mastermode == SPI_MASTER)
@@ -239,10 +239,10 @@ void SPIClass::detachInterrupt(void)
 			break;
 	}
 
-	SPI_InitStructure.SPI_NSS = SPI_NSS_Soft;
+	SPI_InitStructure.SPI_NSS = SPI_NSS_Hard;
 	SPI_InitStructure.SPI_BaudRatePrescaler = prescaler;
 	SPI_InitStructure.SPI_FirstBit = bitOrder;
-	SPI_InitStructure.SPI_CRCPolynomial = 7;
+	SPI_InitStructure.SPI_CRCPolynomial = 0;
 
 	/* Initializes the SPI communication */
 	if(mastermode == SPI_MASTER)
@@ -292,10 +292,10 @@ void SPIClass::detachInterrupt(void)
 			break;
 	}
 
-	SPI_InitStructure.SPI_NSS = SPI_NSS_Soft;
+	SPI_InitStructure.SPI_NSS = SPI_NSS_Hard;
 	SPI_InitStructure.SPI_BaudRatePrescaler = prescaler;
 	SPI_InitStructure.SPI_FirstBit = bitOrder;
-	SPI_InitStructure.SPI_CRCPolynomial = 7;
+	SPI_InitStructure.SPI_CRCPolynomial = 0;
 
 	/* Initializes the SPI communication */
 	if(mastermode == SPI_MASTER)

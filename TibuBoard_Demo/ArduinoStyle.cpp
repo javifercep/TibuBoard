@@ -12,8 +12,7 @@ void setup()
 	SPI.begin(SPI_MASTER);
 	Serial.begin(115200);
 	Tibu.LEDOff(LED1);
-	Tibu.LEDOn(LED2);
-	Serial.println("Hola");
+	Serial.write("Hola\n");
 	pinMode(NSS,OUTPUT);
 	pinMode(CE,OUTPUT);
 	pinMode(IRQ, INPUT);
@@ -21,15 +20,16 @@ void setup()
 	digitalWrite(CE,LOW);
 	delay(10000);
 	digitalWrite(NSS,LOW);
-	Serial.println(SPI.transfer(0x00));
-	Serial.println(SPI.transfer(0xFF));
+	Tibu.LEDOn(LED2);
+	Serial.write(SPI.transfer(0x01));
+	//Serial.println(SPI.transfer(0xFF));
 	digitalWrite(NSS,HIGH);
 	Tibu.LEDOn(LED1);
 }
 
 void loop()
 {
-	Serial.println("Hola");
+	Serial.write("Hola\n");
 	delay(500);
 
 }
